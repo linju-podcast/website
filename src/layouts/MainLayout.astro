@@ -1,0 +1,16 @@
+---
+import Footer from '../components/Footer.astro';
+import NavBar from '../components/NavBar.astro';
+import MainHead from './MainHead.astro';
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <MainHead {title} />
+  <body class="flex-column">
+    <NavBar />
+    <slot />
+    <Footer />
+  </body>
+</html>

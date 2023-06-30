@@ -1,0 +1,13 @@
+---
+import { Icon } from 'astro-icon';
+import navData from '../data/navData';
+---
+
+<nav>
+  <div class="navBar">
+    <Icon name="logo" width="60" />
+  </div>
+  <ul>
+    {navData.map((item) => <a href={item.path}>{item.name}</a>)}
+  </ul>
+</nav>
