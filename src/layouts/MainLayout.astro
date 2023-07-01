@@ -8,9 +8,13 @@ const { title } = Astro.props;
 
 <html lang="en">
   <MainHead {title} />
-  <body class="flex-column">
-    <NavBar />
-    <slot />
-    <Footer />
+  <body class="m-0 p-0">
+    <container class="flex-col min-h-screen">
+      <NavBar />
+      <main class="flex-1">
+        <slot />
+      </main>
+      <Footer />
+    </container>
   </body>
 </html>

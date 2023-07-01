@@ -3,11 +3,21 @@ import { Icon } from 'astro-icon';
 import navData from '../data/navData';
 ---
 
-<nav>
-  <div class="navBar">
-    <Icon name="logo" width="60" />
+<header
+  class="sticky top-0 flex place-content-between items-center px-8 py-2 shadow-md"
+>
+  <div class="flex items-center justify-between">
+    <Icon class="pt-2" name="logo" width="60" />
   </div>
-  <ul>
-    {navData.map((item) => <a href={item.path}>{item.name}</a>)}
-  </ul>
-</nav>
+  <nav>
+    <ul class="flex space-x-6">
+      {
+        navData.map((item) => (
+          <li>
+            <a href={item.path}>{item.name}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
