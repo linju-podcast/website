@@ -9,12 +9,18 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      purple: '#bc8bf8',
+      purple: '#bd93f9',
       green: '#23f367',
-      pink: '#ca39c4',
+      pink: '#ff79c6',
+      translucent: 'rgba(255,255,255,0.2)',
+      line: 'rgba(255,255,255,0.25)',
+      specialLine: 'rgba(255,255,255,0.5)',
     },
-    minHeight: {
-      10: '10px',
+    flex: {
+      1: '1',
+    },
+    borderWidth: {
+      1: '1px',
     },
     extend: {},
   },

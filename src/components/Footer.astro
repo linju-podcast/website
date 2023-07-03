@@ -1,14 +1,14 @@
 ---
 ---
 
-<footer class="w-full bg-purple relative min-h-10">
+<footer class="flex place-content-between justify-center px-8 py-2">
   <small>
     Copyright &copy;<span id="copyright"></span> | All right reserved
   </small>
 </footer>
 
 <script>
-  document.querySelector('#copyright').textContent = new Date()
+  document.querySelector('#copyright')!.textContent = new Date()
     .getFullYear()
     .toString();
 </script>
