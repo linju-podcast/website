@@ -10,11 +10,14 @@ module.exports = {
     },
     colors: {
       purple: '#bd93f9',
-      green: '#23f367',
+      white: '#fcf7fb',
       pink: '#ff79c6',
+      blue: '#282a36',
       translucent: 'rgba(255,255,255,0.2)',
       line: 'rgba(255,255,255,0.25)',
       specialLine: 'rgba(255,255,255,0.5)',
+      background: '#bd93f9',
+      navBar: '#6272a4',
     },
     flex: {
       1: '1',
@@ -22,7 +25,18 @@ module.exports = {
     borderWidth: {
       1: '1px',
     },
-    extend: {},
+
+    extend: {
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-20%)' },
+          '50%': { transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        bounce: 'bounce 5s cubic-bezier(0.1, -0.6, 0.2, 0) infinite',
+      },
+    },
   },
   plugins: [],
 };
