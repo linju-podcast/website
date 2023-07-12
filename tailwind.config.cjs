@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -13,6 +15,7 @@ module.exports = {
       white: '#fcf7fb',
       pink: '#ff79c6',
       blue: '#282a36',
+      green: '#50fa7b',
       translucent: 'rgba(255,255,255,0.2)',
       line: 'rgba(255,255,255,0.25)',
       specialLine: 'rgba(255,255,255,0.5)',
@@ -38,5 +41,13 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // plugin(function ({ addBase, theme }) {
+    //   addBase({
+    //     h1: { fontSize: theme('fontSize.2xl') },
+    //     h2: { fontSize: theme('fontSize.xl') },
+    //     h3: { fontSize: theme('fontSize.lg') },
+    //   });
+    // }),
+  ],
 };

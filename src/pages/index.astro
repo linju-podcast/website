@@ -1,21 +1,29 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-import { Image } from 'astro:assets';
-import logo from '../assets/logo.png';
+
+import Main from '../components/Main.astro';
+import EpisodeCard from '../components/EpisodeCard.astro';
+const episodes = await Astro.glob('../content/podcast/*.md');
 ---
 
 <MainLayout title="home">
   <container
-    class="max-w-full max-h-full bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] rounded-lg backdrop-blur-xl border-1 border-line p-2 max-h-80 flex flex-row items-center content-center"
+    class="w-5/6 h-5/6 absolute top-12 z-0 rounded-lg border-1 border-line p-2 flex flex-col content-between justify-center bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] border-line backdrop-blur-sm"
   >
-    <div class="max-w-sm">
-      <h2 class="h2">Title</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, animi
-        voluptatum nostrum est dicta id ut veniam ipsum recusandae ad omnis
-        sequi quos pariatur. Sint enim eos saepe quidem explicabo?
-      </p>
+    <Main />
+    <div class="flex justify-center absolute -bottom-8 w-full">
+      {
+        episodes
+          .slice(0, 3)
+          .map((episode) => (
+            <EpisodeCard
+              title={episode.frontmatter.title}
+              tags={episode.frontmatter.tags}
+              description={episode.frontmatter.description}
+              url={episode.frontmatter.url}
+            />
+          ))
+      }
     </div>
-    <Image class="animate-bounce" src={logo} width={250} alt="podcast logo" />
   </container>
 </MainLayout>

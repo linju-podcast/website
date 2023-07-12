@@ -3,26 +3,28 @@ import { Icon } from 'astro-icon';
 import navData from '../data/navData';
 ---
 
-<header
-  class="sticky top-0 flex place-content-between items-center px-5 py-2 bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] rounded-lg border-1 border-line"
->
-  <div class="flex items-center justify-between">
-    <Icon class="pt-2" name="logo" width="60" />
-  </div>
-  <nav>
-    <ul class="flex space-x-6">
-      {
-        navData.map((item) => (
-          <li>
-            <a
-              href={item.path}
-              class="text-blue px-5 py-2 rounded-2xl font-medium  hover:shadow-[0_5px_10px_0px_rgba(0,0,0,0.1)] hover:bg-white"
-            >
-              {item.name}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
-</header>
+<container class="sticky top-0 flex justify-center items-center z-10">
+  <header
+    class="w-4/5 my-3 flex place-content-between items-center py-2 bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] rounded-lg border-1 border-line backdrop-blur-sm"
+  >
+    <div class="flex items-center justify-between">
+      <Icon class="pt-2 fill-green" name="logo" width="60" />
+    </div>
+    <nav>
+      <ul class="flex space-x-6">
+        {
+          navData.map((item) => (
+            <li>
+              <a
+                href={item.path}
+                class="text-blue px-5 py-2 rounded-2xl font-medium  hover:shadow-[0_5px_10px_0px_rgba(0,0,0,0.1)] hover:bg-white active:bg-white"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </header>
+</container>

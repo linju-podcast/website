@@ -1,0 +1,24 @@
+---
+const { title, tags, description, url } = Astro.props;
+---
+
+<article
+  class="flex rounded-lg border-1 border-line flex-col items-center justify-center bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] border-line mx-5 p-5 backdrop-blur-sm z-10"
+  id="card"
+>
+  <h3 class="text-2xl py-10">{title}</h3>
+  <p>{description}</p>
+  {tags.map((tag) => <p>{tag}</p>)}
+  <a href={url}>Read more</a>
+</article>
+
+<script>
+  import VanillaTilt from 'vanilla-tilt';
+
+  VanillaTilt.init(document.getElementById('card')!, {
+    max: 5,
+    speed: 200,
+    glare: true,
+    'max-glare': 0.5,
+  });
+</script>
