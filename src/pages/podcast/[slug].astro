@@ -1,0 +1,23 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+import { CollectionEntry, getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const episodes = await getCollection('podcast');
+  return episodes.map((episode) => ({
+    params: { slug: episode.slug },
+    props: { episode },
+  }));
+}
+
+interface Props {
+  episode: CollectionEntry<'podcast'>;
+}
+
+const { episode } = Astro.props;
+---
+
+<MainLayout>
+  <h1>{episode.id}</h1>
+</MainLayout>

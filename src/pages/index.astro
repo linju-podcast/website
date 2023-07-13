@@ -3,27 +3,31 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 import Main from '../components/Main.astro';
 import EpisodeCard from '../components/EpisodeCard.astro';
-const episodes = await Astro.glob('../content/podcast/*.md');
+
+import { getCollection, getEntry } from 'astro:content';
+
+const episodes = await getCollection('podcast');
 ---
 
 <MainLayout title="home">
   <container
-    class="w-5/6 h-5/6 absolute top-12 z-0 rounded-lg border-1 border-line p-2 flex flex-col content-between justify-center bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] border-line backdrop-blur-sm"
+    class="w-5/6 h-5/6 absolute top-12 z-0 rounded-lg border-1 border-line p-2 flex flex-col justify-center bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] border-line backdrop-blur-sm"
   >
     <Main />
-    <div class="flex justify-center absolute -bottom-8 w-full">
-      {
+    <div class="flex justify-center w-full mt-10">
+      <!-- {
         episodes
           .slice(0, 3)
-          .map((episode) => (
+          .map(({ title, tags, image, publishDate }) => (
             <EpisodeCard
-              title={episode.frontmatter.title}
-              tags={episode.frontmatter.tags}
-              description={episode.frontmatter.description}
-              url={episode.frontmatter.url}
+              title={title}
+              tags={tags}
+              image={image}
+              date={publishDate}
             />
           ))
       }
+    </div> -->
     </div>
   </container>
 </MainLayout>

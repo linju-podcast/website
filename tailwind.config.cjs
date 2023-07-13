@@ -15,6 +15,7 @@ module.exports = {
       white: '#fcf7fb',
       pink: '#ff79c6',
       blue: '#282a36',
+      darkBlue: 'rgba(98,114, 164,0.5)',
       green: '#50fa7b',
       translucent: 'rgba(255,255,255,0.2)',
       line: 'rgba(255,255,255,0.25)',

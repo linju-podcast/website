@@ -5,8 +5,7 @@ import logo from '../assets/logo.png';
 
 <container class="flex flex-row items-center justify-evenly">
   <div
-    class="max-w-3xl bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] rounded-lg border-1 border-line backdrop-blur-sm"
-    id="card"
+    class="max-w-3xl bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] rounded-lg border-1 border-line backdrop-blur-sm card"
   >
     <h2 class="text-5xl px-16 pt-6">Title</h2>
     <p class="px-16 py-6">
@@ -21,15 +20,15 @@ import logo from '../assets/logo.png';
       quisquam, ipsam libero itaque similique sit totam provident veritatis?
     </p>
   </div>
-  <div class="w-1/6 bg-translucent rounded-full backdrop-blur-sm">
+  <container class="w-1/6 bg-translucent rounded-full backdrop-blur-sm">
     <Image class="animate-bounce" src={logo} width={250} alt="podcast logo" />
-  </div>
+  </container>
 </container>
 
 <script>
   import VanillaTilt from 'vanilla-tilt';
 
-  VanillaTilt.init(document.getElementById('card')!, {
+  VanillaTilt.init(document.getElementById('.card')!, {
     max: 5,
     speed: 200,
     glare: true,
