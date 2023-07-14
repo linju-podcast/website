@@ -1,0 +1,53 @@
+---
+const { length, currentUrl, currentPage, firstUrl, prevUrl, nextUrl, lastUrl } =
+  Astro.props;
+
+const paginationList = Array.from({length: `${length}`, (_, i) => i + 1})
+---
+<nav aria-label="podcast pages">
+    { firstUrl == currentUrl ? (
+        <span>
+            <i>left</i>
+            <i>left</i>
+            </span>
+    ):(
+        <a href={firstUrl}>
+              <i>left</i>
+            <i>left</i>
+            </a>
+    )
+}
+
+{prevUrl ? (
+    <a href={prevUrl}>
+        <i>left</i></a>
+):(
+    <span>
+        <i>left</i></span>
+)}
+
+{
+    paginationList.map(num => (
+        <a href={`${firstUrl}${num == 1? '': '/'+(num)}`}>{num}</a>
+    ))
+}
+
+{!nextUrl?(
+    <span>
+        <i>right</i></span>
+):(
+    <a href="">
+        <i>right</i></a>
+)}
+
+{lastUrl == currentUrl ? (
+    <span>
+        <i>right</i>
+        <i>right</i></span>
+):(
+    <a href="">
+        <i>right</i>
+        <i>right</i></a>
+)}
+
+</nav>

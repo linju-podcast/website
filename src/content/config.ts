@@ -1,17 +1,19 @@
 import { z, defineCollection } from 'astro:content';
 
-const { object, string, array, date } = z;
+const { object, string, date, boolean } = z;
 
 const podcastCollection = defineCollection({
   type: 'content',
   schema: object({
     title: string(),
-    tags: array(string()),
+    description: string().max(160, 'for better display'),
+    tags: z.enum(['DevTips', 'LifeHacks', 'English']),
     image: object({
       src: string(),
       alt: string(),
     }),
-    publishDate: date(),
+    date: date(),
+    draft: boolean().default(false),
   }),
 });
 
