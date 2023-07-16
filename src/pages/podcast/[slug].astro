@@ -16,8 +16,10 @@ interface Props {
 }
 
 const { episode } = Astro.props;
+const { Content } = await episode.render();
 ---
 
 <MainLayout>
   <h1>{episode.id}</h1>
+  <Content />
 </MainLayout>

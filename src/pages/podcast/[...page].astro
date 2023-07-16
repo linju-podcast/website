@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro';
+
+import { formatPosts } from '../../utils';
+import Pagination from '../../components/Pagination.astro';
+
+const allPodcasts = await getCollection('podcast');
+
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await getCollection('podcast');
+
+  const formattedPodcast = formatPosts(allPosts, {});
+
+  return paginate(formattedPodcast, {
+    pageSize: 5,
+  });
+}
+
+const { page } = Astro.props;
+const pathname = new URL(Astro.request.url).pathname.split('/');
+const firstPath = pathname[1];
+
+const { prevUrl, currentUrl, nextUrl, currentPage, lastPage } = page;
+---
+
+<MainLayout title="podcast">
+  <ol>
+    {
+      page.data.map((post) => (
+        <li>
+          <div>
+            <h2>{post.data.title}</h2>
+            <div>{post.data.description}</div>
+            <div>{post.data.time}</div>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+
+  {
+    allPodcasts.length > 2 && (
+      <div>
+        <Pagination
+          length={lastPage}
+          currentPage={currentUrl}
+          currentPage={currentPage}
+          firstUrl={`/${firstPath}`}
+          prevUrl={prevUrl}
+          nextUrl={nextUrl}
+          lastUrl={`/${firstPath}/${lastPage}`}
+        />
+      </div>
+    )
+  }
+</MainLayout>
