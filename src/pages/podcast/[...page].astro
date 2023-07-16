@@ -4,6 +4,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
 
 import { formatPosts } from '../../utils';
 import Pagination from '../../components/Pagination.astro';
+import PodcastCard from '../../components/PodcastCard.astro';
 
 const allPodcasts = await getCollection('podcast');
 
@@ -25,33 +26,36 @@ const { prevUrl, currentUrl, nextUrl, currentPage, lastPage } = page;
 ---
 
 <MainLayout title="podcast">
-  <ol>
-    {
-      page.data.map((post) => (
-        <li>
-          <div>
-            <h2>{post.data.title}</h2>
-            <div>{post.data.description}</div>
-            <div>{post.data.time}</div>
-          </div>
-        </li>
-      ))
-    }
-  </ol>
+  <container class="flex flex-col">
+    <ol class="flex max-w-3xl flex-col space-y-16">
+      {
+        page.data.map((post) => (
+          <li>
+            <PodcastCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date}
+              slug={post.slug}
+            />
+          </li>
+        ))
+      }
+    </ol>
 
-  {
-    allPodcasts.length > 2 && (
-      <div>
-        <Pagination
-          length={lastPage}
-          currentPage={currentUrl}
-          currentPage={currentPage}
-          firstUrl={`/${firstPath}`}
-          prevUrl={prevUrl}
-          nextUrl={nextUrl}
-          lastUrl={`/${firstPath}/${lastPage}`}
-        />
-      </div>
-    )
-  }
+    {
+      allPodcasts.length > 2 && (
+        <div>
+          <Pagination
+            length={lastPage}
+            currentPage={currentUrl}
+            currentPage={currentPage}
+            firstUrl={`/${firstPath}`}
+            prevUrl={prevUrl}
+            nextUrl={nextUrl}
+            lastUrl={`/${firstPath}/${lastPage}`}
+          />
+        </div>
+      )
+    }
+  </container>
 </MainLayout>
