@@ -8,17 +8,14 @@ const paginationList: number[] = Array.from(
 );
 ---
 
-<nav aria-label="Blog pages" class="pagination pagination-default">
+<nav aria-label="Blog pages" class="flex justify-center py-2">
   {
     firstUrl == currentUrl ? (
-      <span class="pagination__link disabled">
-        <Icon name="fa-regular:arrow-alt-circle-left" />
-      </span>
+      <Icon name="fa6-regular:circle-left" class="blue" />
     ) : (
-      <a href={firstUrl} class="pagination__link">
-        <i class="pi-angle-left" />
-        <i class="pi-angle-left" />
-      </a>
+      <Icon name="fa-regular:arrow-alt-circle-left" class="w-6">
+        <a href={firstUrl} class="pagination__link" />
+      </Icon>
     )
   }
 
@@ -33,19 +30,15 @@ const paginationList: number[] = Array.from(
       </span>
     )
   }
-
-  {
-    paginationList.map((num) => (
-      <a
-        href={`${firstUrl}${num == 1 ? '' : '/' + num}`}
-        class={`pagination__link ${
-          currentPage == num ? 'disabled active' : ''
-        }`}
-      >
-        {num}
-      </a>
-    ))
-  }
+  <ol class="flex">
+    {
+      paginationList.map((num) => (
+        <li class="px-2 focus:ring-2">
+          <a href={`${firstUrl}${num == 1 ? '' : '/' + num}`}>{num}</a>
+        </li>
+      ))
+    }
+  </ol>
 
   {
     !nextUrl ? (
@@ -66,10 +59,9 @@ const paginationList: number[] = Array.from(
         <i class="pi-angle-right" />
       </span>
     ) : (
-      <a href={lastUrl} class="pagination__link">
-        <i class="pi-angle-right" />
-        <i class="pi-angle-right" />
-      </a>
+      <Icon name="fa-regular:arrow-alt-circle-right" class="w-6">
+        <a href={lastUrl} class="pagination__link" />
+      </Icon>
     )
   }
 </nav>
