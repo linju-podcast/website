@@ -16,7 +16,7 @@ export function formatPosts(
     limit = undefined,
   }: restFormatPostsProps
 ): podcastEntry {
-  const filteredPosts = posts.reduce((acc: podcastEntry, post) => {
+  let filteredPosts = posts.reduce((acc: podcastEntry, post) => {
     const { draft } = post.data;
 
     if (filterOutDrafts && draft) return acc;
@@ -33,7 +33,9 @@ export function formatPosts(
       return dateB - dateA;
     });
 
-  limit && filteredPosts.slice(0, limit);
+  if (limit) {
+    filteredPosts = filteredPosts.slice(0, limit);
+  }
 
   return filteredPosts;
 }
