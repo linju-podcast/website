@@ -1,37 +1,60 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
+import { getCollection } from 'astro:content';
+import { formatPosts } from '../utils';
+
+import EpisodeCard from './EpisodeCard.astro';
+
+const podcasts = await getCollection('podcast');
+const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 6 });
 ---
 
-<container class="flex flex-row items-center justify-evenly">
-  <div
-    class="max-w-3xl bg-translucent shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] rounded-lg border-1 border-line backdrop-blur-sm card"
-  >
-    <h2 class="text-5xl px-16 pt-6">Title</h2>
-    <p class="px-16 py-6">
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+>
+  <div class="py-6 md:order-1 hidden md:block">
+    <Image src={logo} width={250} alt="podcast logo" />
+  </div>
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tight"
+    >
+      网上邻居
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, animi
       voluptatum nostrum est dicta id ut veniam ipsum recusandae ad omnis sequi
       quos pariatur. Sint enim eos saepe quidem explicabo? Lorem ipsum dolor sit
       amet consectetur adipisicing elit. Voluptates quia neque tempore eligendi
-      vel architecto magnam, labore autem obcaecati ea quibusdam expedita nobis
-      ipsam enim ipsum, mollitia commodi! Assumenda, reprehenderit. Lorem, ipsum
-      dolor sit amet consectetur adipisicing elit. Quas placeat iusto iste
-      pariatur eligendi cupiditate distinctio alias illum natus at deserunt
-      quisquam, ipsam libero itaque similique sit totam provident veritatis?
     </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <a
+        href="/about"
+        class="rounded-3xl text-center px-6 py-1 bg-purple text-white"
+      >
+        Read More</a
+      >
+    </div>
   </div>
-  <container class="w-1/6 bg-translucent rounded-full backdrop-blur-sm">
-    <Image class="animate-bounce" src={logo} width={250} alt="podcast logo" />
-  </container>
-</container>
-
-<script>
-  import VanillaTilt from 'vanilla-tilt';
-
-  VanillaTilt.init(document.getElementById('.card')!, {
-    max: 5,
-    speed: 200,
-    glare: true,
-    'max-glare': 0.5,
-  });
-</script>
+</main>
+<div class="'mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:lg:tracking-tight">
+    Feel Free to Checkout the Latest Episodes!
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+  </p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 mt-16 gap-16">
+  {
+    formatedLatestedPodcasts.map((podcast) => (
+      <EpisodeCard
+        title={podcast.data.title}
+        tags={podcast.data.tags}
+        image={podcast.data.image}
+        slug={podcast.slug}
+      />
+    ))
+  }
+</div>

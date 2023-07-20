@@ -3,20 +3,20 @@ import Footer from '../components/Footer.astro';
 import NavBar from '../components/NavBar.astro';
 import MainHead from './MainHead.astro';
 
+import '../style/global.css';
+
 const { title } = Astro.props;
 ---
 
 <html lang="en">
   <MainHead {title} />
-  <body class="m-0 p-0">
-    <container
-      class="flex flex-col min-h-screen bg-gradient-to-br from-blue to-purple"
-    >
+  <body>
+    <div class="max-w-screen-2xl mx-auto px-5">
       <NavBar />
-      <main class="flex-1 flex w-screen justify-center">
-        <slot />
-      </main>
-      <Footer />
-    </container>
+    </div>
+    <div class="max-w-screen-2xl mx-auto px-5">
+      <slot />
+    </div>
+    <Footer />
   </body>
 </html>
