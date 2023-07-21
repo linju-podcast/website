@@ -22,40 +22,45 @@ const { page } = Astro.props;
 const pathname = new URL(Astro.request.url).pathname.split('/');
 const firstPath = pathname[1];
 
-const { prevUrl, currentUrl, nextUrl, currentPage, lastPage } = page;
+const { currentPage, lastPage } = page;
+const { current, prev, next } = page.url;
 ---
 
 <MainLayout title="podcast">
-  <container class="flex flex-col">
-    <ol class="flex max-w-3xl flex-col space-y-16">
+  <div class="mt-16 text-center">
+    <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">播客单集</h1>
+    <main class="mt-16 flex flex-col">
+      <ol class="flex flex-col space-y-8">
+        {
+          page.data.map((post) => (
+            <li>
+              <PodcastCard
+                title={post.data.title}
+                description={post.data.description}
+                date={post.data.date}
+                slug={post.slug}
+              />
+            </li>
+          ))
+        }
+      </ol>
+    </main>
+    <div class="mt-16">
       {
-        page.data.map((post) => (
-          <li>
-            <PodcastCard
-              title={post.data.title}
-              description={post.data.description}
-              date={post.data.date}
-              slug={post.slug}
+        allPodcasts.length > 5 && (
+          <div>
+            <Pagination
+              length={lastPage}
+              currentUrl={current}
+              currentPage={currentPage}
+              firstUrl={`/${firstPath}`}
+              prevUrl={prev}
+              nextUrl={next}
+              lastUrl={`/${firstPath}/${lastPage}`}
             />
-          </li>
-        ))
+          </div>
+        )
       }
-    </ol>
-
-    {
-      allPodcasts.length > 2 && (
-        <div>
-          <Pagination
-            length={lastPage}
-            currentUrl={currentUrl}
-            currentPage={currentPage}
-            firstUrl={`/${firstPath}`}
-            prevUrl={prevUrl}
-            nextUrl={nextUrl}
-            lastUrl={`/${firstPath}/${lastPage}`}
-          />
-        </div>
-      )
-    }
-  </container>
+    </div>
+  </div>
 </MainLayout>

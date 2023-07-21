@@ -7,7 +7,7 @@ import { formatPosts } from '../utils';
 import EpisodeCard from './EpisodeCard.astro';
 
 const podcasts = await getCollection('podcast');
-const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 6 });
+const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 ---
 
 <main
@@ -46,7 +46,7 @@ const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 6 });
     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
   </p>
 </div>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 mt-16 gap-16">
+<div class="grid md:grid-cols-3 mt-16 justify-items-center">
   {
     formatedLatestedPodcasts.map((podcast) => (
       <EpisodeCard
@@ -54,6 +54,7 @@ const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 6 });
         tags={podcast.data.tags}
         image={podcast.data.image}
         slug={podcast.slug}
+        date={podcast.data.date}
       />
     ))
   }

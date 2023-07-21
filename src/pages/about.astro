@@ -1,7 +1,65 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import { Image } from 'astro:assets';
+import Sing from '../assets/Sing.jpeg';
+import Papaya from '../assets/Papaya.jpeg';
 ---
 
 <MainLayout>
-  <h1>This is About Page</h1>
+  <div
+    class="mt-16 grid gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
+  >
+    <div class="hidden lg:pl-20 md:flex lg:flex-col gap-10">
+      <Image
+        src={Sing}
+        width={250}
+        alt="Portrait of Host S1ngS1ng"
+        class="aspect-square rounded-2xl rotate-3 hover:shadow-xl hover:-translate-y-1"
+      />
+      <Image
+        src={Papaya}
+        width={250}
+        alt="Portrait of Host Papaya"
+        class="aspect-square rounded-2xl -rotate-3 hover:shadow-xl hover:-translate-y-1"
+      />
+    </div>
+
+    <div class="lg:order-first lg:row-span-2">
+      <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+        关于播客和主播
+      </h1>
+      <p class="text-lg mt-4 text-slate-600">
+        由两位“网上邻居”创办的《网上邻居》。
+      </p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <h2 class="font-bold text-3xl text-gray-800 text-left">
+          The origin of the podcast
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum
+          similique tempore neque quos, quis ratione impedit, praesentium
+          molestias repellat fugit fuga facilis adipisci est. Reiciendis totam
+          eligendi necessitatibus unde?
+        </p>
+        <h2 class="font-bold text-2xl text-gray-800 text-left">
+          Host: S1ngS1ng
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum
+          similique tempore neque quos, quis ratione impedit, praesentium
+          molestias repellat fugit fuga facilis adipisci est. Reiciendis totam
+          eligendi necessitatibus unde?
+        </p>
+        <h2 class="font-bold text-2xl text-gray-800 text-left">
+          Host: Papaya HUANG
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum
+          similique tempore neque quos, quis ratione impedit, praesentium
+          molestias repellat fugit fuga facilis adipisci est. Reiciendis totam
+          eligendi necessitatibus unde?
+        </p>
+      </div>
+    </div>
+  </div>
 </MainLayout>
