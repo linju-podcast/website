@@ -1,6 +1,6 @@
 ---
 import { formatDate } from '../utils';
-const { title, date, slug, description } = Astro.props;
+const { title, date, url, description } = Astro.props;
 ---
 
 <article class="md:grid md:grid-cols-4 md:items-baseline">
@@ -12,7 +12,7 @@ const { title, date, slug, description } = Astro.props;
     >
     <p class="relative z-10 mt-2 text-sm">{description}</p>
     <div class="relative z-10 mt-4 flex items-center text-sm font-medium">
-      <a href={`podcast/${slug}`}><i> Read article</i></a>
+      <a href={url}><i> Read article</i></a>
     </div>
   </div>
   <time
