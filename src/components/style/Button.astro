@@ -1,0 +1,23 @@
+---
+interface Props {
+  size?: 'md' | 'lg';
+  style?: 'menu' | 'primary' | 'secondary';
+  block?: boolean;
+}
+
+const { size = 'md', style = 'primary', block } = Astro.props;
+
+const spacingConfig = {
+  md: 'px-5 py-2.5',
+  lg: 'px-6 py-3',
+};
+
+const styleConfig = {
+  primary:
+    'border-2 border-transparent bg-purple text-white cursor-pointer inline-block ',
+};
+---
+
+<button class:list={[block, spacingConfig[size], styleConfig[style]]}
+  ><slot /></button
+>

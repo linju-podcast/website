@@ -1,0 +1,17 @@
+---
+interface Props {
+  name: 'devTips' | 'lifeHacks' | 'englishLearnings';
+}
+
+const { name } = Astro.props;
+
+const colorConfig = {
+  devTips: 'bg-orange',
+  lifeHacks: 'bg-pink',
+  englishLearnings: 'bg-cyan',
+};
+---
+
+<span class:list={['text-sm text-gray-500 ', colorConfig[name]]}>
+  #<slot />
+</span>
