@@ -8,8 +8,8 @@ module.exports = {
       md: '768px',
       lg: '992px',
       xl: '1200px',
-      xxl: '1400px',
     },
+
     colors: {
       purple: '#bd93f9',
       white: '#fcf7fb',
@@ -20,7 +20,6 @@ module.exports = {
       translucent: 'rgba(255,255,255,0.2)',
       line: 'rgba(255,255,255,0.25)',
       specialLine: 'rgba(255,255,255,0.5)',
-      background: '#bd93f9',
       navBar: '#6272a4',
     },
     flex: {

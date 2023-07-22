@@ -12,7 +12,7 @@ const { title, date, url, description } = Astro.props;
     >
     <p class="relative z-10 mt-2 text-sm">{description}</p>
     <div class="relative z-10 mt-4 flex items-center text-sm font-medium">
-      <a href={url}><i> Read article</i></a>
+      <a href={`/podcast/${url}`}><i> Read article</i></a>
     </div>
   </div>
   <time
