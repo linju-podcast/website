@@ -2,11 +2,6 @@
 import MainLayout from '../layouts/MainLayout.astro';
 
 import Main from '../components/Main.astro';
-import EpisodeCard from '../components/EpisodeCard.astro';
-
-import { getCollection, getEntry } from 'astro:content';
-
-const episodes = await getCollection('podcast');
 ---
 
 <MainLayout title="home">

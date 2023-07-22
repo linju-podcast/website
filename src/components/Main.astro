@@ -8,6 +8,8 @@ import EpisodeCard from './EpisodeCard.astro';
 
 const podcasts = await getCollection('podcast');
 const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
+
+import Button from './style/Button.astro';
 ---
 
 <main
@@ -29,12 +31,14 @@ const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
       amet consectetur adipisicing elit. Voluptates quia neque tempore eligendi
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <a
-        href="/about"
-        class="rounded-3xl text-center px-6 py-1 bg-purple text-white"
-      >
-        Read More</a
-      >
+      <Button>
+        <a
+          href="/about"
+          class="rounded-3xl text-center px-6 py-1 bg-purple text-white"
+        >
+          Read More</a
+        >
+      </Button>
     </div>
   </div>
 </main>

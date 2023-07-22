@@ -2,6 +2,7 @@
 
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: '576px',
@@ -21,24 +22,10 @@ module.exports = {
       line: 'rgba(255,255,255,0.25)',
       specialLine: 'rgba(255,255,255,0.5)',
       navBar: '#6272a4',
-    },
-    flex: {
-      1: '1',
-    },
-    borderWidth: {
-      1: '1px',
+      orange: '#ffb86c',
+      cyan: '#8be9fd',
     },
 
-    extend: {
-      keyframes: {
-        bounce: {
-          '0%, 100%': { transform: 'translateY(-20%)' },
-          '50%': { transform: 'translateY(0)' },
-        },
-      },
-      animation: {
-        bounce: 'bounce 5s cubic-bezier(0.1, -0.6, 0.2, 0) infinite',
-      },
-    },
+    extend: {},
   },
 };

@@ -1,6 +1,6 @@
 ---
 title: '一个标题'
-tags: ['English']
+tags: ['englishLearnings']
 description: '两位主播从信任和老手两个视角分享转码经验'
 date: 2023-06-23
 image:

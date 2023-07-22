@@ -17,6 +17,10 @@ interface Props {
 
 const { episode } = Astro.props;
 const { Content } = await episode.render();
+
+const { tags, title } = episode.data;
+
+import Tag from '../../components/style/Tag.astro';
 ---
 
 <MainLayout>
@@ -24,8 +28,9 @@ const { Content } = await episode.render();
     <h1
       class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-snug"
     >
-      {episode.data.title}
+      {title}
     </h1>
+    {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
   </div>
   <div class="text-base max-w-prose mt-6 max-w-3xl mx-auto">
     <Content />

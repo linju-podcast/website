@@ -2,15 +2,27 @@
 const { title, tags, image, slug, date } = Astro.props;
 import { Image } from 'astro:assets';
 import { formatDate } from '../utils';
+
+import Tag from './style/Tag.astro';
+import Link from './style/Link.astro';
 ---
 
 <article
-  class="flex rounded-lg border-1 border-line flex-col items-start justify-center shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] border-line mx-5 p-5 z-10"
+  class="flex rounded-lg border-1 border-line flex-col items-start justify-center shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] border-line mx-5 p-5 z-10 bg-white border-2 border-gray-200"
 >
   <Image src={image.src} alt={image.alt} width={400} height={100} />
+
   <h3 class="text-lg font-semibold py-2">{title}</h3>
 
-  {tags.map((tag) => <span>{tag}</span>)}
-  <span><time date-time={date}>{formatDate(date)}</time></span>
-  <a href={`podcast/${slug}`} class="bg-green px-2 rounded-3xl">Read more</a>
+  <div class="flex flex-col gap-1">
+    <div class="flex gap-2 w-full">
+      {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
+    </div>
+    <div class="text-sm text-gray-500">
+      <time date-time={date}> {formatDate(date)}</time>
+    </div>
+    <div>
+      <Link url={`/podcast/${slug}`}>Read More</Link>
+    </div>
+  </div>
 </article>
