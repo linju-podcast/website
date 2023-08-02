@@ -11,6 +11,10 @@ const navData = [
     name: 'Podcast',
     path: '/podcast',
   },
+  {
+    name: 'Tag',
+    path: '/tag',
+  },
 ];
 
 export default navData;
