@@ -3,6 +3,8 @@ import { Icon } from 'astro-icon';
 import ThemeToggleInput from './ThemeToggleInput.astro';
 
 import navData from '../data/navData';
+
+import MenuToggle from './MenuToggle';
 ---
 
 <header class="flex flex-col lg:flex-row justify-between items-center my-5">
@@ -11,7 +13,7 @@ import navData from '../data/navData';
       <Icon class="pt-2 fill-green" name="logo" width="50" />
     </a>
   </div>
-  <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+  <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0 nav-links">
     <ul class="flex flex-col lg:flex-row gap-3">
       {
         navData.map((item) => (
@@ -27,11 +29,11 @@ import navData from '../data/navData';
       }
     </ul>
   </nav>
-
-  <div
-    class="hidden lg:flex items-center gap-4 bor bg-green px-3 py-1 rounded-3xl"
-  >
-    <ThemeToggleInput name="sun" value="light" />
-    <ThemeToggleInput name="moon" value="dark" />
+  <div class="flex gap-2">
+    <div class="lg:flex items-center gap-4 bor bg-green px-3 py-1 rounded-3xl">
+      <ThemeToggleInput name="sun" value="light" />
+      <ThemeToggleInput name="moon" value="dark" />
+    </div>
+    <MenuToggle client:load />
   </div>
 </header>
