@@ -5,34 +5,41 @@ import navData from '../data/navData';
 
 import MenuToggle from './MenuToggle';
 import ThemeToggle from './ThemeToggle';
+import Link from './style/Link.astro';
+
+const currentPath = new URL(Astro.request.url).pathname;
 ---
 
-<header class="flex justify-between items-center my-5">
-  <div class="flex items-center justify-between">
-    <a href="/">
-      <Icon class="pt-2 fill-green" name="logo" width="50" />
-    </a>
-  </div>
-  <nav class="hidden md:flex w-auto mt-2 mt-0">
-    <ul class="flex flex-row gap-3">
-      {
-        navData.map((item) => (
-          <li>
-            <a
-              href={item.path}
-              class="text-blue px-5 py-2 rounded-2xl font-medium  hover:shadow-[0_5px_10px_0px_rgba(0,0,0,0.1)] hover:bg-white"
-            >
+<header>
+  <container class="flex justify-between items-center bg-[#f3f4f5] m-0 p-0">
+    <div class="flex items-center justify-between my-5">
+      <a href="/">
+        <Icon class="pt-2 ml-4 fill-green" name="logo" width="50" />
+      </a>
+    </div>
+    <nav class="hidden md:flex w-auto mt-2 mt-0">
+      <ul class="flex flex-row gap-8">
+        {
+          navData.map((item) => (
+            <Link url={item.path} {currentPath}>
               {item.name}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
-  <div class="md:flex hidden">
-    <ThemeToggle client:load />
-  </div>
-  <div class="md:hidden">
-    <MenuToggle client:load />
-  </div>
+            </Link>
+          ))
+        }
+      </ul>
+    </nav>
+    <div class="md:flex hidden mr-4">
+      <ThemeToggle client:load />
+    </div>
+    <div class="md:hidden mr-4">
+      <MenuToggle client:load />
+    </div>
+  </container>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+    ><path
+      fill="#f3f4f5"
+      fill-opacity="1"
+      d="M0,160L60,133.3C120,107,240,53,360,53.3C480,53,600,107,720,117.3C840,128,960,96,1080,106.7C1200,117,1320,171,1380,197.3L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+    ></path></svg
+  >
 </header>

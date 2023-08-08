@@ -32,7 +32,7 @@ import Tag from '../../components/style/Tag.astro';
     </h1>
     {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
   </div>
-  <div class="text-base max-w-prose mt-6 max-w-3xl mx-auto">
+  <article class="mx-auto mt-6 max-w-3xl prose prose-lg">
     <Content />
-  </div>
+  </article>
 </MainLayout>

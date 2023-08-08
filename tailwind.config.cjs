@@ -2,7 +2,7 @@
 
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-  darkMode: 'class',
+
   theme: {
     screens: {
       sm: '576px',
@@ -12,8 +12,12 @@ module.exports = {
     },
 
     colors: {
+      primary: '#F6E56E',
+      secondary: '#6C577F',
+      accent: '#C5B7A1',
+      white: '#FFFFFF',
       purple: '#bd93f9',
-      white: '#fcf7fb',
+
       pink: '#ff79c6',
       blue: '#282a36',
       darkBlue: 'rgba(98,114, 164,0.5)',
@@ -27,5 +31,6 @@ module.exports = {
     },
 
     extend: {},
+    plugins: [require('@tailwindcss/typography')],
   },
 };
