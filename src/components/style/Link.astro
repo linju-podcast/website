@@ -8,7 +8,7 @@ interface Props {
 const { url, style = 'default', currentPath } = Astro.props;
 
 const styleConfig = {
-  default: `font-medium  hover:text-accent  active:bg-violet-700 ${
+  default: `font-medium hover:text-accent  active:bg-violet-700 ${
     currentPath === url
       ? `text-accent underline underline-offset-2`
       : `text-secondary`

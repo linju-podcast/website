@@ -13,10 +13,15 @@ import Button from './style/Button.astro';
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 px-6"
 >
   <div class="py-6 md:order-1 hidden md:block">
-    <Image src={logo} width={250} alt="podcast logo" />
+    <Image
+      src={logo}
+      width={300}
+      alt="podcast logo"
+      class="rounded-2xl shadow-xl"
+    />
   </div>
   <div>
     <h1
@@ -25,26 +30,19 @@ import Button from './style/Button.astro';
       网上邻居
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, animi
-      voluptatum nostrum est dicta id ut veniam ipsum recusandae ad omnis sequi
-      quos pariatur. Sint enim eos saepe quidem explicabo? Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Voluptates quia neque tempore eligendi
+      欢迎收听网上邻居，这是一档由两位网上邻居创办的泛开发、泛科技的播客计划。
+      <br />播客将以每两周的频率随机更新。<br />欢迎订阅收听。
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Button>
-        <a
-          href="/about"
-          class="rounded-3xl text-center px-6 py-1 bg-purple text-white"
-        >
-          Read More</a
-        >
+        <a href="/about">了解更多</a>
       </Button>
     </div>
   </div>
 </main>
-<div class="'mt-16 md:mt-0">
+<div class="'mt-16 md:mt-0 px-6">
   <h2 class="text-4xl lg:text-5xl font-bold lg:lg:tracking-tight">
-    Feel Free to Checkout the Latest Episodes!
+    最新播客！
   </h2>
   <p class="text-lg mt-4 text-slate-600">
     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
