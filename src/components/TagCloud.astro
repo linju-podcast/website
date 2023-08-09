@@ -1,0 +1,38 @@
+---
+import { getCollection, CollectionEntry } from 'astro:content';
+import { formatPosts } from '../utils';
+
+const allPodcasts = await getCollection('podcast');
+const formattedPodcast: CollectionEntry<'podcast'>[] = formatPosts(
+  allPodcasts,
+  {}
+);
+const allTags = formattedPodcast.map((tag) => tag.data.tags).flat();
+
+const processedTags: Record<
+  'devTips' | 'lifeHacks' | 'englishLearnings',
+  number
+> = allTags.reduce((acc, tag) => {
+  const value = acc[tag] || 0;
+
+  return {
+    ...acc,
+    [tag]: value + 1,
+  };
+}, {});
+
+import Tag from './style/Tag.astro';
+---
+
+<ul class="flex gap-3">
+  {
+    Object.entries(processedTags).map(([key, val]) => (
+      <li>
+        <a href={`/podcast/${key}`}>
+          <Tag name={key}>{key}</Tag>
+          {val}
+        </a>
+      </li>
+    ))
+  }
+</ul>
