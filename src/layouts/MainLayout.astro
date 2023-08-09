@@ -11,9 +11,15 @@ const { title } = Astro.props;
 <html lang="en">
   <MainHead {title} />
   <body>
-    <div class="max-w-screen-xl mx-auto">
-      <NavBar />
-
+    <NavBar />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+      ><path
+        fill="#f3f4f5"
+        fill-opacity="1"
+        d="M0,160L60,133.3C120,107,240,53,360,53.3C480,53,600,107,720,117.3C840,128,960,96,1080,106.7C1200,117,1320,171,1380,197.3L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path></svg
+    >
+    <div class="max-w-screen-xl mx-auto px-6">
       <slot />
       <Footer />
     </div>
