@@ -40,35 +40,34 @@ const MenuToggle: FunctionComponent = () => {
         <IconMenu style={{ fontSize: '2rem' }} />
       </button>
 
-      {menuType === 'toClose' && (
-        <div className="fixed inset-0 w-full h-full md:hidden">
-          <div className="absolute inset-0 w-full h-full bg-blue opacity-50"></div>
-          <div className="absolute w-72 h-full bg-white right-0 top-0 z-50">
-            <div className="w-full flex justify-end ">
-              <IconClose
-                style={{ fontSize: '2rem' }}
-                className="mr-2 mt-2"
-                onClick={handleClick}
-              />
-            </div>
-
-            <nav>
-              <ul className="flex flex-col flex-wrap  content-center  gap-8">
-                {navData.map((item) => (
-                  <li>
-                    <a href={item.path} onClick={handleClick}>
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="w-full flex justify-center mt-10">
-              <ThemeToggle />
-            </div>
-          </div>
+      <div
+        className={`transition ${
+          menuType === 'toClose' ? `translate-x-0` : `translate-x-[100%]`
+        } absolute w-72 duration-300 h-full bg-white right-0 top-0 z-50 `}
+      >
+        <div className="w-full flex justify-end ">
+          <IconClose
+            style={{ fontSize: '2rem' }}
+            className="mr-2 mt-2"
+            onClick={handleClick}
+          />
         </div>
-      )}
+
+        <nav>
+          <ul className="flex flex-col flex-wrap  content-center  gap-8">
+            {navData.map((item) => (
+              <li>
+                <a href={item.path} onClick={handleClick}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="w-full flex justify-center mt-10">
+          <ThemeToggle />
+        </div>
+      </div>
     </div>
   );
 };

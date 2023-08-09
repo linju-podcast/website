@@ -8,16 +8,16 @@ interface Props {
 const { url, style = 'default', currentPath } = Astro.props;
 
 const styleConfig = {
-  default: `font-medium hover:text-accent  active:bg-violet-700 ${
-    currentPath === url
-      ? `text-accent underline underline-offset-2`
-      : `text-secondary`
+  default: `font-medium text-secondary relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+    currentPath === url ? `before:scale-x-100` : ``
   }`,
 };
 ---
 
 <li>
   <a href={url} class:list={[styleConfig[style]]}>
-    <slot />
+    <span class="relative group-hover:text-secondary">
+      <slot />
+    </span>
   </a>
 </li>
