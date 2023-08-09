@@ -8,21 +8,23 @@ import Link from './style/Link.astro';
 ---
 
 <article
-  class="flex rounded-lg border-1 border-line flex-col items-start justify-center shadow-[0_15px_35px_0px_rgba(0,0,0,0.05)] border-line mx-5 p-5 z-10 bg-white border-2 border-gray-200"
+  class="flex rounded-lg border-1 border-line flex-col items-start shadow-xl border-line mx-5 p-5 my-5 border-2 gap-4"
 >
-  <Image src={image.src} alt={image.alt} width={400} height={100} />
-
-  <h3 class="text-lg font-semibold py-2">{title}</h3>
-
-  <div class="flex flex-col gap-1">
-    <div class="flex gap-2 w-full">
-      {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
-    </div>
-    <div class="text-sm text-gray-500">
+  <ul>
+    <Link style="card" url={`/podcast/${slug}`}>{title}</Link>
+    <div class="text-sm text-secondary">
       <time date-time={date}> {formatDate(date)}</time>
     </div>
-    <div>
-      <Link url={`/podcast/${slug}`}>Read More</Link>
-    </div>
+  </ul>
+  <Image
+    src={image.src}
+    alt={image.alt}
+    width={400}
+    height={100}
+    class="rounded"
+  />
+
+  <div class="flex gap-2 w-full text-sm">
+    {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
   </div>
 </article>

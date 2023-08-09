@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import { formatPosts } from '../utils';
 
 import EpisodeCard from './EpisodeCard.astro';
+import TagCloud from './TagCloud.astro';
 
 const podcasts = await getCollection('podcast');
 const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
@@ -29,11 +30,11 @@ import Button from './style/Button.astro';
     >
       网上邻居
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      欢迎收听网上邻居，这是一档由两位网上邻居创办的泛开发、泛科技的播客计划。
+    <p class="text-lg mt-8 text-slate-600 max-w-xl">
+      是一档由两位网上邻居创办的泛开发、泛科技的播客计划。
       <br />播客将以每两周的频率随机更新。<br />欢迎订阅收听。
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <div class="mt-8 flex flex-col sm:flex-row gap-3">
       <Button>
         <a href="/about">了解更多</a>
       </Button>
@@ -41,14 +42,11 @@ import Button from './style/Button.astro';
   </div>
 </main>
 <div class="'mt-16 md:mt-0 px-6">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:lg:tracking-tight">
-    最新播客！
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-  </p>
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">最新播客！</h2>
 </div>
-<div class="grid md:grid-cols-3 mt-16 justify-items-center">
+<div
+  class="grid md:grid-cols-2 lg:grid-cols-3 mt-8 justify-items-center place-content-between"
+>
   {
     formatedLatestedPodcasts.map((podcast) => (
       <EpisodeCard
@@ -60,4 +58,7 @@ import Button from './style/Button.astro';
       />
     ))
   }
+  <p class="text-lg mt-8 text-slate-600">
+    <TagCloud />
+  </p>
 </div>

@@ -1,17 +1,24 @@
 ---
 interface Props {
-  name: 'devTips' | 'lifeHacks' | 'englishLearnings';
+  name: string;
 }
 
 const { name } = Astro.props;
 
 const colorConfig = {
-  devTips: 'bg-orange',
-  lifeHacks: 'bg-pink',
-  englishLearnings: 'bg-cyan',
+  devTips: 'before:bg-orange',
+  lifeHacks: 'before:bg-pink',
+  englishLearnings: 'before:bg-cyan',
 };
 ---
 
-<span class:list={['text-sm text-gray-500 ', colorConfig[name]]}>
-  #<slot />
+<span
+  class:list={[
+    'before:block before:absolute before:-inset-0.5 before:-skew-y-2 relative inline-block',
+    colorConfig[name],
+  ]}
+>
+  <span class="relative text-white">
+    <slot />
+  </span>
 </span>

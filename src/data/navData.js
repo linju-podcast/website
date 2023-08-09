@@ -1,19 +1,15 @@
 const navData = [
   {
-    name: 'Home',
+    name: '首页',
     path: '/',
   },
   {
-    name: 'About',
+    name: '关于',
     path: '/about',
   },
   {
-    name: 'Podcast',
+    name: '播客',
     path: '/podcast',
-  },
-  {
-    name: 'Tag',
-    path: '/tag',
   },
 ];
 
