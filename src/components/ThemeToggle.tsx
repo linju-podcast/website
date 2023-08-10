@@ -1,15 +1,25 @@
 import { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 
-import IconMoon from '~icons/tabler/moon';
-import IconSun from '~icons/tabler/sun-high';
+import IconMoon from '~icons/tabler/moon-filled';
+import IconSun from '~icons/tabler/sun-filled';
 const ThemeToggle: FunctionComponent = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'light');
 
+  const handleClick = () => {
+    setTheme(() => (theme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <div className="flex gap-4">
-      <IconSun style={{ fontSize: '2rem' }} />
-      <IconMoon style={{ fontSize: '2rem' }} />
+    <div className="flex  bg-[#111] p-1 relative rounded-3xl">
+      <IconSun style={{ fontSize: '2rem', color: '#f39c12' }} />
+      <IconMoon style={{ fontSize: '2rem', color: '#f1c40f' }} />
+      <button
+        className={`absolute w-8 h-8 bg-[#fff] rounded-full ${
+          theme === 'light' ? `translate-x-0` : `translate-x-[100%]`
+        } transition duration-300`}
+        onClick={handleClick}
+      ></button>
     </div>
   );
 };

@@ -8,7 +8,7 @@ interface Props {
 const { url, style = 'default', currentPath } = Astro.props;
 
 const styleConfig = {
-  default: `font-medium text-secondary relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+  default: `font-bold text-xl tracking-widest text-secondary relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
     currentPath === url ? `before:scale-x-100` : ``
   }`,
   card: ' text-xl before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-accent before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100',
