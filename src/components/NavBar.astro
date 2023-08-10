@@ -1,11 +1,11 @@
 ---
-import { Icon } from 'astro-icon';
-
 import navData from '../data/navData';
 
 import MenuToggle from './MenuToggle';
 import ThemeToggle from './ThemeToggle';
 import Link from './style/Link.astro';
+
+import IconLogo from '~icons/my-icons/logo';
 
 const currentPath = new URL(Astro.request.url).pathname;
 ---
@@ -16,7 +16,10 @@ const currentPath = new URL(Astro.request.url).pathname;
   >
     <div class="flex items-center justify-between my-5">
       <a href="/">
-        <Icon class="pt-2 ml-4 fill-green" name="logo" width="50" />
+        <IconLogo
+          class="pt-2 ml-4 fill-green"
+          style={{ width: '3em', color: 'red' }}
+        />
       </a>
     </div>
     <nav class="hidden md:flex w-auto mt-2 mt-0">

@@ -13,7 +13,7 @@ const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 import Button from './style/Button.astro';
 ---
 
-<div class="hidden xl:block xl:absolute top-[120px] right-[25%]">
+<div class="hidden xl:block xl:absolute top-[120px] right-[20%]">
   <Image
     src={logo}
     width={250}
@@ -24,23 +24,19 @@ import Button from './style/Button.astro';
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24"
 >
-  <div class="py-6 md:order-1 hidden md:block xl:hidden">
-    <Image
-      src={logo}
-      width={250}
-      alt="podcast logo"
-      class="rounded-2xl shadow-xl"
-    />
+  <div class="pb-20 block xl:hidden w-6/12 md:w-4/12 lg:w-5/12">
+    <Image src={logo} alt="podcast logo" class="rounded-2xl shadow-xl" />
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tight"
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tight hidden"
     >
       网上邻居
     </h1>
-    <p class="text-lg mt-8 text-slate-600 max-w-xl">
+    <p class="text-lg text-slate-600 max-w-xl leading-loose">
       是一档由两位网上邻居创办的泛开发、泛科技的播客计划。
       <br />播客将以每两周的频率随机更新。<br />欢迎订阅收听。
+      <span class="i-tabler-moon"></span>
     </p>
     <div class="mt-8 flex flex-col sm:flex-row gap-3">
       <Button>

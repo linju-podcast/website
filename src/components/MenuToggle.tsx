@@ -60,7 +60,7 @@ const MenuToggle: FunctionComponent = () => {
                 <a
                   href={item.path}
                   onClick={handleClick}
-                  className="font-medium text-secondary"
+                  className="font-bold text-xl tracking-widest text-secondary"
                 >
                   {item.name}
                 </a>

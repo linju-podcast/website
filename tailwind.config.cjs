@@ -5,9 +5,9 @@ module.exports = {
 
   theme: {
     colors: {
-      primary: '#F6E56E',
-      secondary: '#6C577F',
-      accent: '#C5B7A1',
+      primary: '#AB539B',
+      secondary: '#2C68B2',
+      accent: '#71C7D5',
       white: '#FFFFFF',
       purple: '#bd93f9',
 
@@ -22,7 +22,9 @@ module.exports = {
       orange: '#ffb86c',
       cyan: '#8be9fd',
     },
-
+    fontFamily: {
+      sans: ['LXGW Wenkai', 'sans-serif'],
+    },
     extend: {},
     plugins: [require('@tailwindcss/typography')],
   },
