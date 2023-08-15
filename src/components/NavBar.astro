@@ -6,6 +6,15 @@ import ThemeToggle from './ThemeToggle';
 import Link from './style/Link.astro';
 
 import IconLogo from '~icons/my-icons/logo';
+import {
+  getLangFromUrl,
+  useTranslatedPath,
+  useTranslations,
+} from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 
 const currentPath = new URL(Astro.request.url).pathname;
 ---
@@ -24,13 +33,20 @@ const currentPath = new URL(Astro.request.url).pathname;
     </div>
     <nav class="hidden md:flex w-auto mt-2 mt-0">
       <ul class="flex flex-row gap-8">
-        {
+        <Link url={translatePath('/')} {currentPath}>{t('nav.home')}</Link>
+        <Link url={translatePath('/about')} {currentPath}>
+          {t('nav.about')}
+        </Link>
+        <Link url={translatePath('/podcast')} {currentPath}>
+          {t('nav.podcast')}
+        </Link>
+        <!-- {
           navData.map((item) => (
             <Link url={item.path} {currentPath}>
               {item.name}
             </Link>
           ))
-        }
+        } -->
       </ul>
     </nav>
     <div class="md:flex hidden mr-4">

@@ -11,6 +11,7 @@ const podcasts = await getCollection('podcast');
 const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 
 import Button from './style/Button.astro';
+import Contact from './Contact.astro';
 ---
 
 <div class="hidden xl:block xl:absolute top-[120px] right-[20%]">
@@ -36,8 +37,8 @@ import Button from './style/Button.astro';
     <p class="text-lg text-slate-600 max-w-xl leading-loose">
       是一档由两位网上邻居创办的泛开发、泛科技的播客计划。
       <br />播客将以每两周的频率随机更新。<br />欢迎订阅收听。
-      <span class="i-tabler-moon"></span>
     </p>
+    <Contact />
     <div class="mt-8 flex flex-col sm:flex-row gap-3">
       <Button>
         <a href="/about">了解更多</a>

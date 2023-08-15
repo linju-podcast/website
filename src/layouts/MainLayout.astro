@@ -2,13 +2,15 @@
 import Footer from '../components/Footer.astro';
 import NavBar from '../components/NavBar.astro';
 import MainHead from './MainHead.astro';
+import { getLangFromUrl } from '../i18n/utils';
 
 import '../style/global.css';
 
 const { title } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
 ---
 
-<html lang="en">
+<html lang={lang}>
   <MainHead {title} />
   <body>
     <NavBar />
