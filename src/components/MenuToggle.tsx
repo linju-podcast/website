@@ -6,6 +6,7 @@ import IconClose from '~icons/tabler/x';
 
 import navData from '../data/navData';
 import ThemeToggle from './ThemeToggle';
+import LanguagePicker from './LanguagePicker';
 
 const MenuToggle: FunctionComponent = () => {
   const [menuType, setMenuType] = useState(
@@ -68,7 +69,8 @@ const MenuToggle: FunctionComponent = () => {
             ))}
           </ul>
         </nav>
-        <div className="w-full flex justify-center mt-10">
+        <div className="w-full flex flex-col items-center mt-10">
+          <LanguagePicker />
           <ThemeToggle />
         </div>
       </div>

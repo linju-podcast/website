@@ -1,6 +1,6 @@
 ---
 import navData from '../data/navData';
-
+import LanguagePicker from '../components/LanguagePicker';
 import MenuToggle from './MenuToggle';
 import ThemeToggle from './ThemeToggle';
 import Link from './style/Link.astro';
@@ -40,19 +40,13 @@ const currentPath = new URL(Astro.request.url).pathname;
         <Link url={translatePath('/podcast')} {currentPath}>
           {t('nav.podcast')}
         </Link>
-        <!-- {
-          navData.map((item) => (
-            <Link url={item.path} {currentPath}>
-              {item.name}
-            </Link>
-          ))
-        } -->
       </ul>
     </nav>
-    <div class="md:flex hidden mr-4">
+    <div class="md:flex hidden mr-4 items-center gap-3">
+      <LanguagePicker client:load />
       <ThemeToggle client:load />
     </div>
-    <div class="md:hidden mr-4">
+    <div class="md:hidden mr-4 items-center gap-3">
       <MenuToggle client:load />
     </div>
   </container>
