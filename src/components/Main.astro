@@ -14,50 +14,56 @@ import Button from './style/Button.astro';
 import Contact from './Contact.astro';
 ---
 
-<div class="hidden xl:block xl:absolute top-[120px] right-[20%]">
-  <Image
-    src={logo}
-    width={250}
-    alt="podcast logo"
-    class="rounded-2xl shadow-xl"
-  />
-</div>
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24"
 >
-  <div class="pb-20 block xl:hidden w-6/12 md:w-4/12 lg:w-5/12">
-    <Image src={logo} alt="podcast logo" class="rounded-2xl shadow-xl" />
+  <div class="pb-20 block xl:block xl:absolute top-[120px] right-[20%]">
+    <Image
+      src={logo}
+      alt="podcast logo"
+      width={200}
+      class="rounded-2xl shadow-xl"
+    />
   </div>
   <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tight lg:block lg:pb-6 hidden"
+    <h2
+      class="font-extrabold leading-tight lg:mt-10 md:text-5xl mt-5 text-4xl xl:text-6xl"
     >
-      网上邻居
-    </h1>
-    <p class="text-lg text-slate-600 max-w-xl leading-loose">
-      是一档由两位网上邻居创办的泛开发、泛科技的播客计划。
-      <br />播客将以每两周的频率随机更新。<br />欢迎订阅收听。
-    </p>
-    <Contact />
-    <div class="mt-8 flex flex-col sm:flex-row gap-3">
-      <Button>
-        <a href="/about">了解更多</a>
-      </Button>
-    </div>
+      一档由两位网上邻居创办的
+      <ul
+        class="inline-block relative h-12 align-bottom overflow-hidden lg:h-14"
+      >
+        <li class="translate-y-full animate-first">
+          <span class="text-purple">泛开发</span>
+        </li>
+        <li class="translate-y-0 animate-second">
+          <span class="text-green">泛科技</span>
+        </li>
+      </ul>
+      播客计划。
+    </h2>
   </div>
 </main>
-<div class="'mt-16 md:mt-0 px-6">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">最新播客！</h2>
+
+<div class="my-8 flex flex-col sm:flex-row gap-3">
+  <Button>
+    <a href="/about">了解更多</a>
+  </Button>
 </div>
+
+<h2 class="text-lg lg:text-xl font-bold text-center lg:text-left hidden">
+  最新播客
+</h2>
+
 <div
-  class="grid md:grid-cols-2 lg:grid-cols-3 mt-8 justify-items-center place-content-between"
+  class="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center place-content-between"
 >
   {
     formatedLatestedPodcasts.map((podcast) => (
       <EpisodeCard
         title={podcast.data.title}
         tags={podcast.data.tags}
-        image={podcast.data.image}
+        description={podcast.data.description}
         slug={podcast.slug}
         date={podcast.data.date}
       />

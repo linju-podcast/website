@@ -16,3 +16,12 @@
     font-family: LXGW Wenkai;
   }
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+  .delay {
+    animation-delay: 2s;
+  }
+}

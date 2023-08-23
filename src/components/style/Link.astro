@@ -3,19 +3,20 @@ interface Props {
   url: string;
   style?: 'default' | 'card';
   currentPath?: string;
+  classes?: string;
 }
 
-const { url, style = 'default', currentPath } = Astro.props;
+const { url, style = 'default', currentPath, classes, ...rest } = Astro.props;
 
 const styleConfig = {
   default: `font-bold text-xl tracking-widest text-secondary relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
     currentPath === url ? `before:scale-x-100` : ``
   }`,
-  card: ' text-xl before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-accent before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100',
+  card: ' text-sm before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-accent before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100',
 };
 ---
 
-<li class="relative">
+<li class:list={['relative', classes]}>
   <a href={url} class:list={[styleConfig[style]]}>
     <span class="relative group-hover:text-secondary">
       <slot />
