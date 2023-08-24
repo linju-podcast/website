@@ -4,11 +4,23 @@ import { useState, useEffect } from 'preact/hooks';
 import IconMenu from '~icons/tabler/menu-2';
 import IconClose from '~icons/tabler/x';
 
-import navData from '../data/navData';
 import ThemeToggle from './ThemeToggle';
 import LanguagePicker from './LanguagePicker';
 
-const MenuToggle: FunctionComponent = () => {
+import { useTranslatedPath, useTranslations } from '../i18n/utils';
+
+type menuToggleProps = {
+  lang: 'cn' | 'en';
+  currentPath: string;
+};
+
+const MenuToggle: FunctionComponent<menuToggleProps> = ({
+  lang,
+  currentPath,
+}) => {
+  const t = useTranslations(lang);
+  const translatePath = useTranslatedPath(lang);
+
   const [menuType, setMenuType] = useState(
     localStorage.getItem('menu') ?? 'toOpen'
   );
@@ -56,17 +68,39 @@ const MenuToggle: FunctionComponent = () => {
 
         <nav>
           <ul className="flex flex-col flex-wrap content-center  gap-8">
-            {navData.map((item) => (
-              <li>
-                <a
-                  href={item.path}
-                  onClick={handleClick}
-                  className="font-bold text-xl tracking-widest text-secondary"
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
+            <li>
+              <a
+                href={translatePath('/')}
+                onClick={handleClick}
+                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+                  currentPath === '/' ? `before:scale-x-100` : ``
+                }`}
+              >
+                <span className="relative">{t('nav.home')}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={translatePath('/about')}
+                onClick={handleClick}
+                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+                  currentPath === '/about' ? `before:scale-x-100` : ``
+                }`}
+              >
+                <span className="relative">{t('nav.about')}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={translatePath('/podcast')}
+                onClick={handleClick}
+                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+                  currentPath === '/podcast' ? `before:scale-x-100` : ``
+                }`}
+              >
+                <span className="relative">{t('nav.podcast')}</span>
+              </a>
+            </li>
           </ul>
         </nav>
         <div className="w-full flex flex-col items-center mt-10">

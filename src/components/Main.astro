@@ -11,7 +11,6 @@ const podcasts = await getCollection('podcast');
 const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 
 import Button from './style/Button.astro';
-import Contact from './Contact.astro';
 ---
 
 <main
@@ -34,10 +33,10 @@ import Contact from './Contact.astro';
         class="inline-block relative h-12 align-bottom overflow-hidden lg:h-14"
       >
         <li class="translate-y-full animate-first">
-          <span class="text-purple">泛开发</span>
+          <span class="text-violet-800">泛开发</span>
         </li>
         <li class="translate-y-0 animate-second">
-          <span class="text-green">泛科技</span>
+          <span class="text-cyan-800">泛科技</span>
         </li>
       </ul>
       播客计划。

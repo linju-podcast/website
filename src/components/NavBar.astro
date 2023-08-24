@@ -1,11 +1,10 @@
 ---
-import navData from '../data/navData';
 import LanguagePicker from '../components/LanguagePicker';
 import MenuToggle from './MenuToggle';
 import ThemeToggle from './ThemeToggle';
 import Link from './style/Link.astro';
 
-import IconLogo from '~icons/my-icons/logo';
+import IconNet from '~icons/my-icons/net';
 import {
   getLangFromUrl,
   useTranslatedPath,
@@ -25,10 +24,7 @@ const currentPath = new URL(Astro.request.url).pathname;
   >
     <div class="flex items-center justify-between my-5">
       <a href="/">
-        <IconLogo
-          class="pt-2 ml-4 fill-green"
-          style={{ width: '3em', color: 'red' }}
-        />
+        <IconNet class="pt-2 ml-4 text-cyan-700" style={{ width: '3em' }} />
       </a>
     </div>
     <nav class="hidden md:flex w-auto mt-2 mt-0">
@@ -47,7 +43,7 @@ const currentPath = new URL(Astro.request.url).pathname;
       <ThemeToggle client:load />
     </div>
     <div class="md:hidden mr-4 items-center gap-3">
-      <MenuToggle client:load />
+      <MenuToggle client:load {...{ lang, currentPath }} />
     </div>
   </container>
 </header>
