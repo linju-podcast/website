@@ -10,7 +10,6 @@ import TagCloud from './TagCloud.astro';
 const podcasts = await getCollection('podcast');
 const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 
-import Button from './style/Button.astro';
 import BadgeWallLeft from './BadgeWallLeft.astro';
 import BadgeWallRight from './BadgeWallRight.astro';
 ---
@@ -18,7 +17,7 @@ import BadgeWallRight from './BadgeWallRight.astro';
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24 xl:grid-cols-1"
 >
-  <div class="pb-20 block xl:block xl:absolute top-[120px] right-[20%]">
+  <div class="block xl:block xl:absolute top-[120px] right-[20%] pb-16">
     <Image
       src={logo}
       alt="podcast logo"
@@ -29,11 +28,11 @@ import BadgeWallRight from './BadgeWallRight.astro';
   <div class="flex flex-col gap-6 justify-around w-full xl:flex-row">
     <BadgeWallLeft />
     <h2
-      class="font-extrabold leading-tight lg:mt-10 md:text-4xl my-5 text-4xl xl:text-6xl max-w-2xl order-1 text-center xl:order-2"
+      class="font-extrabold leading-tight lg:mt-10 md:text-4xl text-3xl xl:text-6xl max-w-2xl order-1 text-center xl:order-2"
     >
       一档由两位网上邻居创办的
       <ul
-        class="inline-block relative h-12 align-bottom overflow-hidden lg:h-14"
+        class="inline-block relative h-10 align-bottom overflow-hidden lg:h-14"
       >
         <li class="translate-y-full animate-first">
           <span class="text-violet-800">泛开发</span>
@@ -53,7 +52,7 @@ import BadgeWallRight from './BadgeWallRight.astro';
 </h2>
 
 <div
-  class="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center place-content-between"
+  class="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center place-content-between pt-10"
 >
   {
     formatedLatestedPodcasts.map((podcast) => (
@@ -66,7 +65,7 @@ import BadgeWallRight from './BadgeWallRight.astro';
       />
     ))
   }
-  <p class="text-lg mt-8 text-slate-600">
-    <TagCloud />
-  </p>
+</div>
+<div class="text-lg mt-12 text-slate-600">
+  <TagCloud />
 </div>

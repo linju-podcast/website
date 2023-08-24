@@ -24,13 +24,13 @@ const processedTags: Record<
 import Tag from './style/Tag.astro';
 ---
 
-<ul class="flex gap-3">
+<ul class="flex flex-col gap-3 md:flex-row justify-center md:gap-6">
   {
     Object.entries(processedTags).map(([key, val]) => (
       <li>
         <a href={`/podcast/${key}`}>
+          <span class="text-cyan-900 px-2 font-bold">{val}</span>
           <Tag name={key}>{key}</Tag>
-          {val}
         </a>
       </li>
     ))

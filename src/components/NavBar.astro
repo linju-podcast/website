@@ -22,7 +22,7 @@ const currentPath = new URL(Astro.request.url).pathname;
   <container
     class="max-w-screen-xl mx-auto flex justify-between items-center m-0 p-0"
   >
-    <div class="flex items-center justify-between my-5">
+    <div class="flex items-center justify-between my-5 w-36">
       <a href="/">
         <IconNet class="pt-2 ml-4 text-cyan-700" style={{ width: '3em' }} />
       </a>
@@ -38,7 +38,7 @@ const currentPath = new URL(Astro.request.url).pathname;
         </Link>
       </ul>
     </nav>
-    <div class="md:flex hidden mr-4 items-center gap-3">
+    <div class="md:flex hidden mr-4 items-center gap-3 w-36">
       <LanguagePicker client:load />
       <ThemeToggle client:load />
     </div>
