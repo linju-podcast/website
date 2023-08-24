@@ -11,10 +11,12 @@ const podcasts = await getCollection('podcast');
 const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 
 import Button from './style/Button.astro';
+import BadgeWallLeft from './BadgeWallLeft.astro';
+import BadgeWallRight from './BadgeWallRight.astro';
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24"
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24 xl:grid-cols-1"
 >
   <div class="pb-20 block xl:block xl:absolute top-[120px] right-[20%]">
     <Image
@@ -24,9 +26,10 @@ import Button from './style/Button.astro';
       class="rounded-2xl shadow-xl"
     />
   </div>
-  <div>
+  <div class="flex flex-col gap-6 justify-around w-full xl:flex-row">
+    <BadgeWallLeft />
     <h2
-      class="font-extrabold leading-tight lg:mt-10 md:text-5xl mt-5 text-4xl xl:text-6xl"
+      class="font-extrabold leading-tight lg:mt-10 md:text-4xl my-5 text-4xl xl:text-6xl max-w-2xl order-1 text-center xl:order-2"
     >
       一档由两位网上邻居创办的
       <ul
@@ -41,14 +44,9 @@ import Button from './style/Button.astro';
       </ul>
       播客计划。
     </h2>
+    <BadgeWallRight />
   </div>
 </main>
-
-<div class="my-8 flex flex-col sm:flex-row gap-3">
-  <Button>
-    <a href="/about">了解更多</a>
-  </Button>
-</div>
 
 <h2 class="text-lg lg:text-xl font-bold text-center lg:text-left hidden">
   最新播客

@@ -6,15 +6,18 @@ import { formatDate } from '../utils';
 import Tag from './style/Tag.astro';
 
 import IconCalendar from '~icons/tabler/calendar-plus';
-
 import IconTag from '~icons/tabler/tag';
+import IconPodcast from '~icons/tabler/brand-apple-podcast';
 
 import Link from './style/Link.astro';
 ---
 
 <div
-  class="flex rounded-lg flex-col items-start shadow-lg border-line mx-5 p-5 my-6 gap-4 border-x-8 hover:border-s-[#bd93f9]"
+  class="flex rounded-lg flex-col items-start shadow-lg border-line mx-5 p-5 my-6 gap-4 border-s-8 hover:border-s-cyan-400 relative"
 >
+  <div class="absolute text-slate-100 text-9xl -z-10 bottom-5 right-5">
+    <IconPodcast />
+  </div>
   <h2 class="text-xl font-semibold my-3">{title}</h2>
   <div class="text-sm text-secondary flex gap-3">
     <IconCalendar />
