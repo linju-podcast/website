@@ -18,19 +18,19 @@ export async function getStaticPaths({ paginate }) {
 
 import MainLayout from '../../../layouts/MainLayout.astro';
 import PodcastCard from '../../../components/PodcastCard.astro';
-// import Pagination from '../../../components/Pagination.astro';
+import Pagination from '../../../components/Pagination.astro';
 
 const { page } = Astro.props;
-// const pathname = new URL(Astro.request.url).pathname.split('/');
-// const firstPath = pathname[1];
+const pathname = new URL(Astro.request.url).pathname.split('/');
+const firstPath = pathname[1];
 
-// const { currentPage, lastPage } = page;
-// const { current, prev, next } = page.url;
+const { currentPage, lastPage } = page;
+const { current, prev, next } = page.url;
 const params = Astro.params;
 ---
 
 <MainLayout title={params.tag}>
-  <div class="mt-16 text-center">
+  <div class="text-center">
     <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
       {params.tag}
     </h1>
@@ -50,9 +50,9 @@ const params = Astro.params;
         }
       </ol>
     </main>
-    <!-- <div class="mt-16">
+    <div class="mt-16">
       {
-        page.length > 2 && (
+        page.data.length > 5 && (
           <div>
             <Pagination
               length={lastPage}
@@ -61,11 +61,10 @@ const params = Astro.params;
               firstUrl={`/${firstPath}`}
               prevUrl={prev}
               nextUrl={next}
-              lastUrl={`/${firstPath}/${lastPage}`}
             />
           </div>
         )
       }
-    </div> -->
+    </div>
   </div>
 </MainLayout>

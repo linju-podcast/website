@@ -49,6 +49,6 @@ module.exports = {
         second: 'second 5s linear infinite',
       },
     },
-    plugins: [require('@tailwindcss/typography')],
   },
+  plugins: [require('@tailwindcss/typography')],
 };

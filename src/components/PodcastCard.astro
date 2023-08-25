@@ -1,12 +1,14 @@
 ---
 import { formatDate } from '../utils';
+import IconMic from '~icons/tabler/microphone';
+
 import Link from './style/Link.astro';
 
 const { title, date, url, description } = Astro.props;
 ---
 
 <article class="md:grid md:grid-cols-4 md:items-baseline">
-  <div class="md:col-span-3 relative flex flex-col items-start">
+  <div class="md:col-span-2 relative flex flex-col md:items-center order-2">
     <h2 class="text-3xl font-semibold leading-tight">{title}</h2>
     <time
       class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm"
@@ -17,8 +19,14 @@ const { title, date, url, description } = Astro.props;
       <Link url={`/podcast/${url}`}>Read article</Link>
     </div>
   </div>
-  <time
-    class="mt-1 hidden md:block relative z-10 order-first mb-3 flex text-center text-sm"
-    datetime={date}>{formatDate(date)}</time
+  <div
+    class="mt-1 hidden md:block relative z-10 order-1 mb-3 flex text-right text-sm relative"
   >
+    <div>
+      <IconMic
+        class="absolute text-slate-100 text-7xl -z-10 -bottom-10 -right-5 group-hover:text-cyan-100"
+      />
+    </div>
+    <time datetime={date}>{formatDate(date)}</time>
+  </div>
 </article>
