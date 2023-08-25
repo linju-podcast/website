@@ -1,31 +1,42 @@
 ---
-const { length, currentUrl, currentPage, firstUrl, prevUrl, nextUrl, lastUrl } =
-  Astro.props;
+const { length, currentPage, firstUrl, prevUrl, nextUrl } = Astro.props;
 const paginationList: number[] = Array.from(
   { length },
   (_, index) => index + 1
 );
 
-import IconLeft from '~icons/tabler/square-rounded-chevron-left';
-import IconRight from '~icons/tabler/square-rounded-chevron-right';
+import IconLeft from '~icons/tabler/circle-arrow-left-filled';
+import IconRight from '~icons/tabler/circle-arrow-right-filled';
 ---
 
 <nav aria-label="Blog pages" class="flex justify-center py-2">
   {
     prevUrl ? (
       <a href={prevUrl}>
-        <IconLeft style={{ fontSize: '2rem' }} />
+        <span class="text-cyan-700">
+          <IconLeft style={{ fontSize: '2rem' }} />
+        </span>
       </a>
     ) : (
-      <IconLeft style={{ fontSize: '2rem' }} />
+      <span class="text-slate-200">
+        <IconLeft style={{ fontSize: '2rem' }} />
+      </span>
     )
   }
 
-  <ol class="flex">
+  <ol class="flex items-center px-2">
     {
       paginationList.map((num) => (
         <li class="px-2 focus:ring-2">
-          <a href={`${firstUrl}${num == 1 ? '' : '/' + num}`}>{num}</a>
+          <a href={`${firstUrl}${num == 1 ? '' : '/' + num}`}>
+            <span
+              class={`text-cyan-700 font-bold inline-block  ${
+                currentPage === num ? `underline` : `text-cyan-700`
+              }`}
+            >
+              {num}
+            </span>
+          </a>
         </li>
       ))
     }
@@ -34,10 +45,14 @@ import IconRight from '~icons/tabler/square-rounded-chevron-right';
   {
     nextUrl ? (
       <a href={nextUrl}>
-        <IconRight style={{ fontSize: '2em' }} />
+        <span class="text-cyan-700">
+          <IconRight style={{ fontSize: '2em' }} />
+        </span>
       </a>
     ) : (
-      <IconRight style={{ fontSize: '2em' }} />
+      <span class="text-slate-200">
+        <IconRight style={{ fontSize: '2em' }} />
+      </span>
     )
   }
 </nav>
