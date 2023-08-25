@@ -4,6 +4,8 @@ import MenuToggle from './MenuToggle';
 import ThemeToggle from './ThemeToggle';
 import Link from './style/Link.astro';
 
+// import LanguagePicker from './LanguagePicker.astro';
+
 import IconNet from '~icons/my-icons/net';
 import {
   getLangFromUrl,
@@ -39,7 +41,7 @@ const currentPath = new URL(Astro.request.url).pathname;
       </ul>
     </nav>
     <div class="md:flex hidden mr-4 items-center gap-3 w-36">
-      <LanguagePicker client:load />
+      <LanguagePicker client:load lang={lang} />
       <ThemeToggle client:load />
     </div>
     <div class="md:hidden mr-4 items-center gap-3">

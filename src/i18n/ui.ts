@@ -1,6 +1,6 @@
 export const language = {
-  en: 'English',
-  cn: 'Chinese',
+  en: 'A',
+  cn: '中',
 };
 
 export const defaultLang = 'cn';
