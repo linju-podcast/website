@@ -56,7 +56,7 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
       <div
         className={`transition ${
           menuType === 'toClose' ? `translate-x-0` : `translate-x-[100%]`
-        } fixed w-72 duration-300 h-full bg-white right-0 top-0 z-50 shadow-2xl`}
+        } fixed w-72 duration-300 h-full bg-white right-0 top-0 z-50`}
       >
         <div className="w-full flex justify-end my-5 ">
           <IconClose

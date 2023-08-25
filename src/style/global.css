@@ -24,4 +24,18 @@
   .delay {
     animation-delay: 2s;
   }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .perspective {
+    perspective: 1000px;
+  }
+  .flip {
+    transform: rotateY(180deg);
+  }
+  .hidden-backface {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
 }
