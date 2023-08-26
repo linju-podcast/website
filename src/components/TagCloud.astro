@@ -1,10 +1,11 @@
 ---
-import { getCollection, CollectionEntry } from 'astro:content';
+import { CollectionEntry } from 'astro:content';
 import { formatPosts } from '../utils';
 
-const allPodcasts = await getCollection('podcast');
+const { podcasts } = Astro.props;
+
 const formattedPodcast: CollectionEntry<'podcast'>[] = formatPosts(
-  allPodcasts,
+  podcasts,
   {}
 );
 const allTags = formattedPodcast.map((tag) => tag.data.tags).flat();

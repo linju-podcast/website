@@ -1,5 +1,5 @@
 ---
-const { title, tags, description, slug, date } = Astro.props;
+const { title, tags, description, slug, date, t } = Astro.props;
 
 import { formatDate } from '../utils';
 
@@ -34,6 +34,6 @@ import Link from './style/Link.astro';
     {description}
   </p>
   <Link style="card" url={`/podcast/${slug}`} classes="list-none">
-    了解更多
+    {t('podcast.readMore')}
   </Link>
 </div>

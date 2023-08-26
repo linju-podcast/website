@@ -10,10 +10,15 @@ type languagePickerProps = {
 
 const LanguagePicker: FunctionComponent<languagePickerProps> = ({ lang }) => {
   const translatePath = useTranslatedPath(lang);
-  const [currentPath, setCurrentPath] = useState('');
+  const [path, setPath] = useState('');
 
   useEffect(() => {
-    setCurrentPath(window.location.pathname);
+    const currentPath = window.location.pathname;
+    if (currentPath.includes('/en/')) {
+      setPath(currentPath.substring(3));
+    } else {
+      setPath(currentPath);
+    }
   }, []);
 
   return (
@@ -24,7 +29,7 @@ const LanguagePicker: FunctionComponent<languagePickerProps> = ({ lang }) => {
             lang === 'en' && `row-start-2 col-start-2`
           }`}
         >
-          <a href={translatePath(currentPath, lang)}>
+          <a href={translatePath(path, lang)}>
             <span class="flex justify-center hover:text-emerald-500">
               {label}
             </span>

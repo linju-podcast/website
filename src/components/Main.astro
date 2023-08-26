@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
-import { getCollection } from 'astro:content';
+
 import { formatPosts } from '../utils';
 
 import EpisodeCard from './EpisodeCard.astro';
 import TagCloud from './TagCloud.astro';
 
-const podcasts = await getCollection('podcast');
+const { podcasts, t } = Astro.props;
 const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 
 import BadgeWallLeft from './BadgeWallLeft.astro';
@@ -30,26 +30,22 @@ import BadgeWallRight from './BadgeWallRight.astro';
     <h2
       class="font-extrabold leading-tight lg:mt-10 md:text-4xl text-3xl xl:text-6xl max-w-2xl order-1 text-center xl:order-2"
     >
-      一档由两位网上邻居创办的
+      {t('main.description')}
       <ul
         class="inline-block relative h-10 align-bottom overflow-hidden lg:h-14"
       >
         <li class="translate-y-full animate-first">
-          <span class="text-violet-800">泛开发</span>
+          <span class="text-violet-800">{t('main.development')}</span>
         </li>
         <li class="translate-y-0 animate-second">
-          <span class="text-cyan-800">泛科技</span>
+          <span class="text-cyan-800">{t('main.tech')}</span>
         </li>
       </ul>
-      播客计划。
+      {t('main.plan')}
     </h2>
     <BadgeWallRight />
   </div>
 </main>
-
-<h2 class="text-lg lg:text-xl font-bold text-center lg:text-left hidden">
-  最新播客
-</h2>
 
 <div
   class="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center place-content-between pt-10"
@@ -62,10 +58,11 @@ import BadgeWallRight from './BadgeWallRight.astro';
         description={podcast.data.description}
         slug={podcast.slug}
         date={podcast.data.date}
+        t={t}
       />
     ))
   }
 </div>
 <div class="text-lg mt-12 text-slate-600">
-  <TagCloud />
+  <TagCloud podcasts={podcasts} />
 </div>

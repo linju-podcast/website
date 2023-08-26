@@ -1,0 +1,66 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Potraits from '../../components/Potraits.astro';
+
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<MainLayout>
+  <div
+    class="mt-4 grid gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 px-6 xl:grid-cols-1"
+  >
+    <div
+      class="flex flex-col md:flex-row justify-center items-center lg:pl-20 lg:flex-col gap-10 xl:absolute xl:flex-row top-[120px] right-[20%]"
+    >
+      <Potraits />
+    </div>
+
+    <div class="lg:order-first lg:row-span-2">
+      <h1
+        class="text-4xl lg:text-5xl font-bold lg:tracking-tight xl:text-center"
+      >
+        关于播客和主播
+      </h1>
+      <p class="text-lg mt-4 text-slate-600 xl:text-center">
+        由两位“网上邻居”创办的《网上邻居》。<br />
+      </p>
+      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <h2 class="font-bold text-3xl text-gray-800 text-left">播客缘起</h2>
+        <p>
+          两位主播是通过一个编程社群认识的，一位坐标湾区，一位坐标上海。一位是编码老手，一位是新人小白。在创办播客这件事上一拍即合。<br
+          />
+          如果你也喜欢两倍速听播客，李如一在你的播客收听历史中扮演过重要角色，没事喜欢翻翻《少数派》，你可能会觉得这两位播客还不错。<br
+          />
+          起码这些是女主播在接触男主播的过程中，脑海中小灯泡点亮的几个瞬间。<br
+          />
+          在这个播客节目中，你将会听到开发、科技、英语学习等话题。
+        </p>
+        <h2 class="font-bold text-2xl text-gray-800 text-left">
+          主播: S1ngS1ng
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum
+          similique tempore neque quos, quis ratione impedit, praesentium
+          molestias repellat fugit fuga facilis adipisci est. Reiciendis totam
+          eligendi necessitatibus unde?
+        </p>
+        <h2 class="font-bold text-2xl text-gray-800 text-left">
+          主播: Papaya HUANG
+        </h2>
+        <>
+          坐标上海的前端小白，希望早日出新手村<br />
+          在国内 Top 1 英语培训机构做过老师，也在外企做过管理。做过字幕组、翻译和口译。<br
+          />
+          高中通过大学英语六级，雅思听力阅读满分，通过了据说很难考的人事部二级笔译和口译。参加过大大小小的英语演讲比赛，不论是校级和省级，永远都是第二名。<br
+          />
+          坚持跑步，喜欢尝试各种各样的运动，最近尝试最好玩的是攀岩、桨板和冲浪。希望可以通过运动更好地探索自己的身体。<br
+          />
+          看了不下十遍《老友记》、喜欢研究《哈利波特》里的咒语。
+        </>
+      </div>
+    </div>
+  </div>
+</MainLayout>

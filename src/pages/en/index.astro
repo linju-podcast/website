@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Main from '../../components/Main.astro';
+
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const podcasts = await getCollection('podcast', ({ id }) => {
+  return id.startsWith('en/');
+});
+
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<MainLayout title="home">
+  <Main {...{ podcasts, t }} />
+</MainLayout>
