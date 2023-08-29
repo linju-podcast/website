@@ -1,26 +1,26 @@
 ---
 import { getCollection } from 'astro:content';
+import MainLayout from '../../../layouts/MainLayout.astro';
+
+import { formatPosts } from '../../../utils';
+import Pagination from '../../../components/Pagination.astro';
+import PodcastCard from '../../../components/PodcastCard.astro';
+
+const allPodcasts = await getCollection('podcast', ({ id }) => {
+  return id.startsWith('en/');
+});
 
 export async function getStaticPaths({ paginate }) {
-  const allTags = ['devTips', 'lifeHacks', 'englishLearnings'];
-  const allPodcasts = await getCollection('podcast', ({ id }) => {
-    return id.startsWith('cn/');
+  const allPosts = await getCollection('podcast', ({ id }) => {
+    return id.startsWith('en/');
   });
 
-  return allTags.map((tag) => {
-    const filteredPodcasts = allPodcasts.filter((podcast) =>
-      podcast.data.tags.includes(tag)
-    );
-    return paginate(filteredPodcasts, {
-      params: { tag },
-      pageSize: 5,
-    });
+  const formattedPodcast = formatPosts(allPosts, {});
+
+  return paginate(formattedPodcast, {
+    pageSize: 5,
   });
 }
-
-import MainLayout from '../../../layouts/MainLayout.astro';
-import PodcastCard from '../../../components/PodcastCard.astro';
-import Pagination from '../../../components/Pagination.astro';
 
 const { page } = Astro.props;
 const pathname = new URL(Astro.request.url).pathname.split('/');
@@ -28,19 +28,15 @@ const firstPath = pathname[1];
 
 const { currentPage, lastPage } = page;
 const { current, prev, next } = page.url;
-const params = Astro.params;
 
 import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
-
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<MainLayout title={params.tag}>
-  <div class="text-center">
-    <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      {params.tag}
-    </h1>
+<MainLayout title="podcast">
+  <div class="mt-3 text-center">
+    <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">播客单集</h1>
     <main class="mt-16 flex flex-col">
       <ol class="flex flex-col space-y-8">
         {
@@ -50,7 +46,7 @@ const t = useTranslations(lang);
                 title={post.data.title}
                 description={post.data.description}
                 date={post.data.date}
-                url={post.slug.substring(3)}
+                url={`/podcast/${post.slug.substring(3)}`}
                 lang={lang}
               />
             </li>
@@ -60,7 +56,7 @@ const t = useTranslations(lang);
     </main>
     <div class="mt-16">
       {
-        page.data.length > 5 && (
+        allPodcasts.length > 5 && (
           <div>
             <Pagination
               length={lastPage}

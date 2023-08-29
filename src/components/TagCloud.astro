@@ -2,7 +2,7 @@
 import { CollectionEntry } from 'astro:content';
 import { formatPosts } from '../utils';
 
-const { podcasts } = Astro.props;
+const { podcasts, lang } = Astro.props;
 
 const formattedPodcast: CollectionEntry<'podcast'>[] = formatPosts(
   podcasts,
@@ -23,13 +23,16 @@ const processedTags: Record<
 }, {});
 
 import Tag from './style/Tag.astro';
+import { useTranslatedPath } from '../i18n/utils';
+
+const translatedPath = useTranslatedPath(lang);
 ---
 
 <ul class="flex flex-col gap-3 md:flex-row justify-center md:gap-6">
   {
     Object.entries(processedTags).map(([key, val]) => (
       <li>
-        <a href={`/podcast/${key}`}>
+        <a href={translatedPath(`/podcast/${key}`, lang)}>
           <span class="text-cyan-900 px-2 font-bold">{val}</span>
           <Tag name={key}>{key}</Tag>
         </a>

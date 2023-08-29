@@ -4,7 +4,11 @@ import IconMic from '~icons/tabler/microphone';
 
 import Link from './style/Link.astro';
 
-const { title, date, url, description } = Astro.props;
+const { title, date, url, description, lang } = Astro.props;
+
+import { useTranslatedPath } from '../i18n/utils';
+
+const translatePath = useTranslatedPath(lang);
 ---
 
 <article class="md:grid md:grid-cols-4 md:items-baseline">
@@ -16,7 +20,7 @@ const { title, date, url, description } = Astro.props;
     >
     <p class="relative z-10 mt-2 text-sm">{description}</p>
     <div class="relative z-10 mt-4 flex items-center text-sm font-medium">
-      <Link url={`/podcast/${url}`}>Read article</Link>
+      <Link url={translatePath(url, lang)}>Read article</Link>
     </div>
   </div>
   <div

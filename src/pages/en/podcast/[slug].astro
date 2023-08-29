@@ -1,0 +1,40 @@
+---
+import MainLayout from '../../../layouts/MainLayout.astro';
+
+import { CollectionEntry, getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const episodes = await getCollection('podcast', ({ id }) => {
+    return id.startsWith('en/');
+  });
+  return episodes.map((episode) => ({
+    params: { slug: episode.slug.substring(3) },
+    props: { episode },
+  }));
+}
+
+interface Props {
+  episode: CollectionEntry<'podcast'>;
+}
+
+const { episode } = Astro.props;
+const { Content } = await episode.render();
+
+const { tags, title } = episode.data;
+
+import Tag from '../../../components/style/Tag.astro';
+---
+
+<MainLayout>
+  <div class="mx-auto max-w-3xl mt-16 text-center">
+    <h1
+      class="text-4xl lg:text-5xl font-bold lg:tracking-tight my-1 lg:leading-snug"
+    >
+      {title}
+    </h1>
+    {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
+  </div>
+  <article class="mx-auto mt-6 max-w-3xl prose lg:prose-lg">
+    <Content />
+  </article>
+</MainLayout>

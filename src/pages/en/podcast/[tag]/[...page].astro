@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 export async function getStaticPaths({ paginate }) {
   const allTags = ['devTips', 'lifeHacks', 'englishLearnings'];
   const allPodcasts = await getCollection('podcast', ({ id }) => {
-    return id.startsWith('cn/');
+    return id.startsWith('en/');
   });
 
   return allTags.map((tag) => {
@@ -18,9 +18,9 @@ export async function getStaticPaths({ paginate }) {
   });
 }
 
-import MainLayout from '../../../layouts/MainLayout.astro';
-import PodcastCard from '../../../components/PodcastCard.astro';
-import Pagination from '../../../components/Pagination.astro';
+import MainLayout from '../../../../layouts/MainLayout.astro';
+import PodcastCard from '../../../../components/PodcastCard.astro';
+import Pagination from '../../../../components/Pagination.astro';
 
 const { page } = Astro.props;
 const pathname = new URL(Astro.request.url).pathname.split('/');
@@ -30,7 +30,7 @@ const { currentPage, lastPage } = page;
 const { current, prev, next } = page.url;
 const params = Astro.params;
 
-import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../../../../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

@@ -4,9 +4,11 @@ import MainLayout from '../../layouts/MainLayout.astro';
 import { CollectionEntry, getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const episodes = await getCollection('podcast');
+  const episodes = await getCollection('podcast', ({ id }) => {
+    return id.startsWith('cn/');
+  });
   return episodes.map((episode) => ({
-    params: { slug: episode.slug },
+    params: { slug: episode.slug.substring(3) },
     props: { episode },
   }));
 }
