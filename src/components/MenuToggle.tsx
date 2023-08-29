@@ -104,7 +104,7 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
           </ul>
         </nav>
         <div className="w-full flex flex-col items-center mt-10 gap-6">
-          <LanguagePicker />
+          <LanguagePicker lang={lang} onClick={handleClick} />
           <ThemeToggle />
         </div>
       </div>

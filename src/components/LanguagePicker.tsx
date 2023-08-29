@@ -1,43 +1,73 @@
 import { FunctionComponent } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 
-import { language } from '../i18n/ui';
 import { useTranslatedPath } from '../i18n/utils';
 
 type languagePickerProps = {
   lang: 'cn' | 'en';
+  onClick?: () => void;
 };
 
-const LanguagePicker: FunctionComponent<languagePickerProps> = ({ lang }) => {
-  const translatePath = useTranslatedPath(lang);
+const LanguagePicker: FunctionComponent<languagePickerProps> = ({
+  lang,
+  onClick,
+}) => {
   const [path, setPath] = useState('');
+  const [currentLang, setCurrentLang] = useState(lang);
+  const translatePath = useTranslatedPath(lang);
+  const [shouldRedirect, setShouldRedirect] = useState(false);
 
   useEffect(() => {
-    const currentPath = window.location.pathname;
-    if (currentPath.includes('/en/')) {
-      setPath(currentPath.substring(3));
+    const path = window.location.pathname;
+    if (path.includes('/en/')) {
+      setPath(path.substring(3));
     } else {
-      setPath(currentPath);
+      setPath(path);
     }
   }, []);
 
+  useEffect(() => {
+    if (shouldRedirect) {
+      const translatedUrl = translatePath(path, currentLang);
+      window.location.href = translatedUrl;
+    }
+    setShouldRedirect(false);
+  }, [shouldRedirect, currentLang, path, translatePath]);
+
+  const handleClick = () => {
+    const newLang = currentLang === 'cn' ? 'en' : 'cn';
+    setCurrentLang(newLang);
+    setShouldRedirect(true);
+    onClick?.();
+  };
+
   return (
-    <ul class="relative grid grid-cols-2 grid-rows-2 w-12">
-      {Object.entries(language).map(([lang, label]) => (
-        <li
-          class={`bg-slate-50 z-10 rounded ${
-            lang === 'en' && `row-start-2 col-start-2`
+    <div>
+      <button
+        className="relative grid grid-cols-2 grid-rows-2 w-12"
+        onClick={handleClick}
+      >
+        <span
+          className={`inline-block z-10 rounded ${
+            currentLang === `cn`
+              ? `bg-emerald-500 text-slate-100 text-xl font-extrabold`
+              : `bg-slate-50`
           }`}
         >
-          <a href={translatePath(path, lang)}>
-            <span class="flex justify-center hover:text-emerald-500">
-              {label}
-            </span>
-          </a>
-        </li>
-      ))}
-      <span class="absolute block border-2 rounded inset-3"></span>
-    </ul>
+          中
+        </span>
+        <span
+          className={`inline-block  z-10 rounded row-start-2 col-start-2 ${
+            currentLang === `en`
+              ? `bg-emerald-500 text-slate-100 text-xl font-extrabold`
+              : `bg-slate-50`
+          }`}
+        >
+          A
+        </span>
+        <span class="absolute block border-2 rounded inset-3"></span>
+      </button>
+    </div>
   );
 };
 
