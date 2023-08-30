@@ -3,9 +3,10 @@ interface Props {
   size?: 'md' | 'lg';
   style?: 'menu' | 'primary' | 'secondary';
   block?: boolean;
+  url: string;
 }
 
-const { size = 'md', style = 'primary', block } = Astro.props;
+const { size = 'md', style = 'primary', block, url } = Astro.props;
 
 const spacingConfig = {
   md: 'px-5 py-2.5',
@@ -17,6 +18,26 @@ const styleConfig = {
 };
 ---
 
-<button class:list={[block, spacingConfig[size], styleConfig[style]]}
-  ><slot /></button
+<a
+  href={url}
+  class="relative group overflow-hidden px-2 h-10 flex space-x-2 items-center"
 >
+  <span class="relative text-cyan-700"><slot /></span>
+  <div class="flex items-center -space-x-3 translate-x-3">
+    <div
+      class="w-2.5 h-[1.6px] rounded bg-cyan-300 origin-left scale-x-0 transition duration-300 group-hover:scale-x-100"
+    >
+    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-5 w-5 stroke-cyan-300 -translate-x-4 transition duration-200 group-hover:translate-x-0"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"
+      ></path>
+    </svg>
+  </div>
+</a>

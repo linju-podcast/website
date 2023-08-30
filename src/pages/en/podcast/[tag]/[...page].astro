@@ -51,7 +51,7 @@ const t = useTranslations(lang);
                 description={post.data.description}
                 date={post.data.date}
                 url={post.slug.substring(3)}
-                lang={lang}
+                {...{ t, lang }}
               />
             </li>
           ))

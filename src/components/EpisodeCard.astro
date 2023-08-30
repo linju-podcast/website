@@ -9,7 +9,7 @@ import IconCalendar from '~icons/tabler/calendar-plus';
 import IconTag from '~icons/tabler/tag';
 import IconPodcast from '~icons/tabler/brand-apple-podcast';
 
-import Link from './style/Link.astro';
+import Button from './style/Button.astro';
 ---
 
 <div
@@ -33,7 +33,7 @@ import Link from './style/Link.astro';
   <p class="my-3">
     {description}
   </p>
-  <Link style="card" url={`/podcast/${slug}`} classes="list-none">
+  <Button url={`/podcast/${slug}`}>
     {t('podcast.readMore')}
-  </Link>
+  </Button>
 </div>
