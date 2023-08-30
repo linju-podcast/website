@@ -15,6 +15,9 @@ export const ui = {
     'main.development': '泛开发',
     'main.tech': '泛科技',
     'podcast.readMore': '了解更多',
+    'about.title': '关于播客和主播',
+    'about.description': '由两位“网上邻居”创办的《网上邻居》。',
+    'podcast.title': '播客单集',
   },
   en: {
     'nav.home': 'Home',
@@ -26,6 +29,10 @@ export const ui = {
     'main.development': 'Devs',
     'main.tech': 'Techs',
     'podcast.readMore': 'Read More',
+    'about.title': 'About Podcast and Hosts',
+    'about.description':
+      'A Podcast named Network Neighborhood created by two cyber neighbors. ',
+    'podcast.title': 'Episodes',
   },
 } as const;
 

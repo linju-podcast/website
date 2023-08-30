@@ -4,7 +4,7 @@ import IconMic from '~icons/tabler/microphone';
 
 import Link from './style/Link.astro';
 
-const { title, date, url, description, lang } = Astro.props;
+const { title, date, url, description, lang, t } = Astro.props;
 
 import { useTranslatedPath } from '../i18n/utils';
 
@@ -20,7 +20,7 @@ const translatePath = useTranslatedPath(lang);
     >
     <p class="relative z-10 mt-2 text-sm">{description}</p>
     <div class="relative z-10 mt-4 flex items-center text-sm font-medium">
-      <Link url={translatePath(url, lang)}>Read article</Link>
+      <Link url={translatePath(url, lang)}>{t('podcast.readMore')}</Link>
     </div>
   </div>
   <div
