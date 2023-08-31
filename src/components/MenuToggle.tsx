@@ -50,55 +50,64 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
   return (
     <div>
       <button onClick={handleClick} className="md:hidden">
-        <IconMenu style={{ fontSize: '2rem' }} />
+        <IconMenu
+          style={{ fontSize: '2rem' }}
+          className="dark:text-purple-400"
+        />
       </button>
 
       <div
         className={`transition ${
           menuType === 'toClose' ? `translate-x-0` : `translate-x-[100%]`
-        } fixed w-72 duration-300 h-full bg-white right-0 top-0 z-50`}
+        } fixed w-72 duration-300 h-full bg-white right-0 top-0 z-50 dark:bg-neutral-600`}
       >
         <div className="w-full flex justify-end my-5 ">
           <IconClose
             style={{ fontSize: '2rem' }}
-            className="mr-2 mt-2"
+            className="mr-2 mt-2 dark:text-purple-400"
             onClick={handleClick}
           />
         </div>
 
         <nav>
-          <ul className="flex flex-col flex-wrap content-center  gap-8">
+          <ul className="flex flex-col flex-wrap content-center gap-8">
             <li>
               <a
                 href={translatePath('/')}
                 onClick={handleClick}
-                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 dark:before:bg-purple-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
                   currentPath === '/' ? `before:scale-x-100` : ``
                 }`}
               >
-                <span className="relative">{t('nav.home')}</span>
+                <span className="relative dark:text-slate-200">
+                  {t('nav.home')}
+                </span>
               </a>
             </li>
             <li>
               <a
                 href={translatePath('/about')}
                 onClick={handleClick}
-                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 dark:before:bg-purple-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
                   currentPath === '/about' ? `before:scale-x-100` : ``
                 }`}
               >
-                <span className="relative">{t('nav.about')}</span>
+                <span className="relative dark:text-slate-200">
+                  {t('nav.about')}
+                </span>
               </a>
             </li>
             <li>
               <a
                 href={translatePath('/podcast')}
                 onClick={handleClick}
-                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
+                className={`font-bold text-xl tracking-widest text-fuchsia-900 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-blue-300 dark:before:bg-purple-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 ${
                   currentPath === '/podcast' ? `before:scale-x-100` : ``
                 }`}
               >
-                <span className="relative">{t('nav.podcast')}</span>
+                <span className="relative dark:text-slate-200">
+                  {t('nav.podcast')}
+                </span>
               </a>
             </li>
           </ul>

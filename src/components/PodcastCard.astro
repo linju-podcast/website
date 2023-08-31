@@ -12,12 +12,16 @@ const translatePath = useTranslatedPath(lang);
 
 <article class="md:grid md:grid-cols-4 md:items-baseline">
   <div class="md:col-span-2 relative flex flex-col md:items-center order-2">
-    <h2 class="text-3xl font-semibold leading-tight">{title}</h2>
+    <h2 class="text-3xl font-semibold leading-tight dark:text-slate-200">
+      {title}
+    </h2>
     <time
-      class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm"
+      class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm dark:text-slate-200 text-slate-700"
       datetime={date}>{formatDate(date)}</time
     >
-    <p class="relative z-10 mt-2 text-sm">{description}</p>
+    <p class="relative z-10 mt-2 text-sm dark:text-slate-400 text-slate-700">
+      {description}
+    </p>
     <div class="relative z-10 mt-4 flex items-center text-sm font-medium">
       <Button url={translatePath(url, lang)}>{t('podcast.readMore')}</Button>
     </div>
@@ -27,9 +31,11 @@ const translatePath = useTranslatedPath(lang);
   >
     <div>
       <IconMic
-        class="absolute text-slate-100 text-7xl -z-10 -bottom-10 -right-5 group-hover:text-cyan-100"
+        class="absolute text-slate-100 text-7xl -z-10 -bottom-10 -right-5 dark:text-neutral-700"
       />
     </div>
-    <time datetime={date}>{formatDate(date)}</time>
+    <time datetime={date} class="dark:text-slate-200 text-slate-700"
+      >{formatDate(date)}</time
+    >
   </div>
 </article>

@@ -30,29 +30,40 @@ const { Content: PapayaContent } = await papaya.render();
 
     <div class="lg:order-first lg:row-span-2">
       <h1
-        class="text-4xl lg:text-5xl font-bold lg:tracking-tight xl:text-center"
+        class="text-4xl lg:text-5xl font-bold lg:tracking-tight xl:text-center dark:text-slate-200"
       >
         {t('about.title')}
       </h1>
-      <p class="text-lg mt-4 text-slate-600 xl:text-center">
+      <p class="text-lg mt-4 text-slate-600 xl:text-center dark:text-slate-400">
         {t('about.description')}<br />
       </p>
       <Contact />
       <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-        <h2 class="font-bold text-3xl text-gray-800 text-left">
+        <h2
+          class="font-bold text-3xl text-gray-800 dark:text-slate-400 text-left"
+        >
           {podcast.data.title}
         </h2>
+        <div class="prose dark:prose-invert">
+          <PodcastContent />
+        </div>
 
-        <PodcastContent class="prose" />
-
-        <h2 class="font-bold text-2xl text-gray-800 text-left">
+        <h2
+          class="font-bold text-2xl text-gray-800 dark:text-slate-400 text-left"
+        >
           {sing.data.title}
         </h2>
-        <SingContent class="prose" />
-        <h2 class="font-bold text-2xl text-gray-800 text-left">
+        <div class="prose dark:prose-invert">
+          <SingContent />
+        </div>
+        <h2
+          class="font-bold text-2xl text-gray-800 dark:text-slate-400 text-left"
+        >
           {papaya.data.title}
         </h2>
-        <PapayaContent class="prose" />
+        <div class="prose dark:prose-invert">
+          <PapayaContent />
+        </div>
       </div>
     </div>
   </div>

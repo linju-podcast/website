@@ -13,12 +13,12 @@ import IconRight from '~icons/tabler/circle-arrow-right-filled';
   {
     prevUrl ? (
       <a href={prevUrl}>
-        <span class="text-cyan-700">
+        <span class="text-cyan-700 dark:text-purple-400">
           <IconLeft style={{ fontSize: '2rem' }} />
         </span>
       </a>
     ) : (
-      <span class="text-slate-200">
+      <span class="text-slate-200 dark:text-neutral-700">
         <IconLeft style={{ fontSize: '2rem' }} />
       </span>
     )
@@ -30,8 +30,10 @@ import IconRight from '~icons/tabler/circle-arrow-right-filled';
         <li class="px-2 focus:ring-2">
           <a href={`${firstUrl}${num == 1 ? '' : '/' + num}`}>
             <span
-              class={`text-cyan-700 font-bold inline-block  ${
-                currentPage === num ? `underline` : `text-cyan-700`
+              class={`text-cyan-700 dark:text-purple-400 font-bold inline-block  ${
+                currentPage === num
+                  ? `underline`
+                  : `text-cyan-700 dark:text-purple-400`
               }`}
             >
               {num}
@@ -45,12 +47,12 @@ import IconRight from '~icons/tabler/circle-arrow-right-filled';
   {
     nextUrl ? (
       <a href={nextUrl}>
-        <span class="text-cyan-700">
+        <span class="text-cyan-700 dark:text-purple-400">
           <IconRight style={{ fontSize: '2em' }} />
         </span>
       </a>
     ) : (
-      <span class="text-slate-200">
+      <span class="text-slate-200 dark:text-neutral-700">
         <IconRight style={{ fontSize: '2em' }} />
       </span>
     )

@@ -14,10 +14,10 @@ const lang = getLangFromUrl(Astro.url);
 
 <html lang={lang}>
   <MainHead {title} />
-  <body>
+  <body class="dark:bg-neutral-900">
     <NavBar />
 
-    <Wave class="text-[#f3f4f5]" />
+    <Wave class="text-[#f3f4f5] dark:text-neutral-700" />
 
     <div class="max-w-screen-xl mx-auto px-6">
       <slot />

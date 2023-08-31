@@ -1,15 +1,33 @@
 import { FunctionComponent } from 'preact';
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 
 import IconMoon from '~icons/tabler/moon-filled';
 import IconSun from '~icons/tabler/sun-filled';
+
 const ThemeToggle: FunctionComponent = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'light');
+  const [isMounted, setIsMounted] = useState(false);
 
   const handleClick = () => {
     setTheme(() => (theme === 'light' ? 'dark' : 'light'));
   };
 
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
   return (
     <div className="flex  bg-[#111] p-1 relative rounded-3xl">
       <IconSun style={{ fontSize: '2rem', color: '#f39c12' }} />

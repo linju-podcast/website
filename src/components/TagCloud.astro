@@ -32,7 +32,9 @@ const translatedPath = useTranslatedPath(lang);
   {
     Object.entries(processedTags).map(([key, val]) => (
       <li>
-        <span class="text-cyan-900 px-2 font-bold">{val}</span>
+        <span class="text-cyan-900 px-2 font-bold dark:text-slate-200">
+          {val}
+        </span>
         <Tag name={key} url={translatedPath(`/podcast/${key}`, lang)}>
           {key}
         </Tag>

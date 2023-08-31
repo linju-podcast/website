@@ -3,11 +3,14 @@ import IconSaturn from '~icons/streamline/ecology-science-planet-solar-system-ri
 import IconSpotify from '~icons/mingcute/spotify-line';
 import IconApplePodcast from '~icons/ph/apple-podcasts-logo';
 import IconGooglePodcast from '~icons/simple-icons/googlepodcasts';
+
+const { t } = Astro.props;
 ---
 
 <div class="py-10 text-center">
-  <h3 class="text-xl lg:text-2xl">
-    每<span class="line-through">两周</span>更新，欢迎订阅收听：
+  <h3 class="text-xl lg:text-2xl dark:text-slate-400 text-slate-700">
+    {t('main.release')}
+    <span class="line-through">{t('main.biWeek')}</span>{t('main.subscribe')}
   </h3>
   <div class="flex gap-5 justify-center py-6">
     <div class="relative group">
@@ -16,7 +19,10 @@ import IconGooglePodcast from '~icons/simple-icons/googlepodcasts';
       >
       </div>
       <a href="">
-        <IconSaturn style={{ fontSize: '2em' }} class="text-slate-500" />
+        <IconSaturn
+          style={{ fontSize: '2em' }}
+          class="text-slate-500 dark:text-slate-200"
+        />
       </a>
     </div>
     <div class="relative group">
@@ -25,7 +31,10 @@ import IconGooglePodcast from '~icons/simple-icons/googlepodcasts';
       >
       </div>
       <a href="">
-        <IconSpotify style={{ fontSize: '2em' }} class="text-slate-500" />
+        <IconSpotify
+          style={{ fontSize: '2em' }}
+          class="text-slate-500 dark:text-slate-200"
+        />
       </a>
     </div>
     <div class="relative group">
@@ -34,7 +43,10 @@ import IconGooglePodcast from '~icons/simple-icons/googlepodcasts';
       >
       </div>
       <a href="">
-        <IconApplePodcast style={{ fontSize: '2em' }} class="text-slate-500" />
+        <IconApplePodcast
+          style={{ fontSize: '2em' }}
+          class="text-slate-500 dark:text-slate-200"
+        />
       </a>
     </div>
     <div class="relative group">
@@ -43,7 +55,10 @@ import IconGooglePodcast from '~icons/simple-icons/googlepodcasts';
       >
       </div>
       <a href="">
-        <IconGooglePodcast style={{ fontSize: '2em' }} class="text-slate-500" />
+        <IconGooglePodcast
+          style={{ fontSize: '2em' }}
+          class="text-slate-500 dark:text-slate-200"
+        />
       </a>
     </div>
   </div>

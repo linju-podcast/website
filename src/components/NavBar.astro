@@ -18,13 +18,16 @@ const translatePath = useTranslatedPath(lang);
 const currentPath = new URL(Astro.request.url).pathname;
 ---
 
-<header class="bg-[#f3f4f5]">
+<header class="bg-[#f3f4f5] dark:bg-neutral-700">
   <container
     class="max-w-screen-xl mx-auto flex justify-between items-center m-0 p-0"
   >
     <div class="flex items-center justify-between my-5 w-36">
       <a href={translatePath('/', lang)}>
-        <IconNet class="pt-2 ml-4 text-cyan-700" style={{ width: '3em' }} />
+        <IconNet
+          class="pt-2 ml-4 text-cyan-700 dark:text-purple-400"
+          style={{ width: '3em' }}
+        />
       </a>
     </div>
     <nav class="hidden md:flex w-auto mt-2 mt-0">
