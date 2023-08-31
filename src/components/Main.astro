@@ -12,6 +12,7 @@ const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
 
 import BadgeWallLeft from './BadgeWallLeft.astro';
 import BadgeWallRight from './BadgeWallRight.astro';
+import Platform from './Platform.astro';
 ---
 
 <main
@@ -27,22 +28,26 @@ import BadgeWallRight from './BadgeWallRight.astro';
   </div>
   <div class="flex flex-col gap-6 justify-around w-full xl:flex-row">
     <BadgeWallLeft />
-    <h2
-      class="font-extrabold leading-tight lg:mt-10 md:text-4xl text-3xl xl:text-6xl max-w-2xl order-1 text-center xl:order-2"
-    >
-      {t('main.description')}
-      <ul
-        class="inline-block relative h-10 align-bottom overflow-hidden lg:h-14"
+    <div class="xl:order-2">
+      <h2
+        class="font-extrabold leading-tight lg:mt-10 md:text-4xl text-3xl xl:text-6xl max-w-2xl order-1 text-center"
       >
-        <li class="translate-y-full animate-first">
-          <span class="text-violet-800">{t('main.development')}</span>
-        </li>
-        <li class="translate-y-0 animate-second">
-          <span class="text-cyan-800">{t('main.tech')}</span>
-        </li>
-      </ul>
-      {t('main.plan')}
-    </h2>
+        {t('main.description')}
+        <ul
+          class="inline-block relative h-10 align-bottom overflow-hidden lg:h-14"
+        >
+          <li class="translate-y-full animate-first">
+            <span class="text-violet-800">{t('main.development')}</span>
+          </li>
+          <li class="translate-y-0 animate-second">
+            <span class="text-cyan-800">{t('main.tech')}</span>
+          </li>
+        </ul>
+        {t('main.plan')}
+      </h2>
+
+      <Platform />
+    </div>
     <BadgeWallRight />
   </div>
 </main>
@@ -56,13 +61,13 @@ import BadgeWallRight from './BadgeWallRight.astro';
         title={podcast.data.title}
         tags={podcast.data.tags}
         description={podcast.data.description}
-        slug={podcast.slug}
+        url={`/podcast/${podcast.slug.substring(3)}`}
         date={podcast.data.date}
-        t={t}
+        {...{ t, lang }}
       />
     ))
   }
 </div>
-<div class="text-lg mt-12 text-slate-600">
+<div class="text-lg mt-12">
   <TagCloud {...{ podcasts, lang }} />
 </div>

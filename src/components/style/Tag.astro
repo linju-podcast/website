@@ -1,24 +1,39 @@
 ---
 interface Props {
   name: string;
+  url?: string;
 }
 
-const { name } = Astro.props;
+const { name, url } = Astro.props;
 
-const colorConfig = {
-  devTips: 'before:bg-amber-400',
-  lifeHacks: 'before:bg-red-400',
-  englishLearnings: 'before:bg-blue-400',
+const borderConfig = {
+  devTips: 'border-amber-400',
+  lifeHacks: 'border-red-400',
+  englishLearnings: 'border-blue-400',
+};
+
+const textConfig = {
+  devTips: 'text-amber-400',
+  lifeHacks: 'text-red-400',
+  englishLearnings: 'text-blue-400',
+};
+
+const bgConfig = {
+  devTips: 'hover:bg-amber-400',
+  lifeHacks: 'hover:bg-red-400',
+  englishLearnings: 'hover:bg-blue-400',
 };
 ---
 
-<span
+<a
+  href={url}
   class:list={[
-    'before:block before:absolute before:-inset-0.5 before:rounded px-2 relative inline-block before:shadow',
-    colorConfig[name],
+    'px-2 h-6 border rounded-md group shadow-md transition duration-300 ease-in-out bg-white',
+    `${borderConfig[name]}`,
+    `${bgConfig[name]}`,
   ]}
 >
-  <span class="relative text-white">
-    <slot />
+  <span class:list={[`${textConfig[name]}`, 'group hover:text-white']}>
+    {name}
   </span>
-</span>
+</a>

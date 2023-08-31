@@ -1,5 +1,5 @@
 ---
-const { title, tags, description, slug, date, t } = Astro.props;
+const { title, tags, description, url, date, t, lang } = Astro.props;
 
 import { formatDate } from '../utils';
 
@@ -10,6 +10,9 @@ import IconTag from '~icons/tabler/tag';
 import IconPodcast from '~icons/tabler/brand-apple-podcast';
 
 import Button from './style/Button.astro';
+import { useTranslatedPath } from '../i18n/utils';
+
+const translatePath = useTranslatedPath(lang);
 ---
 
 <div
@@ -33,7 +36,7 @@ import Button from './style/Button.astro';
   <p class="my-3">
     {description}
   </p>
-  <Button url={`/podcast/${slug}`}>
+  <Button url={translatePath(url, lang)}>
     {t('podcast.readMore')}
   </Button>
 </div>
