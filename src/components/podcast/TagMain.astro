@@ -1,0 +1,58 @@
+---
+const {
+  t,
+  lang,
+  currentPage,
+  lastPage,
+  current,
+  prev,
+  next,
+  firstPath,
+  params,
+  page
+} = Astro.props
+
+import PodcastCard from './PodcastCard.astro'
+import Pagination from './Pagination.astro'
+---
+
+<div class='text-center'>
+  <h1
+    class='text-4xl lg:text-5xl font-bold lg:tracking-tight dark:text-slate-200'
+  >
+    {params.tag}
+  </h1>
+  <main class='mt-16 flex flex-col'>
+    <ol class='flex flex-col space-y-8'>
+      {
+        page.data.map((post) => (
+          <li>
+            <PodcastCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date}
+              url={post.slug.substring(3)}
+              {...{ t, lang }}
+            />
+          </li>
+        ))
+      }
+    </ol>
+  </main>
+  <div class='mt-16'>
+    {
+      page.data.length > 5 && (
+        <div>
+          <Pagination
+            length={lastPage}
+            currentUrl={current}
+            currentPage={currentPage}
+            firstUrl={`/${firstPath}`}
+            prevUrl={prev}
+            nextUrl={next}
+          />
+        </div>
+      )
+    }
+  </div>
+</div>

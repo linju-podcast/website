@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content'
 
 import MainLayout from '../layouts/MainLayout.astro'
-import Main from '../components/Main.astro'
+import Main from '../components/home/Main.astro'
 
 const podcasts = await getCollection('podcast', ({ id }) => {
   return id.startsWith('cn/')

@@ -19,8 +19,6 @@ export async function getStaticPaths({ paginate }) {
 }
 
 import MainLayout from '../../../layouts/MainLayout.astro'
-import PodcastCard from '../../../components/PodcastCard.astro'
-import Pagination from '../../../components/Pagination.astro'
 
 const { page } = Astro.props
 const pathname = new URL(Astro.request.url).pathname.split('/')
@@ -34,47 +32,23 @@ import { getLangFromUrl, useTranslations } from '../../../i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+import TagMain from '../../../components/podcast/TagMain.astro'
 ---
 
 <MainLayout title={params.tag}>
-  <div class='text-center'>
-    <h1
-      class='text-4xl lg:text-5xl font-bold lg:tracking-tight dark:text-slate-200'
-    >
-      {params.tag}
-    </h1>
-    <main class='mt-16 flex flex-col'>
-      <ol class='flex flex-col space-y-8'>
-        {
-          page.data.map((post) => (
-            <li>
-              <PodcastCard
-                title={post.data.title}
-                description={post.data.description}
-                date={post.data.date}
-                url={post.slug.substring(3)}
-                {...{ t, lang }}
-              />
-            </li>
-          ))
-        }
-      </ol>
-    </main>
-    <div class='mt-16'>
-      {
-        page.data.length > 5 && (
-          <div>
-            <Pagination
-              length={lastPage}
-              currentUrl={current}
-              currentPage={currentPage}
-              firstUrl={`/${firstPath}`}
-              prevUrl={prev}
-              nextUrl={next}
-            />
-          </div>
-        )
-      }
-    </div>
-  </div>
+  <TagMain
+    {...{
+      t,
+      lang,
+      currentPage,
+      lastPage,
+      current,
+      prev,
+      next,
+      firstPath,
+      params,
+      page
+    }}
+  />
 </MainLayout>

@@ -1,0 +1,16 @@
+---
+import Tag from '../style/Tag.astro'
+const { tags, title, Content } = Astro.props
+---
+
+<div class='mx-auto max-w-3xl mt-3 text-center'>
+  <h1
+    class='text-4xl lg:text-5xl font-bold lg:tracking-tight my-6 lg:leading-snug dark:text-slate-200'
+  >
+    {title}
+  </h1>
+  {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
+</div>
+<article class='mx-auto mt-6 max-w-3xl prose lg:prose-lg dark:prose-invert'>
+  <Content />
+</article>

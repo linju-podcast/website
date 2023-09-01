@@ -1,11 +1,11 @@
 ---
-import { formatDate } from '../utils'
+import { formatDate } from '../../utils'
 import IconMic from '~icons/tabler/microphone'
 
-import Button from './style/Button.astro'
+import Button from '../style/Button.astro'
 const { title, date, url, description, lang, t } = Astro.props
 
-import { useTranslatedPath } from '../i18n/utils'
+import { useTranslatedPath } from '../../i18n/utils'
 
 const translatePath = useTranslatedPath(lang)
 ---

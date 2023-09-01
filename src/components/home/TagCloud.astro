@@ -1,6 +1,6 @@
 ---
 import { CollectionEntry } from 'astro:content'
-import { formatPosts } from '../utils'
+import { formatPosts } from '../../utils'
 
 const { podcasts, lang } = Astro.props
 
@@ -19,8 +19,8 @@ const processedTags: Record<
   }
 }, {})
 
-import Tag from './style/Tag.astro'
-import { useTranslatedPath } from '../i18n/utils'
+import Tag from '../style/Tag.astro'
+import { useTranslatedPath } from '../../i18n/utils'
 
 const translatedPath = useTranslatedPath(lang)
 ---
