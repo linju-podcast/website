@@ -6,7 +6,6 @@ import IconSun from '~icons/tabler/sun-filled';
 
 const ThemeToggle: FunctionComponent = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'light');
-  const [isMounted, setIsMounted] = useState(false);
 
   const handleClick = () => {
     setTheme(() => (theme === 'light' ? 'dark' : 'light'));
@@ -21,13 +20,6 @@ const ThemeToggle: FunctionComponent = () => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
   return (
     <div className="flex  bg-[#111] p-1 relative rounded-3xl">
       <IconSun style={{ fontSize: '2rem', color: '#f39c12' }} />

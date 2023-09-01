@@ -24,7 +24,6 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
   const [menuType, setMenuType] = useState(
     localStorage.getItem('menu') ?? 'toOpen'
   );
-  const [isMounted, setIsMounted] = useState(false);
 
   const handleClick = () => {
     setMenuType(() => (menuType === 'toOpen' ? 'toClose' : 'toOpen'));
@@ -38,14 +37,6 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
     }
     localStorage.setItem('menu', menuType);
   }, [menuType]);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
 
   return (
     <div>
