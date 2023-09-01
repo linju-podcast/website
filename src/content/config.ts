@@ -1,6 +1,6 @@
-import { z, defineCollection } from 'astro:content';
+import { z, defineCollection } from 'astro:content'
 
-const { object, string, date, boolean } = z;
+const { object, string, date, boolean } = z
 
 const podcastCollection = defineCollection({
   type: 'content',
@@ -10,13 +10,13 @@ const podcastCollection = defineCollection({
     tags: z.enum(['devTips', 'lifeHacks', 'englishLearnings']),
     image: object({
       src: string(),
-      alt: string(),
+      alt: string()
     }),
     date: date(),
-    draft: boolean().default(false),
-  }),
-});
+    draft: boolean().default(false)
+  })
+})
 
 export const collection = {
-  podcast: podcastCollection,
-};
+  podcast: podcastCollection
+}

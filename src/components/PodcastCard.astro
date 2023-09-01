@@ -1,40 +1,40 @@
 ---
-import { formatDate } from '../utils';
-import IconMic from '~icons/tabler/microphone';
+import { formatDate } from '../utils'
+import IconMic from '~icons/tabler/microphone'
 
-import Button from './style/Button.astro';
-const { title, date, url, description, lang, t } = Astro.props;
+import Button from './style/Button.astro'
+const { title, date, url, description, lang, t } = Astro.props
 
-import { useTranslatedPath } from '../i18n/utils';
+import { useTranslatedPath } from '../i18n/utils'
 
-const translatePath = useTranslatedPath(lang);
+const translatePath = useTranslatedPath(lang)
 ---
 
-<article class="md:grid md:grid-cols-4 md:items-baseline">
-  <div class="md:col-span-2 relative flex flex-col md:items-center order-2">
-    <h2 class="text-3xl font-semibold leading-tight dark:text-slate-200">
+<article class='md:grid md:grid-cols-4 md:items-baseline'>
+  <div class='md:col-span-2 relative flex flex-col md:items-center order-2'>
+    <h2 class='text-3xl font-semibold leading-tight dark:text-slate-200'>
       {title}
     </h2>
     <time
-      class="md:hidden relative z-10 order-first mb-3 flex items-center text-sm dark:text-slate-200 text-slate-700"
+      class='md:hidden relative z-10 order-first mb-3 flex items-center text-sm dark:text-slate-200 text-slate-700'
       datetime={date}>{formatDate(date)}</time
     >
-    <p class="relative z-10 mt-2 text-sm dark:text-slate-400 text-slate-700">
+    <p class='relative z-10 mt-2 text-sm dark:text-slate-400 text-slate-700'>
       {description}
     </p>
-    <div class="relative z-10 mt-4 flex items-center text-sm font-medium">
+    <div class='relative z-10 mt-4 flex items-center text-sm font-medium'>
       <Button url={translatePath(url, lang)}>{t('podcast.readMore')}</Button>
     </div>
   </div>
   <div
-    class="mt-1 hidden md:block relative z-10 order-1 mb-3 flex text-right text-sm relative"
+    class='mt-1 hidden md:block relative z-10 order-1 mb-3 flex text-right text-sm relative'
   >
     <div>
       <IconMic
-        class="absolute text-slate-100 text-7xl -z-10 -bottom-10 -right-5 dark:text-neutral-700"
+        class='absolute text-slate-100 text-7xl -z-10 -bottom-10 -right-5 dark:text-neutral-700'
       />
     </div>
-    <time datetime={date} class="dark:text-slate-200 text-slate-700"
+    <time datetime={date} class='dark:text-slate-200 text-slate-700'
       >{formatDate(date)}</time
     >
   </div>

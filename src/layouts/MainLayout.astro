@@ -1,25 +1,25 @@
 ---
-import { getLangFromUrl } from '../i18n/utils';
+import { getLangFromUrl } from '../i18n/utils'
 
-import Footer from '../components/Footer.astro';
-import NavBar from '../components/NavBar.astro';
-import MainHead from './MainHead.astro';
+import Footer from '../components/Footer.astro'
+import NavBar from '../components/NavBar.astro'
+import MainHead from './MainHead.astro'
 
-import '../style/global.css';
-import Wave from '~icons/my-icons/wave';
+import '../style/global.css'
+import Wave from '~icons/my-icons/wave'
 
-const { title } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
+const { title } = Astro.props
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <html lang={lang}>
   <MainHead {title} />
-  <body class="dark:bg-neutral-900">
+  <body class='dark:bg-neutral-900'>
     <NavBar />
 
-    <Wave class="text-[#f3f4f5] dark:text-neutral-700" />
+    <Wave class='text-[#f3f4f5] dark:text-neutral-700' />
 
-    <div class="max-w-screen-xl mx-auto px-6">
+    <div class='max-w-screen-xl mx-auto px-6'>
       <slot />
       <Footer />
     </div>

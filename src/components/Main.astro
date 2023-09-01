@@ -1,48 +1,48 @@
 ---
-import { Image } from 'astro:assets';
-import logo from '../assets/logo.png';
+import { Image } from 'astro:assets'
+import logo from '../assets/logo.png'
 
-import { formatPosts } from '../utils';
+import { formatPosts } from '../utils'
 
-import EpisodeCard from './EpisodeCard.astro';
-import TagCloud from './TagCloud.astro';
+import EpisodeCard from './EpisodeCard.astro'
+import TagCloud from './TagCloud.astro'
 
-const { podcasts, t, lang } = Astro.props;
-const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 });
+const { podcasts, t, lang } = Astro.props
+const formatedLatestedPodcasts = formatPosts(podcasts, { limit: 3 })
 
-import BadgeWallLeft from './BadgeWallLeft.astro';
-import BadgeWallRight from './BadgeWallRight.astro';
-import Platform from './Platform.astro';
+import BadgeWallLeft from './BadgeWallLeft.astro'
+import BadgeWallRight from './BadgeWallRight.astro'
+import Platform from './Platform.astro'
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24 xl:grid-cols-1"
+  class='grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24 xl:grid-cols-1'
 >
-  <div class="block xl:absolute top-[120px] right-[20%] pb-16">
+  <div class='block xl:absolute top-[120px] right-[20%] pb-16'>
     <Image
       src={logo}
-      alt="podcast logo"
+      alt='podcast logo'
       width={200}
-      class="rounded-2xl shadow-xl"
+      class='rounded-2xl shadow-xl'
     />
   </div>
-  <div class="flex flex-col gap-6 justify-around w-full xl:flex-row">
+  <div class='flex flex-col gap-6 justify-around w-full xl:flex-row'>
     <BadgeWallLeft />
-    <div class="xl:order-2">
+    <div class='xl:order-2'>
       <h2
-        class="font-extrabold leading-tight lg:mt-10 md:text-4xl text-3xl xl:text-6xl max-w-2xl order-1 text-center dark:text-slate-200"
+        class='font-extrabold leading-tight lg:mt-10 md:text-4xl text-3xl xl:text-6xl max-w-2xl order-1 text-center dark:text-slate-200'
       >
         {t('main.description')}
         <ul
-          class="inline-block relative h-10 align-bottom overflow-hidden lg:h-14"
+          class='inline-block relative h-10 align-bottom overflow-hidden lg:h-14'
         >
-          <li class="translate-y-full animate-first">
-            <span class="text-violet-800 dark:text-purple-400"
+          <li class='translate-y-full animate-first'>
+            <span class='text-violet-800 dark:text-purple-400'
               >{t('main.development')}</span
             >
           </li>
-          <li class="translate-y-0 animate-second">
-            <span class="text-cyan-800 dark:text-cyan-400"
+          <li class='translate-y-0 animate-second'>
+            <span class='text-cyan-800 dark:text-cyan-400'
               >{t('main.tech')}</span
             >
           </li>
@@ -57,7 +57,7 @@ import Platform from './Platform.astro';
 </main>
 
 <div
-  class="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center place-content-between pt-10"
+  class='grid md:grid-cols-2 lg:grid-cols-3 justify-items-center place-content-between pt-10'
 >
   {
     formatedLatestedPodcasts.map((podcast) => (
@@ -72,6 +72,6 @@ import Platform from './Platform.astro';
     ))
   }
 </div>
-<div class="text-lg mt-12">
+<div class='text-lg mt-12'>
   <TagCloud {...{ podcasts, lang }} />
 </div>

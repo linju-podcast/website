@@ -1,16 +1,17 @@
 ---
+
 ---
 
 <footer
-  class="my-20 flex place-content-between justify-center dark:text-slate-300"
+  class='my-20 flex place-content-between justify-center dark:text-slate-300'
 >
   <small>
-    Copyright &copy;<span id="copyright"></span> | All right reserved
+    Copyright &copy;<span id='copyright'></span> | All right reserved
   </small>
 </footer>
 
 <script>
   document.querySelector('#copyright')!.textContent = new Date()
     .getFullYear()
-    .toString();
+    .toString()
 </script>

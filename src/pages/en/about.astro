@@ -1,67 +1,67 @@
 ---
-import MainLayout from '../../layouts/MainLayout.astro';
-import Potraits from '../../components/Potraits.astro';
-import { getEntry } from 'astro:content';
+import MainLayout from '../../layouts/MainLayout.astro'
+import Potraits from '../../components/Potraits.astro'
+import { getEntry } from 'astro:content'
 
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
-import Contact from '../../components/Contact.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import Contact from '../../components/Contact.astro'
 
-const podcast = await getEntry('about', 'en/podcast');
-const sing = await getEntry('about', 'en/sing');
-const papaya = await getEntry('about', 'en/papaya');
+const podcast = await getEntry('about', 'en/podcast')
+const sing = await getEntry('about', 'en/sing')
+const papaya = await getEntry('about', 'en/papaya')
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
-const { Content: PodcastContent } = await podcast.render();
-const { Content: SingContent } = await sing.render();
-const { Content: PapayaContent } = await papaya.render();
+const { Content: PodcastContent } = await podcast.render()
+const { Content: SingContent } = await sing.render()
+const { Content: PapayaContent } = await papaya.render()
 ---
 
 <MainLayout>
   <div
-    class="mt-4 grid gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 px-6 xl:grid-cols-1"
+    class='mt-4 grid gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 px-6 xl:grid-cols-1'
   >
     <div
-      class="flex flex-col md:flex-row justify-center items-center lg:pl-20 lg:flex-col gap-10 xl:absolute xl:flex-row top-[120px] right-[20%]"
+      class='flex flex-col md:flex-row justify-center items-center lg:pl-20 lg:flex-col gap-10 xl:absolute xl:flex-row top-[120px] right-[20%]'
     >
       <Potraits />
     </div>
 
-    <div class="lg:order-first lg:row-span-2">
+    <div class='lg:order-first lg:row-span-2'>
       <h1
-        class="text-4xl lg:text-5xl font-bold lg:tracking-tight xl:text-center dark:text-slate-200"
+        class='text-4xl lg:text-5xl font-bold lg:tracking-tight xl:text-center dark:text-slate-200'
       >
         {t('about.title')}
       </h1>
-      <p class="text-lg mt-4 text-slate-600 xl:text-center dark:text-slate-400">
+      <p class='text-lg mt-4 text-slate-600 xl:text-center dark:text-slate-400'>
         {t('about.description')}<br />
       </p>
       <Contact />
-      <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <div class='flex flex-col gap-3 mx-auto max-w-4xl mt-16'>
         <h2
-          class="font-bold text-3xl text-gray-800 text-left dark:text-slate-400"
+          class='font-bold text-3xl text-gray-800 text-left dark:text-slate-400'
         >
           {podcast.data.title}
         </h2>
-        <div class="prose dark:prose-invert">
+        <div class='prose dark:prose-invert'>
           <PodcastContent />
         </div>
 
         <h2
-          class="font-bold text-2xl text-gray-800 text-left dark:text-slate-400"
+          class='font-bold text-2xl text-gray-800 text-left dark:text-slate-400'
         >
           {sing.data.title}
         </h2>
-        <div class="prose dark:prose-invert">
+        <div class='prose dark:prose-invert'>
           <SingContent />
         </div>
         <h2
-          class="font-bold text-2xl text-gray-800 text-left dark:text-slate-400"
+          class='font-bold text-2xl text-gray-800 text-left dark:text-slate-400'
         >
           {papaya.data.title}
         </h2>
-        <div class="prose dark:prose-invert">
+        <div class='prose dark:prose-invert'>
           <PapayaContent />
         </div>
       </div>

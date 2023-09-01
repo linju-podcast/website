@@ -1,38 +1,35 @@
 ---
-import { CollectionEntry } from 'astro:content';
-import { formatPosts } from '../utils';
+import { CollectionEntry } from 'astro:content'
+import { formatPosts } from '../utils'
 
-const { podcasts, lang } = Astro.props;
+const { podcasts, lang } = Astro.props
 
-const formattedPodcast: CollectionEntry<'podcast'>[] = formatPosts(
-  podcasts,
-  {}
-);
-const allTags = formattedPodcast.map((tag) => tag.data.tags).flat();
+const formattedPodcast: CollectionEntry<'podcast'>[] = formatPosts(podcasts, {})
+const allTags = formattedPodcast.map((tag) => tag.data.tags).flat()
 
 const processedTags: Record<
   'devTips' | 'lifeHacks' | 'englishLearnings',
   number
 > = allTags.reduce((acc, tag) => {
-  const value = acc[tag] || 0;
+  const value = acc[tag] || 0
 
   return {
     ...acc,
-    [tag]: value + 1,
-  };
-}, {});
+    [tag]: value + 1
+  }
+}, {})
 
-import Tag from './style/Tag.astro';
-import { useTranslatedPath } from '../i18n/utils';
+import Tag from './style/Tag.astro'
+import { useTranslatedPath } from '../i18n/utils'
 
-const translatedPath = useTranslatedPath(lang);
+const translatedPath = useTranslatedPath(lang)
 ---
 
-<ul class="flex flex-col gap-3 md:flex-row justify-center md:gap-6">
+<ul class='flex flex-col gap-3 md:flex-row justify-center md:gap-6'>
   {
     Object.entries(processedTags).map(([key, val]) => (
       <li>
-        <span class="text-cyan-900 px-2 font-bold dark:text-slate-200">
+        <span class='text-cyan-900 px-2 font-bold dark:text-slate-200'>
           {val}
         </span>
         <Tag name={key} url={translatedPath(`/podcast/${key}`, lang)}>

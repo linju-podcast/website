@@ -1,37 +1,37 @@
 ---
-import LanguagePicker from '../components/LanguagePicker';
-import MenuToggle from './MenuToggle';
-import ThemeToggle from './ThemeToggle';
-import Link from './style/Link.astro';
+import LanguagePicker from '../components/LanguagePicker'
+import MenuToggle from './MenuToggle'
+import ThemeToggle from './ThemeToggle'
+import Link from './style/Link.astro'
 
-import IconNet from '~icons/my-icons/net';
+import IconNet from '~icons/my-icons/net'
 import {
   getLangFromUrl,
   useTranslatedPath,
-  useTranslations,
-} from '../i18n/utils';
+  useTranslations
+} from '../i18n/utils'
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const translatePath = useTranslatedPath(lang)
 
-const currentPath = new URL(Astro.request.url).pathname;
+const currentPath = new URL(Astro.request.url).pathname
 ---
 
-<header class="bg-[#f3f4f5] dark:bg-neutral-700">
+<header class='bg-[#f3f4f5] dark:bg-neutral-700'>
   <container
-    class="max-w-screen-xl mx-auto flex justify-between items-center m-0 p-0"
+    class='max-w-screen-xl mx-auto flex justify-between items-center m-0 p-0'
   >
-    <div class="flex items-center justify-between my-5 w-36">
+    <div class='flex items-center justify-between my-5 w-36'>
       <a href={translatePath('/', lang)}>
         <IconNet
-          class="pt-2 ml-4 text-cyan-700 dark:text-purple-400"
+          class='pt-2 ml-4 text-cyan-700 dark:text-purple-400'
           style={{ width: '3em' }}
         />
       </a>
     </div>
-    <nav class="hidden md:flex w-auto mt-2 mt-0">
-      <ul class="flex flex-row gap-8">
+    <nav class='hidden md:flex w-auto mt-2 mt-0'>
+      <ul class='flex flex-row gap-8'>
         <Link url={translatePath('/')} {currentPath}>{t('nav.home')}</Link>
         <Link url={translatePath('/about')} {currentPath}>
           {t('nav.about')}
@@ -41,11 +41,11 @@ const currentPath = new URL(Astro.request.url).pathname;
         </Link>
       </ul>
     </nav>
-    <div class="md:flex hidden mr-4 items-center gap-3 w-36">
+    <div class='md:flex hidden mr-4 items-center gap-3 w-36'>
       <LanguagePicker client:load lang={lang} />
       <ThemeToggle client:load />
     </div>
-    <div class="md:hidden mr-4 items-center gap-3">
+    <div class='md:hidden mr-4 items-center gap-3'>
       <MenuToggle client:load {...{ lang, currentPath }} />
     </div>
   </container>

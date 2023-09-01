@@ -1,63 +1,63 @@
 ---
-import IconSaturn from '~icons/streamline/ecology-science-planet-solar-system-ring-planet-saturn-space-astronomy';
-import IconSpotify from '~icons/mingcute/spotify-line';
-import IconApplePodcast from '~icons/ph/apple-podcasts-logo';
-import IconGooglePodcast from '~icons/simple-icons/googlepodcasts';
+import IconSaturn from '~icons/streamline/ecology-science-planet-solar-system-ring-planet-saturn-space-astronomy'
+import IconSpotify from '~icons/mingcute/spotify-line'
+import IconApplePodcast from '~icons/ph/apple-podcasts-logo'
+import IconGooglePodcast from '~icons/simple-icons/googlepodcasts'
 
-const { t } = Astro.props;
+const { t } = Astro.props
 ---
 
-<div class="py-10 text-center">
-  <h3 class="text-xl lg:text-2xl dark:text-slate-400 text-slate-700">
+<div class='py-10 text-center'>
+  <h3 class='text-xl lg:text-2xl dark:text-slate-400 text-slate-700'>
     {t('main.release')}
-    <span class="line-through">{t('main.biWeek')}</span>{t('main.subscribe')}
+    <span class='line-through'>{t('main.biWeek')}</span>{t('main.subscribe')}
   </h3>
-  <div class="flex gap-5 justify-center py-6">
-    <div class="relative group">
+  <div class='flex gap-5 justify-center py-6'>
+    <div class='relative group'>
       <div
-        class="absolute -top-1 -left-1 bg-[#3db4e1] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1"
+        class='absolute -top-1 -left-1 bg-[#3db4e1] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href="">
+      <a href=''>
         <IconSaturn
           style={{ fontSize: '2em' }}
-          class="text-slate-500 dark:text-slate-200"
+          class='text-slate-500 dark:text-slate-200'
         />
       </a>
     </div>
-    <div class="relative group">
+    <div class='relative group'>
       <div
-        class="absolute -top-1 -left-1 bg-[#42d760] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1"
+        class='absolute -top-1 -left-1 bg-[#42d760] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href="">
+      <a href=''>
         <IconSpotify
           style={{ fontSize: '2em' }}
-          class="text-slate-500 dark:text-slate-200"
+          class='text-slate-500 dark:text-slate-200'
         />
       </a>
     </div>
-    <div class="relative group">
+    <div class='relative group'>
       <div
-        class="absolute -top-1 -left-1 bg-[#a945e3] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1"
+        class='absolute -top-1 -left-1 bg-[#a945e3] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href="">
+      <a href=''>
         <IconApplePodcast
           style={{ fontSize: '2em' }}
-          class="text-slate-500 dark:text-slate-200"
+          class='text-slate-500 dark:text-slate-200'
         />
       </a>
     </div>
-    <div class="relative group">
+    <div class='relative group'>
       <div
-        class="absolute -top-1 -left-1 bg-[#f2b30a] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1"
+        class='absolute -top-1 -left-1 bg-[#f2b30a] w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href="">
+      <a href=''>
         <IconGooglePodcast
           style={{ fontSize: '2em' }}
-          class="text-slate-500 dark:text-slate-200"
+          class='text-slate-500 dark:text-slate-200'
         />
       </a>
     </div>

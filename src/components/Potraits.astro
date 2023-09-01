@@ -1,49 +1,49 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from 'astro:assets'
 
-import Sing from '../assets/sing_person.jpg';
-import Papaya from '../assets/papaya_person.jpg';
-import Saysay from '../assets/papaya_cat.jpg';
-import Huangjie from '../assets/sing_cat.jpeg';
+import Sing from '../assets/sing_person.jpg'
+import Papaya from '../assets/papaya_person.jpg'
+import Saysay from '../assets/papaya_cat.jpg'
+import Huangjie from '../assets/sing_cat.jpeg'
 ---
 
-<div class="perspective w-[200px] h-[200px]">
-  <div class="relative preserve-3d transition duration-300 hover:flip">
-    <div class="absolute hidden-backface">
+<div class='perspective w-[200px] h-[200px]'>
+  <div class='relative preserve-3d transition duration-300 hover:flip'>
+    <div class='absolute hidden-backface'>
       <Image
         src={Huangjie}
         width={200}
         alt="Portrait of Host S1ngS1ng's Cat"
-        class="aspect-square rounded-2xl shadow-2xl"
+        class='aspect-square rounded-2xl shadow-2xl'
       />
     </div>
-    <div class="absolute hidden-backface flip">
+    <div class='absolute hidden-backface flip'>
       <Image
         src={Sing}
         width={200}
-        alt="Portrait of Host S1ngS1ng"
-        class="aspect-square rounded-2xl shadow-2xl"
+        alt='Portrait of Host S1ngS1ng'
+        class='aspect-square rounded-2xl shadow-2xl'
       />
     </div>
   </div>
 </div>
 
-<div class="perspective w-[200px] h-[200px]">
-  <div class="relative preserve-3d transition duration-300 hover:flip">
-    <div class="absolute hidden-backface">
+<div class='perspective w-[200px] h-[200px]'>
+  <div class='relative preserve-3d transition duration-300 hover:flip'>
+    <div class='absolute hidden-backface'>
       <Image
         src={Saysay}
         width={200}
         alt="Portrait of Host Papaya's Cat"
-        class="aspect-square rounded-2xl shadow-2xl"
+        class='aspect-square rounded-2xl shadow-2xl'
       />
     </div>
-    <div class="absolute hidden-backface flip">
+    <div class='absolute hidden-backface flip'>
       <Image
         src={Papaya}
         width={200}
-        alt="Portrait of Host Papaya"
-        class="aspect-square rounded-2xl shadow-2xl"
+        alt='Portrait of Host Papaya'
+        class='aspect-square rounded-2xl shadow-2xl'
       />
     </div>
   </div>

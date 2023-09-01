@@ -1,45 +1,45 @@
-import { CollectionEntry } from 'astro:content';
+import { CollectionEntry } from 'astro:content'
 
 type restFormatPostsProps = {
-  filterOutDrafts?: boolean;
-  sortByDate?: boolean;
-  limit?: number | undefined;
-};
+  filterOutDrafts?: boolean
+  sortByDate?: boolean
+  limit?: number | undefined
+}
 
-type podcastEntry = CollectionEntry<'podcast'>[];
+type podcastEntry = CollectionEntry<'podcast'>[]
 
 export function formatPosts(
   posts: podcastEntry,
   {
     filterOutDrafts = true,
     sortByDate = true,
-    limit = undefined,
+    limit = undefined
   }: restFormatPostsProps
 ): podcastEntry {
   let filteredPosts = posts.reduce((acc: podcastEntry, post) => {
-    const { draft } = post.data;
+    const { draft } = post.data
 
-    if (filterOutDrafts && draft) return acc;
-    acc.push(post);
+    if (filterOutDrafts && draft) return acc
+    acc.push(post)
 
-    return acc;
-  }, []);
+    return acc
+  }, [])
 
   sortByDate &&
     filteredPosts.sort((a, b) => {
-      const dateA = new Date(a.data.date) as unknown as number;
-      const dateB = new Date(b.data.date) as unknown as number;
+      const dateA = new Date(a.data.date) as unknown as number
+      const dateB = new Date(b.data.date) as unknown as number
 
-      return dateB - dateA;
-    });
+      return dateB - dateA
+    })
 
   if (limit) {
-    filteredPosts = filteredPosts.slice(0, limit);
+    filteredPosts = filteredPosts.slice(0, limit)
   }
 
-  return filteredPosts;
+  return filteredPosts
 }
 
 export function formatDate(date: Date): string {
-  return new Date(date).toLocaleDateString();
+  return new Date(date).toLocaleDateString()
 }

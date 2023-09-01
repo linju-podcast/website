@@ -1,50 +1,50 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content'
 
 export async function getStaticPaths({ paginate }) {
-  const allTags = ['devTips', 'lifeHacks', 'englishLearnings'];
+  const allTags = ['devTips', 'lifeHacks', 'englishLearnings']
   const allPodcasts = await getCollection('podcast', ({ id }) => {
-    return id.startsWith('cn/');
-  });
+    return id.startsWith('cn/')
+  })
 
   return allTags.map((tag) => {
     const filteredPodcasts = allPodcasts.filter((podcast) =>
       podcast.data.tags.includes(tag)
-    );
+    )
     return paginate(filteredPodcasts, {
       params: { tag },
-      pageSize: 5,
-    });
-  });
+      pageSize: 5
+    })
+  })
 }
 
-import MainLayout from '../../../layouts/MainLayout.astro';
-import PodcastCard from '../../../components/PodcastCard.astro';
-import Pagination from '../../../components/Pagination.astro';
+import MainLayout from '../../../layouts/MainLayout.astro'
+import PodcastCard from '../../../components/PodcastCard.astro'
+import Pagination from '../../../components/Pagination.astro'
 
-const { page } = Astro.props;
-const pathname = new URL(Astro.request.url).pathname.split('/');
-const firstPath = pathname[1];
+const { page } = Astro.props
+const pathname = new URL(Astro.request.url).pathname.split('/')
+const firstPath = pathname[1]
 
-const { currentPage, lastPage } = page;
-const { current, prev, next } = page.url;
-const params = Astro.params;
+const { currentPage, lastPage } = page
+const { current, prev, next } = page.url
+const params = Astro.params
 
-import { getLangFromUrl, useTranslations } from '../../../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../../../i18n/utils'
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <MainLayout title={params.tag}>
-  <div class="text-center">
+  <div class='text-center'>
     <h1
-      class="text-4xl lg:text-5xl font-bold lg:tracking-tight dark:text-slate-200"
+      class='text-4xl lg:text-5xl font-bold lg:tracking-tight dark:text-slate-200'
     >
       {params.tag}
     </h1>
-    <main class="mt-16 flex flex-col">
-      <ol class="flex flex-col space-y-8">
+    <main class='mt-16 flex flex-col'>
+      <ol class='flex flex-col space-y-8'>
         {
           page.data.map((post) => (
             <li>
@@ -60,7 +60,7 @@ const t = useTranslations(lang);
         }
       </ol>
     </main>
-    <div class="mt-16">
+    <div class='mt-16'>
       {
         page.data.length > 5 && (
           <div>

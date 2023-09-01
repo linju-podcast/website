@@ -1,14 +1,11 @@
-import { getCollection, CollectionEntry } from 'astro:content';
+import { getCollection, CollectionEntry } from 'astro:content'
 
-import rss from '@astrojs/rss';
+import rss from '@astrojs/rss'
 
-import { formatPosts } from '../utils';
+import { formatPosts } from '../utils'
 
-const importedPodcasts = await getCollection('podcast');
-const podcasts: CollectionEntry<'podcast'>[] = formatPosts(
-  importedPodcasts,
-  {}
-);
+const importedPodcasts = await getCollection('podcast')
+const podcasts: CollectionEntry<'podcast'>[] = formatPosts(importedPodcasts, {})
 
 export const get = () =>
   rss({
@@ -19,6 +16,6 @@ export const get = () =>
       link: `/blog/${podcast.slug}`,
       title: podcast.data.title,
       pubDate: podcast.data.date,
-      description: podcast.data.description,
-    })),
-  });
+      description: podcast.data.description
+    }))
+  })

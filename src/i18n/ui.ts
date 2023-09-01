@@ -1,9 +1,9 @@
 export const language = {
   en: 'A',
-  cn: '中',
-};
+  cn: '中'
+}
 
-export const defaultLang = 'cn';
+export const defaultLang = 'cn'
 
 export const ui = {
   cn: {
@@ -20,7 +20,7 @@ export const ui = {
     'podcast.readMore': '了解更多',
     'about.title': '关于播客和主播',
     'about.description': '由两位“网上邻居”创办的《网上邻居》。',
-    'podcast.title': '播客单集',
+    'podcast.title': '播客单集'
   },
   en: {
     'nav.home': 'Home',
@@ -38,12 +38,12 @@ export const ui = {
     'about.title': 'About Podcast and Hosts',
     'about.description':
       'A Podcast named Network Neighborhood created by two cyber neighbors. ',
-    'podcast.title': 'Episodes',
-  },
-} as const;
+    'podcast.title': 'Episodes'
+  }
+} as const
 
 export const routes = {
-  cn: {},
-};
+  cn: {}
+}
 
-export const showDefaultLang = false;
+export const showDefaultLang = false

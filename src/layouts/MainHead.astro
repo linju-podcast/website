@@ -1,34 +1,34 @@
 ---
-import SEO from '../components/SEO.astro';
+import SEO from '../components/SEO.astro'
 
-const { title, description, image, data, robots } = Astro.props;
+const { title, description, image, data, robots } = Astro.props
 ---
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
+  <meta charset='utf-8' />
+  <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+  <meta name='viewport' content='width=device-width' />
+  <meta name='generator' content={Astro.generator} />
   <title>{title}</title>
-  <meta name="description" content={description} />
+  <meta name='description' content={description} />
   <script is:inline>
     const theme = (() => {
       if (
         typeof localStorage !== 'undefined' &&
         localStorage.getItem('theme')
       ) {
-        return localStorage.getItem('theme');
+        return localStorage.getItem('theme')
       }
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
+        return 'dark'
       }
-      return 'light';
-    })();
+      return 'light'
+    })()
 
     if (theme === 'light') {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove('dark')
     } else {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add('dark')
     }
   </script>
   <SEO {title} {description} url={Astro.url} {image} {data} {robots} />

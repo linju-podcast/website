@@ -1,43 +1,43 @@
 ---
-const { title, tags, description, url, date, t, lang } = Astro.props;
+const { title, tags, description, url, date, t, lang } = Astro.props
 
-import { formatDate } from '../utils';
+import { formatDate } from '../utils'
 
-import Tag from './style/Tag.astro';
+import Tag from './style/Tag.astro'
 
-import IconCalendar from '~icons/tabler/calendar-plus';
-import IconTag from '~icons/tabler/tag';
-import IconPodcast from '~icons/tabler/brand-apple-podcast';
+import IconCalendar from '~icons/tabler/calendar-plus'
+import IconTag from '~icons/tabler/tag'
+import IconPodcast from '~icons/tabler/brand-apple-podcast'
 
-import Button from './style/Button.astro';
-import { useTranslatedPath } from '../i18n/utils';
+import Button from './style/Button.astro'
+import { useTranslatedPath } from '../i18n/utils'
 
-const translatePath = useTranslatedPath(lang);
+const translatePath = useTranslatedPath(lang)
 ---
 
 <div
-  class="flex rounded-lg flex-col items-start shadow-lg border-line mx-5 p-5 my-6 gap-4 border-s-8 border-s-slate-100 group hover:border-s-cyan-200 relative dark:bg-neutral-700 dark:border-s-neutral-800 dark:hover:border-s-purple-400"
+  class='flex rounded-lg flex-col items-start shadow-lg border-line mx-5 p-5 my-6 gap-4 border-s-8 border-s-slate-100 group hover:border-s-cyan-200 relative dark:bg-neutral-700 dark:border-s-neutral-800 dark:hover:border-s-purple-400'
 >
   <div
-    class="absolute text-slate-100 text-9xl -z-10 bottom-5 right-5 group-hover:text-cyan-100 dark:text-neutral-800 dark:z-10 dark:group-hover:text-purple-400"
+    class='absolute text-slate-100 text-9xl -z-10 bottom-5 right-5 group-hover:text-cyan-100 dark:text-neutral-800 dark:z-10 dark:group-hover:text-purple-400'
   >
     <IconPodcast />
   </div>
-  <h2 class="text-xl font-semibold my-3 dark:text-slate-100">{title}</h2>
+  <h2 class='text-xl font-semibold my-3 dark:text-slate-100'>{title}</h2>
   <div
-    class="text-sm text-secondary flex gap-3 dark:text-slate-100 text-slate-700"
+    class='text-sm text-secondary flex gap-3 dark:text-slate-100 text-slate-700'
   >
     <IconCalendar />
     <time date-time={date}> {formatDate(date)}</time>
   </div>
   <div
-    class="flex gap-3 w-full text-sm text-secondary flex-wrap dark:text-slate-100"
+    class='flex gap-3 w-full text-sm text-secondary flex-wrap dark:text-slate-100'
   >
     <IconTag />
     {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
   </div>
 
-  <p class="my-3 dark:text-slate-200 dark:z-20 text-slate-700">
+  <p class='my-3 dark:text-slate-200 dark:z-20 text-slate-700'>
     {description}
   </p>
   <Button url={translatePath(url, lang)}>

@@ -1,49 +1,49 @@
-import { FunctionComponent } from 'preact';
-import { useState, useEffect } from 'preact/hooks';
+import { FunctionComponent } from 'preact'
+import { useState, useEffect } from 'preact/hooks'
 
-import IconMenu from '~icons/tabler/menu-2';
-import IconClose from '~icons/tabler/x';
+import IconMenu from '~icons/tabler/menu-2'
+import IconClose from '~icons/tabler/x'
 
-import ThemeToggle from './ThemeToggle';
-import LanguagePicker from './LanguagePicker';
+import ThemeToggle from './ThemeToggle'
+import LanguagePicker from './LanguagePicker'
 
-import { useTranslatedPath, useTranslations } from '../i18n/utils';
+import { useTranslatedPath, useTranslations } from '../i18n/utils'
 
 type menuToggleProps = {
-  lang: 'cn' | 'en';
-  currentPath: string;
-};
+  lang: 'cn' | 'en'
+  currentPath: string
+}
 
 const MenuToggle: FunctionComponent<menuToggleProps> = ({
   lang,
-  currentPath,
+  currentPath
 }) => {
-  const t = useTranslations(lang);
-  const translatePath = useTranslatedPath(lang);
+  const t = useTranslations(lang)
+  const translatePath = useTranslatedPath(lang)
 
   const [menuType, setMenuType] = useState(
     localStorage.getItem('menu') ?? 'toOpen'
-  );
+  )
 
   const handleClick = () => {
-    setMenuType(() => (menuType === 'toOpen' ? 'toClose' : 'toOpen'));
-  };
+    setMenuType(() => (menuType === 'toOpen' ? 'toClose' : 'toOpen'))
+  }
 
   useEffect(() => {
     if (menuType === 'toClose') {
-      document.body.style.overflowY = 'hidden';
+      document.body.style.overflowY = 'hidden'
     } else {
-      document.body.style.overflowY = 'visible';
+      document.body.style.overflowY = 'visible'
     }
-    localStorage.setItem('menu', menuType);
-  }, [menuType]);
+    localStorage.setItem('menu', menuType)
+  }, [menuType])
 
   return (
     <div>
-      <button onClick={handleClick} className="md:hidden">
+      <button onClick={handleClick} className='md:hidden'>
         <IconMenu
           style={{ fontSize: '2rem' }}
-          className="dark:text-purple-400"
+          className='dark:text-purple-400'
         />
       </button>
 
@@ -52,16 +52,16 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
           menuType === 'toClose' ? `translate-x-0` : `translate-x-[100%]`
         } fixed w-72 duration-300 h-full bg-white right-0 top-0 z-50 dark:bg-neutral-600`}
       >
-        <div className="w-full flex justify-end my-5 ">
+        <div className='w-full flex justify-end my-5 '>
           <IconClose
             style={{ fontSize: '2rem' }}
-            className="mr-2 mt-2 dark:text-purple-400"
+            className='mr-2 mt-2 dark:text-purple-400'
             onClick={handleClick}
           />
         </div>
 
         <nav>
-          <ul className="flex flex-col flex-wrap content-center gap-8">
+          <ul className='flex flex-col flex-wrap content-center gap-8'>
             <li>
               <a
                 href={translatePath('/')}
@@ -70,7 +70,7 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
                   currentPath === '/' ? `before:scale-x-100` : ``
                 }`}
               >
-                <span className="relative dark:text-slate-200">
+                <span className='relative dark:text-slate-200'>
                   {t('nav.home')}
                 </span>
               </a>
@@ -83,7 +83,7 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
                   currentPath === '/about' ? `before:scale-x-100` : ``
                 }`}
               >
-                <span className="relative dark:text-slate-200">
+                <span className='relative dark:text-slate-200'>
                   {t('nav.about')}
                 </span>
               </a>
@@ -96,20 +96,20 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
                   currentPath === '/podcast' ? `before:scale-x-100` : ``
                 }`}
               >
-                <span className="relative dark:text-slate-200">
+                <span className='relative dark:text-slate-200'>
                   {t('nav.podcast')}
                 </span>
               </a>
             </li>
           </ul>
         </nav>
-        <div className="w-full flex flex-col items-center mt-10 gap-6">
+        <div className='w-full flex flex-col items-center mt-10 gap-6'>
           <LanguagePicker lang={lang} onClick={handleClick} />
           <ThemeToggle />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MenuToggle;
+export default MenuToggle
