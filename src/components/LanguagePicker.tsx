@@ -51,7 +51,7 @@ const LanguagePicker: FunctionComponent<languagePickerProps> = ({
           className={`inline-block z-10 rounded ${
             currentLang === `cn`
               ? `bg-emerald-500 text-slate-100 text-xl font-extrabold`
-              : `bg-slate-50`
+              : `bg-slate-50 text-cyan-900`
           }`}
         >
           中
@@ -60,7 +60,7 @@ const LanguagePicker: FunctionComponent<languagePickerProps> = ({
           className={`inline-block  z-10 rounded row-start-2 col-start-2 ${
             currentLang === `en`
               ? `bg-emerald-500 text-slate-100 text-xl font-extrabold`
-              : `bg-slate-50`
+              : `bg-slate-50 text-cyan-900`
           }`}
         >
           A

@@ -23,21 +23,23 @@ const translatePath = useTranslatedPath(lang)
   >
     <IconPodcast />
   </div>
-  <h2 class='text-xl font-semibold my-3 dark:text-slate-100'>{title}</h2>
+  <h2 class='text-xl font-semibold my-3 dark:text-slate-100 text-slate-600'>
+    {title}
+  </h2>
   <div
-    class='text-sm text-secondary flex gap-3 dark:text-slate-100 text-slate-700'
+    class='text-sm text-secondary flex gap-3 dark:text-slate-100 text-slate-500'
   >
     <IconCalendar />
     <time date-time={date}> {formatDate(date)}</time>
   </div>
   <div
-    class='flex gap-3 w-full text-sm text-secondary flex-wrap dark:text-slate-100'
+    class='flex gap-3 w-full text-sm text-secondary flex-wrap dark:text-slate-100 text-slate-500'
   >
     <IconTag />
     {tags.map((tag) => <Tag name={tag}>{tag}</Tag>)}
   </div>
 
-  <p class='my-3 dark:text-slate-200 dark:z-20 text-slate-700'>
+  <p class='my-3 dark:text-slate-200 dark:z-20 text-slate-500'>
     {description}
   </p>
   <Button url={translatePath(url, lang)}>

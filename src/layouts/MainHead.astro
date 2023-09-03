@@ -13,7 +13,7 @@ import { ViewTransitions } from 'astro:transitions'
   <title>{title}</title>
   <meta name='description' content={description} />
   <script is:inline>
-    const theme = (() => {
+    const theme = () => {
       if (
         typeof localStorage !== 'undefined' &&
         localStorage.getItem('theme')
@@ -24,12 +24,16 @@ import { ViewTransitions } from 'astro:transitions'
         return 'dark'
       }
       return 'light'
-    })()
+    }
+    window.addEventListener('DOMContentLoaded', () => theme(getTheme()))
+    document.addEventListener('astro:after-swap', () => theme(getTheme()))
 
-    if (theme === 'light') {
-      document.documentElement.classList.remove('dark')
-    } else {
-      document.documentElement.classList.add('dark')
+    const getTheme = () => {
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark')
+      } else {
+        document.documentElement.classList.add('dark')
+      }
     }
   </script>
   <SEO {title} {description} url={Astro.url} {image} {data} {robots} />

@@ -28,38 +28,40 @@ const translatePath = useTranslatedPath(lang)
 
   <div class='lg:order-first lg:row-span-2'>
     <h1
-      class='text-4xl lg:text-5xl font-bold lg:tracking-tight xl:text-center dark:text-slate-200'
+      class='text-4xl lg:text-5xl font-bold lg:tracking-tight xl:text-center dark:text-slate-200 text-slate-600'
     >
       {t('about.title')}
     </h1>
-    <p class='text-lg mt-4 text-slate-600 xl:text-center dark:text-slate-400'>
+    <p
+      class='text-lg mt-4 text-slate-600 xl:text-center text-slate-600 dark:text-slate-500'
+    >
       {t('about.description')}<br />
     </p>
     <Contact {...{ translatePath }} />
     <div class='flex flex-col gap-3 mx-auto max-w-4xl mt-16'>
       <h2
-        class='font-bold text-3xl text-gray-800 dark:text-slate-400 text-left'
+        class='font-bold text-3xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
         {podcast.data.title}
       </h2>
-      <div class='prose dark:prose-invert'>
+      <div class='prose dark:prose-invert text-slate-500'>
         <PodcastContent />
       </div>
 
       <h2
-        class='font-bold text-2xl text-gray-800 dark:text-slate-400 text-left'
+        class='font-bold text-2xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
         {sing.data.title}
       </h2>
-      <div class='prose dark:prose-invert'>
+      <div class='prose dark:prose-invert text-slate-500'>
         <SingContent />
       </div>
       <h2
-        class='font-bold text-2xl text-gray-800 dark:text-slate-400 text-left'
+        class='font-bold text-2xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
         {papaya.data.title}
       </h2>
-      <div class='prose dark:prose-invert'>
+      <div class='prose dark:prose-invert text-slate-500'>
         <PapayaContent />
       </div>
     </div>
