@@ -4,6 +4,8 @@ import IconGithub from '~icons/tabler/brand-github'
 
 import IconWechat from '~icons/tabler/brand-wechat'
 import IconRSS from '~icons/tabler/rss'
+
+const { translatePath } = Astro.props
 ---
 
 <div class='flex justify-center gap-6 pt-6'>
@@ -41,7 +43,7 @@ import IconRSS from '~icons/tabler/rss'
       class='absolute -top-1 -left-1 bg-cyan-200 dark:bg-purple-400 w-6 h-6 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
     >
     </div>
-    <a href='/rss.xml'>
+    <a href={translatePath('/rss.xml')}>
       <IconRSS style={{ fontSize: '1.5em' }} class='dark:text-slate-100' />
     </a>
   </div>
