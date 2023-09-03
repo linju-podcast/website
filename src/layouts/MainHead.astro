@@ -2,6 +2,7 @@
 import SEO from '../components/SEO.astro'
 
 const { title, description, image, data, robots } = Astro.props
+import { ViewTransitions } from 'astro:transitions'
 ---
 
 <head>
@@ -32,4 +33,5 @@ const { title, description, image, data, robots } = Astro.props
     }
   </script>
   <SEO {title} {description} url={Astro.url} {image} {data} {robots} />
+  <ViewTransitions />
 </head>

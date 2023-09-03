@@ -33,7 +33,7 @@ export const ui = {
     'main.tech': 'Techs',
     'main.release': 'Release',
     'main.subscribe': ', subscribe to listen:',
-    'main.biWeek': 'once every two weeks',
+    'main.biWeek': ' every two weeks',
     'podcast.readMore': 'Read More',
     'about.title': 'About Podcast and Hosts',
     'about.description':

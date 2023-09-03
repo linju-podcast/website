@@ -4,7 +4,7 @@ import { getLangFromUrl } from '../i18n/utils'
 import Footer from '../components/Footer.astro'
 import NavBar from '../components/NavBar.astro'
 import MainHead from './MainHead.astro'
-
+import { slide } from 'astro:transitions'
 import '../style/global.css'
 import Wave from '~icons/my-icons/wave'
 
@@ -19,9 +19,13 @@ const lang = getLangFromUrl(Astro.url)
 
     <Wave class='text-[#f3f4f5] dark:text-neutral-700' />
 
-    <div class='max-w-screen-xl mx-auto px-6'>
+    <div
+      class='max-w-screen-xl mx-auto px-6'
+      transition:animate={slide({ duration: '0.5s' })}
+    >
       <slot />
-      <Footer />
     </div>
+
+    <Footer />
   </body>
 </html>
