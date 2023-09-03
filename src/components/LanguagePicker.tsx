@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'preact'
+import { type FunctionComponent } from 'preact'
 import { useEffect, useState } from 'preact/hooks'
 
 import { useTranslatedPath } from '../i18n/utils'

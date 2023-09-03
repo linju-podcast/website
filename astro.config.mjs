@@ -8,9 +8,7 @@ import { FileSystemIconLoader } from 'unplugin-icons/loaders';
 export default defineConfig({
   site: 'https://linju.io',
   integrations: [tailwind(), preact()],
-  experimental: {
-    assets: true,
-  },
+
 
   vite: {
     plugins: [

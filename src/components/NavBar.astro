@@ -42,11 +42,11 @@ const currentPath = new URL(Astro.request.url).pathname
       </ul>
     </nav>
     <div class='md:flex hidden mr-4 items-center gap-3 w-36'>
-      <LanguagePicker client:load lang={lang} />
-      <ThemeToggle client:load />
+      <LanguagePicker client:only='preact' lang={lang} />
+      <ThemeToggle client:only='preact' />
     </div>
     <div class='md:hidden mr-4 items-center gap-3'>
-      <MenuToggle client:load {...{ lang, currentPath }} />
+      <MenuToggle client:only='preact' {...{ lang, currentPath }} />
     </div>
   </container>
 </header>

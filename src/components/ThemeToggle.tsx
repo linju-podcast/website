@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'preact'
+import { type FunctionComponent } from 'preact'
 import { useState, useEffect } from 'preact/hooks'
 
 import IconMoon from '~icons/tabler/moon-filled'

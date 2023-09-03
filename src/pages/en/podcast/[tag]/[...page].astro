@@ -7,7 +7,7 @@ export async function getStaticPaths({ paginate }) {
     return id.startsWith('en/')
   })
 
-  return allTags.map((tag) => {
+  return allTags.flatMap((tag) => {
     const filteredPodcasts = allPodcasts.filter((podcast) =>
       podcast.data.tags.includes(tag)
     )
