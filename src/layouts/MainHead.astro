@@ -25,16 +25,18 @@ import { ViewTransitions } from 'astro:transitions'
       }
       return 'light'
     }
-    window.addEventListener('DOMContentLoaded', () => theme(getTheme()))
-    document.addEventListener('astro:after-swap', () => theme(getTheme()))
 
     const getTheme = () => {
-      if (theme === 'light') {
+      const currentTheme = theme()
+      if (currentTheme === 'light') {
         document.documentElement.classList.remove('dark')
       } else {
         document.documentElement.classList.add('dark')
       }
     }
+
+    window.addEventListener('DOMContentLoaded', () => getTheme())
+    document.addEventListener('astro:after-swap', () => getTheme())
   </script>
   <SEO {title} {description} url={Astro.url} {image} {data} {robots} />
   <ViewTransitions />
