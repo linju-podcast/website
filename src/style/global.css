@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
   .preserve-3d {
     transform-style: preserve-3d;
@@ -18,5 +19,33 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+  }
+  .marker {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(165, 243, 252, 0.1),
+      rgba(165, 243, 252, 0.7) 4%,
+      rgba(165, 243, 252, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  .marker-dark {
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(192, 132, 252, 0.1),
+      rgba(192, 132, 252, 0.7) 4%,
+      rgba(192, 132, 252, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 }

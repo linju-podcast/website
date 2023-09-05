@@ -23,7 +23,7 @@ const translatePath = useTranslatedPath(lang)
   <div
     class='flex flex-col md:flex-row justify-center items-center lg:pl-20 lg:flex-col gap-10 xl:absolute xl:flex-row top-[120px] right-[20%]'
   >
-    <Potraits />
+    <Potraits transition:animate='none' />
   </div>
 
   <div class='lg:order-first lg:row-span-2'>
@@ -42,7 +42,9 @@ const translatePath = useTranslatedPath(lang)
       <h2
         class='font-bold text-3xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
-        {podcast.data.title}
+        <span class='marker dark:marker-dark'>
+          {podcast.data.title}
+        </span>
       </h2>
       <div class='prose dark:prose-invert text-slate-500'>
         <PodcastContent />
@@ -51,7 +53,9 @@ const translatePath = useTranslatedPath(lang)
       <h2
         class='font-bold text-2xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
-        {sing.data.title}
+        <span class='marker dark:marker-dark'>
+          {sing.data.title}
+        </span>
       </h2>
       <div class='prose dark:prose-invert text-slate-500'>
         <SingContent />
@@ -59,7 +63,9 @@ const translatePath = useTranslatedPath(lang)
       <h2
         class='font-bold text-2xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
-        {papaya.data.title}
+        <span class='marker dark:marker-dark'>
+          {papaya.data.title}
+        </span>
       </h2>
       <div class='prose dark:prose-invert text-slate-500'>
         <PapayaContent />
