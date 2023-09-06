@@ -2,11 +2,6 @@
   "name": "linju-website",
   "type": "module",
   "version": "0.0.1",
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "arrowParens": "avoid"
-  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,mdx,astro}": "prettier --write",
     "*.{js,ts,jsx,tsx,astro}": "eslint --fix"
