@@ -42,11 +42,36 @@ module.exports = {
           '100%': {
             transform: 'translateY(-200%)'
           }
+        },
+        swing: {
+          '0%': {
+            transform: 'rotate(-25deg)'
+          },
+          '10%': {
+            transform: 'rotate(25deg)',
+            transform: 'scale(1)'
+          },
+          '15%': {
+            transform: 'rotate(-25deg)'
+          },
+          '20%': {
+            transform: 'rotate(25deg)',
+            transform: 'rotate(1.25)'
+          },
+          '25%': {
+            transform: 'rotate(-25deg)',
+            transform: 'scale(1.25)'
+          },
+          '100%': {
+            transform: 'rotate(-25deg)',
+            transform: 'scale(1.25)'
+          }
         }
       },
       animation: {
         first: 'first 5s linear infinite',
-        second: 'second 5s linear infinite'
+        second: 'second 5s linear infinite',
+        swing: 'swing 2s linear 1'
       }
     }
   },
