@@ -7,8 +7,13 @@ module.exports = {
     {
       files: '*.astro',
       options: {
-        parser: 'astro'
-      }
-    }
-  ]
-}
+        parser: 'astro',
+      },
+    },
+  ],
+  config: {
+    singleQuote: true,
+    trailingComma: 'all',
+    arrowParens: 'avoid',
+  },
+};

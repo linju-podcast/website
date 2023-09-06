@@ -2,13 +2,24 @@
   "name": "linju-website",
   "type": "module",
   "version": "0.0.1",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "avoid"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx,astro}": "prettier --write",
+    "*.{js,ts,jsx,tsx,astro}": "eslint --fix"
+  },
   "scripts": {
+    "prepare": "husky install",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
+    "lint": "astro",
+    "test": "lint-staged && npm run lint"
   },
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
@@ -29,6 +40,8 @@
     "eslint": "^8.48.0",
     "eslint-plugin-astro": "^0.29.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.12.0",
