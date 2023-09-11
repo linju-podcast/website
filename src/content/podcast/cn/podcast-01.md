@@ -1,24 +1,45 @@
 ---
-title: '你真的适合转行吗？'
+title: 'EP 1 不完备实测转码工具包 ｜ 最基础的检查点'
 tags: ['devTips']
-description: '两位主播从信任和老手两个视角分享转码经验'
-date: 2023-07-11
-image:
-  {
-    src: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80',
-    alt: 'dev pic'
-  }
+description: '主播将从老手和新人不同视角，分享转码的实测经历。
+本系列将分为四期节目，在第一期节目我们将探讨工具包里最基础的两个检查点：逻辑以及长期学习的意愿。'
+date: 2023-09-10
 draft: false
 ---
 
-## Dictum integer fusce ac ridiculus
+## 节目介绍
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit euismod rutrum, consequat fringilla ultricies nullam curae mollis semper conubia viverra, orci aenean dapibus pharetra nec tortor tellus cubilia. Ullamcorper mi lectus eu malesuada tempor massa praesent magna mattis posuere, lobortis vulputate ut duis magnis parturient habitant nibh id tristique, quis suspendisse donec nisl penatibus sem non feugiat taciti. Mollis per ridiculus integer cursus semper vestibulum fermentum penatibus cubilia blandit scelerisque, tempus platea leo posuere ac pharetra volutpat aliquet euismod id ullamcorper lobortis, urna est magna mus rhoncus massa curae libero praesent eget. Mattis malesuada vestibulum quis ac nam phasellus suscipit facilisis libero diam posuere, cursus massa vehicula neque imperdiet tincidunt dui egestas lacinia mollis aliquet orci, nisl curabitur dapibus litora dis cum nostra montes ligula praesent. Facilisi aliquam convallis molestie tempor blandit ultricies bibendum parturient cubilia quam, porttitor morbi torquent tempus taciti nec faucibus elementum phasellus, quis inceptos vestibulum gravida augue potenti eget nunc maecenas. Tempor facilisis ligula volutpat habitant consequat inceptos orci per potenti blandit platea, mus sapien eget vel libero vestibulum augue cubilia ut ultrices fringilla lectus, imperdiet pellentesque cum ridiculus convallis sollicitudin nisl interdum semper felis.
+S1ngS1ng 其实是非典型湾区程序员，虽然也是赴美攻读硕士并且留美，但其实他研究生读的是材料工程，不过这并不影响他正过着早晚高峰堵在 I-880 高速的生活。
 
-Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti augue nulla vivamus senectus odio, quisque curabitur enim consequat class sociis feugiat ullamcorper, felis dis imperdiet cubilia commodo sed massa phasellus. Viverra purus mus nisi condimentum dui vehicula facilisis turpis, habitant nascetur lectus tempor quisque habitasse urna scelerisque, nibh nullam vestibulum luctus aenean mollis metus. Suscipit gravida duis nec aliquet natoque molestie a ridiculus scelerisque cum, justo cursus sapien sodales purus dignissim vel facilisi magnis, inceptos rutrum ut integer auctor commodo sollicitudin fames et. Faucibus ligula nibh sagittis mauris auctor posuere habitant, scelerisque phasellus accumsan egestas gravida viverra nam, sed etiam eleifend proin massa dictumst. Porttitor risus luctus per aenean tellus primis fringilla vitae fames lacinia mauris metus, nec pulvinar quisque commodo sodales ac nibh natoque phasellus semper placerat. Lectus aenean potenti leo sollicitudin tristique eros quam ligula, vestibulum diam consequat enim torquent nec tempus, blandit viverra dapibus eleifend dis nunc nascetur.
+Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语好，正在勇闯代码世界。虽然是大龄零基础文科女，但是现在在前端新手村也扑腾得很开心。
 
-## Sodales hendrerit malesuada et vestibulum
+主播将从老手和新人不同视角，分享转码的实测经历。
 
-- Luctus euismod pretium nisi et, est dui enim.
+本系列将分为**四期**节目，在第一期节目我们将探讨工具包里最基础的两个检查点：_逻辑_ 以及 _长期学习_ 的意愿。
 
-- Curae eget inceptos malesuada, fermentum class.
+## 时间线
+
+- 01:20:62 该不该开始学习前端开发
+- 01:46:60 逻辑思维的重要性
+- 03:04:55 逻辑思维的的定义
+- 07:30:19 长期学习的决心
+- 13:32:60 如何确定自己想要长期学习？
+- 19:51:19 正向反馈
+- 22:02:06 S1ngS1ng 转码经历分享
+- 26:11:33 有限游戏 vs 无限游戏 1.0
+- 33:37:64 TWO MORE THINGS
+- 34:11:47 ARC 浏览器
+- 37:52:52 歌曲推荐：Until I Found You
+
+## 拓展阅读
+
+- [双向绑定](https://angular.io/guide/two-way-binding)
+- [数据驱动](https://en.wikipedia.org/wiki/Data-driven_programming)
+- 魂系游戏：魂系游戏的起源是2009年宫崎英高设计的《恶魔之魂》，魂系游戏以高操作难度和强调环境背景与叙事结合而著称。
+- [Authentic Happiness](https://www.authentichappiness.sas.upenn.edu/)
+- [Arc 浏览器](https://arc.net/)
+
+想要获取更多节目咨询，欢迎在以下平台关注我们：
+
+- 即刻：
+- 小红书：

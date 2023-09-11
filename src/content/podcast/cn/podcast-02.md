@@ -1,22 +1,45 @@
 ---
-title: '你真的适合转行吗？2'
-tags: ['devTips', 'lifeHacks', 'englishLearnings']
-description: '两位主播从信任和老手两个视角分享转码经验'
-date: 2023-07-14
-image:
-  {
-    src: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80',
-    alt: 'dev pic'
-  }
+title: 'EP 2 不完备实测转码工具包 ｜坚持锦囊'
+tags: ['devTips']
+description: '主播将从老手和新人不同视角，分享转码的实测经历。
+本系列将分为四期节目，在第二期节目我们将探讨工具包里坚持相关的两个要素：学习资料和坚持必备的心态'
+date: 2023-09-17
 draft: false
 ---
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+## 节目介绍
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+S1ngS1ng 其实是非典型湾区程序员，虽然也是赴美攻读硕士并且留美，但其实他研究生读的是材料工程，不过这并不影响他正过着早晚高峰堵在 I-880 高速的生活。
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语好，正在勇闯代码世界。虽然是大龄零基础文科女，但是现在在前端新手村也扑腾得很开心。
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+主播将从老手和新人不同视角，分享转码的实测经历。
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+本系列将分为**四期**节目，在第二期节目我们将探讨工具包里坚持相关的两个要素：_学习资料_ 和 _坚持必备的心态_。
+
+## 时间线
+
+- 01:13:41 有限游戏 vs 无限游戏 2.0
+- 05:25:56 给新人学习和找工作的建议
+- 06:21:32 如何找到好学习资源
+- 10:25:09 学习中的 STAR 原则
+- 17:43:97 要坚持什么，如何坚持？
+- 23:05:95 如何处理刻板印象
+- 27:52:30 好奇心的重要性
+- 34:05:96 TWO MORE THINGS
+- 34:17:87 纪录片 Free Solo
+- 47:39:06 音乐：马戏团背景音乐
+
+## 拓展阅读
+
+- [freeCodeCamp 课程](https://www.freecodecamp.org/chinese/)
+- [稚晖君](https://space.bilibili.com/20259914/)
+- [Free Solo](https://movie.douban.com/subject/30167509/)
+- [MacOS 命名](https://en.wikipedia.org/wiki/MacOS)
+- [游戏音乐网站 —— Khinsider](https://downloads.khinsider.com/game-soundtracks)
+- [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
+
+想要获取更多节目咨询，欢迎在以下平台关注我们：
+
+- 即刻：
+- 小红书：
