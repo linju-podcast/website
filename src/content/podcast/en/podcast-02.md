@@ -36,7 +36,7 @@ This series will be divided into **four episodes**, and in the second episode, w
 - [freeCodeCamp Courses](https://www.freecodecamp.org/)
 - [Wild Iron Man(稚晖君)](https://space.bilibili.com/20259914/)
 - [Free Solo](https://movie.douban.com/subject/30167509/)
-- [MacOS Naming](https://en.wikipedia.org/wiki/MacOS)
+- [macOS Naming](https://en.wikipedia.org/wiki/MacOS)
 - [Game Music Website —— Khinsider](https://downloads.khinsider.com/game-soundtracks)
 - [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
 

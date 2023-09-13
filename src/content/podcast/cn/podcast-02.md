@@ -35,7 +35,7 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - [freeCodeCamp 课程](https://www.freecodecamp.org/chinese/)
 - [稚晖君](https://space.bilibili.com/20259914/)
 - [Free Solo](https://movie.douban.com/subject/30167509/)
-- [MacOS 命名](https://en.wikipedia.org/wiki/MacOS)
+- [macOS 命名](https://en.wikipedia.org/wiki/MacOS)
 - [游戏音乐网站 —— Khinsider](https://downloads.khinsider.com/game-soundtracks)
 - [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
 
