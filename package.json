@@ -18,7 +18,8 @@
     "@astrojs/rss": "^3.0.0",
     "astro": "^3.0.6",
     "lxgw-wenkai-webfont": "^1.7.0",
-    "preact": "^10.16.0"
+    "preact": "^10.16.0",
+    "shikwasa": "^2.2.1"
   },
   "devDependencies": {
     "@astrojs/preact": "^3.0.0",
