@@ -2,6 +2,8 @@
 
 ---
 
+<div id='shikwasa-player-container' class='m-12'></div>
+
 <footer
   class='my-6 flex place-content-between justify-center dark:text-slate-300 relative text-slate-600'
 >
@@ -14,4 +16,18 @@
   document.querySelector('#copyright')!.textContent = new Date()
     .getFullYear()
     .toString()
+
+  import { Player } from '../scripts/load-shikwasa'
+  import Logo from '../assets/logo.png'
+
+  globalThis.player = new Player({
+    container: () => document.querySelector('#shikwasa-player-container'),
+    themeColor: '#C084FC',
+    audio: {
+      title: 'EP1 不完备实测转码工具包 ｜ 最基础的检查点',
+      artist: 'Papaya & S1ngS1ng',
+      cover: Logo.src,
+      src: 'https://podcasts.captivate.fm/media/a7ab2c4e-531a-4bad-aa45-09a6c88d3160/Wangshanglinju-EP-1.mp3'
+    }
+  })
 </script>
