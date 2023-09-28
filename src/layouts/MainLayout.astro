@@ -26,8 +26,24 @@ const lang = getLangFromUrl(Astro.url)
       <slot />
     </div>
 
-    <div id='shikwasa-player-container'></div>
+    <div id='shikwasa-player-container' class='m-12'></div>
 
     <Footer />
+
+    <script>
+      import { Player } from '../scripts/load-shikwasa'
+      import Logo from '../assets/logo.png'
+
+      const player = new Player({
+        container: () => document.querySelector('#shikwasa-player-container'),
+        themeColor: '#C084FC',
+        audio: {
+          title: 'EP1 不完备实测转码工具包 ｜ 最基础的检查点',
+          artist: 'Papaya & S1ngS1ng',
+          cover: Logo.src,
+          src: 'https://podcasts.captivate.fm/media/a7ab2c4e-531a-4bad-aa45-09a6c88d3160/Wangshanglinju-EP-1.mp3'
+        }
+      })
+    </script>
   </body>
 </html>
