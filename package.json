@@ -12,9 +12,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "lint": "astro",
-    "test": "lint-staged && npm run lint"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
