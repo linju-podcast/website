@@ -10,60 +10,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     preact(),
-    {
-      name: 'load-shikwasa',
-      hooks: {
-        'astro:config:setup': ({ injectScript, updateConfig }) => {
-          updateConfig({
-            vite: {
-              plugins: [
-                (() => {
-                  const virtualModuleId = 'virtual:shikwasa';
-                  const resolvedVirtualModuleId = '\0' + virtualModuleId;
-
-                  return {
-                    name: 'vite-plugin-shikwasa-init',
-                    async resolveId(id) {
-                      if (id === virtualModuleId) {
-                        return resolvedVirtualModuleId;
-                      }
-                    },
-                    async load(id) {
-                      if (id === resolvedVirtualModuleId) {
-                        return `
-                        import { Player } from 'shikwasa'
-                        export default Player
-                      `;
-                      }
-                    },
-                  };
-                })()
-              ],
-            },
-          });
-          injectScript(
-            'page',
-            `
-            import Player from 'virtual:shikwasa';
-            globalThis.Player = Player;
-            
-            const player = new Player({
-              container: () => document.querySelector('#shikwasa-player-container'),
-              audio: {
-                title: 'Hello World!',
-                artist: 'Shikwasa FM',
-              },
-            })
-            `,
-          );
-          injectScript(
-            'page-ssr',
-            `import 'shikwasa/dist/style.css';`
-          );
-        },
-      }
-    }],
-
+  ],
   vite: {
     plugins: [
       Icons({
