@@ -3,12 +3,24 @@
 ---
 
 <footer
-  class='my-20 flex place-content-between justify-center dark:text-slate-300 relative text-slate-600'
+  class='my-20 flex flex-col gap-4 items-center justify-center dark:text-slate-300 text-slate-600'
 >
-  <small>
+  <p class='flex text-2xl items-baseline'>
+    Made by
+    <ruby>🧙<rp>(</rp><rt>Papaya</rt><rp>)</rp></ruby> &
+    <ruby>🦹<rp>(</rp><rt>S1ngS1ng</rt><rp>)</rp></ruby>
+     w/ 💜
+  </p>
+  <p class='text-sm'>
     Copyright &copy;<span id='copyright'></span> | All right reserved
-  </small>
+  </p>
 </footer>
+
+<style>
+  ruby {
+    ruby-position: under;
+  }
+</style>
 
 <script>
   document.querySelector('#copyright')!.textContent = new Date()
