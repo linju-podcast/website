@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets'
+import Sing from '../../assets/sing.png'
+import Papaya from '../../assets/papaya.png'
 import PodcastCard from './PodcastCard.astro'
 import Pagination from './Pagination.astro'
 
@@ -17,6 +20,22 @@ const {
 ---
 
 <div class='mt-3 text-center'>
+  <div class='flex justify-center xl:absolute top-[120px] right-[20%] pb-16'>
+    <Image
+      src={Sing}
+      alt='sing'
+      width={200}
+      transition:animate='none'
+      class='dark:block hidden'
+    />
+    <Image
+      src={Papaya}
+      alt='papaya'
+      width={200}
+      transition:animate='none'
+      class='dark:hidden'
+    />
+  </div>
   <h1
     class='text-4xl lg:text-5xl font-bold lg:tracking-tight dark:text-slate-200 text-slate-600'
   >
