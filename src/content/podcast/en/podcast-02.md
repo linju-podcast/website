@@ -30,6 +30,7 @@ This series will be divided into **four episodes**, and in the second episode, w
 - 34:05:96 TWO MORE THINGS
 - 34:17:87 Documentary: Free Solo
 - 47:39:06 Music: Soundtrack of Circus
+- 47:39:06 Song recommendation: American Patrol (OST from Circus Charlie, 1986)
 
 ## Reference
 
@@ -39,5 +40,6 @@ This series will be divided into **four episodes**, and in the second episode, w
 - [macOS Naming](https://en.wikipedia.org/wiki/MacOS)
 - [Game Music Website —— Khinsider](https://downloads.khinsider.com/game-soundtracks)
 - [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
+- [Song: American Patrol (OST from Circus Charlie, 1986)](https://downloads.khinsider.com/game-soundtracks/album/circus-charlie-family-computer)
 
 If you'd like to receive more updates, please feel free to follow us on the following platforms:

@@ -28,7 +28,7 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - 27:52:30 好奇心的重要性
 - 34:05:96 TWO MORE THINGS
 - 34:17:87 纪录片 Free Solo
-- 47:39:06 音乐：马戏团背景音乐
+- 47:39:06 歌曲推荐：1986 版《马戏团》游戏音乐
 
 ## 拓展阅读
 
@@ -38,6 +38,7 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - [macOS 命名](https://en.wikipedia.org/wiki/MacOS)
 - [游戏音乐网站 —— Khinsider](https://downloads.khinsider.com/game-soundtracks)
 - [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
+- [歌曲：1986 版《马戏团》游戏音乐](https://downloads.khinsider.com/game-soundtracks/album/circus-charlie-family-computer)
 
 想要获取更多节目咨询，欢迎在以下平台关注我们：
 

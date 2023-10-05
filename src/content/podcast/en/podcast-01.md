@@ -31,14 +31,16 @@ This series will be divided into four episodes, and in the first episode, we wil
 - 26:11:33 Finite games vs. Infinite games 1.0.
 - 33:37:64 TWO MORE THINGS.
 - 34:11:47 ARC Browser.
-- 37:52:52 Song recommendation: "Until I Found You."
+- 37:52:52 Song recommendation: "Until I Found You" (Stephen Sanchez
+  ) - Covered by ROSÉ
 
 ## Reference
 
 - [Two-Way Binding](https://angular.io/guide/two-way-binding)
 - [Data-Driven](https://en.wikipedia.org/wiki/Data-driven_programming)
-- Soulsborne Games: The Soulsborne games originated with "Demon's Souls," designed by Hidetaka Miyazaki in 2009. Soulsborne games are known for their high level of difficulty and emphasis on environmental storytelling.
+- Soulsborne Games: The Soulsborne games originated with _Demon's Souls_, designed by Hidetaka Miyazaki in 2009. Soulsborne games are known for their high level of difficulty and emphasis on environmental storytelling.
 - [Authentic Happiness](https://www.authentichappiness.sas.upenn.edu/)
 - [Arc Browser](https://arc.net/)
+- [Song: Until I Found You](https://www.youtube.com/watch?v=WfEiabOTH8Y)
 
 If you'd like to receive more updates, please feel free to follow us on the following platforms:

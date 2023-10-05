@@ -29,15 +29,17 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - 26:11:33 有限游戏 vs 无限游戏 1.0
 - 33:37:64 TWO MORE THINGS
 - 34:11:47 ARC 浏览器
-- 37:52:52 歌曲推荐：Until I Found You
+- 37:52:52 歌曲推荐："Until I Found You" (Stephen Sanchez
+  )，由 ROSÉ 翻唱
 
 ## 拓展阅读
 
 - [双向绑定](https://angular.io/guide/two-way-binding)
 - [数据驱动](https://en.wikipedia.org/wiki/Data-driven_programming)
-- 魂系游戏：魂系游戏的起源是2009年宫崎英高设计的《恶魔之魂》，魂系游戏以高操作难度和强调环境背景与叙事结合而著称。
+- 魂系游戏：魂系游戏的起源是 2009 年宫崎英高设计的《恶魔之魂》，魂系游戏以高操作难度和强调环境背景与叙事结合而著称。
 - [Authentic Happiness](https://www.authentichappiness.sas.upenn.edu/)
 - [Arc 浏览器](https://arc.net/)
+- [歌曲：Until I Found You](https://www.youtube.com/watch?v=WfEiabOTH8Y)
 
 想要获取更多节目咨询，欢迎在以下平台关注我们：
 
