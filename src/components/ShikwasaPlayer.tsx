@@ -1,5 +1,5 @@
 import { type FunctionComponent } from 'preact'
-import { useEffect } from 'preact/hooks'
+import { useEffect, useRef, useState } from 'preact/hooks'
 import { Player } from '../scripts/load-shikwasa'
 import Logo from '../assets/logo.png'
 
@@ -9,10 +9,12 @@ type ShikwasaPlayerProps = {
 }
 
 const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
+  const podcast = useRef(null)
+
   useEffect(() => {
     if (sessionStorage.getItem('playerId') === null) {
       globalThis.player = new Player({
-        container: () => document.querySelector('#shikwasa-player-container'),
+        container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
           title: 'EP1 不完备实测转码工具包 ｜ 最基础的检查点',
@@ -23,14 +25,11 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
     } else {
-      globalThis.player.ui.mount(
-        document.querySelector('#shikwasa-player-container'),
-        true
-      )
+      globalThis.player.ui.mount(podcast.current, true)
     }
   }, [])
 
-  return <div id='shikwasa-player-container' class='m-6'></div>
+  return <div ref={podcast} class='m-6'></div>
 }
 
 export default ShikwasaPlayer
