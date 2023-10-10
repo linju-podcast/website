@@ -1,12 +1,37 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro'
 const isDev = import.meta.env.DEV
+if (!isDev) {
+  return Astro.redirect('/404')
+}
 ---
 
-{
-  isDev && (
-    <MainLayout>
-      <p>Hello Color Palette!</p>
-    </MainLayout>
-  )
-}
+<MainLayout>
+  <div class='flex gap-5'>
+    <p>TEXT</p>
+    <div class='bg-slate-600 text-white p-2 rounded shadow-xl'>
+      <p>Main Text</p>
+      <p>slate 600</p>
+      <p>Light Mode</p>
+      <p>lightMainText</p>
+    </div>
+    <div class='bg-slate-200 text-white p-2 rounded shadow-xl'>
+      <p>Main Text</p>
+      <p>slate 200</p>
+      <p>Dark Mode</p>
+      <p>darkMainText</p>
+    </div>
+    <div class='bg-slate-500 text-white p-2 rounded shadow-xl'>
+      <p>Sub Text</p>
+      <p>slate 500</p>
+      <p>Dark Mode</p>
+      <p>lightSubText</p>
+    </div>
+    <div class='bg-slate-400 text-white p-2 rounded shadow-xl'>
+      <p>Sub Text</p>
+      <p>slate 400</p>
+      <p>Dark Mode</p>
+      <p>lightSubText</p>
+    </div>
+  </div>
+</MainLayout>
