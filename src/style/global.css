@@ -1,4 +1,5 @@
 @import 'lxgw-wenkai-webfont/style.css';
+@import 'shikwasa/dist/style.css';
 
 @tailwind base;
 @tailwind components;

@@ -7,8 +7,10 @@ import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://linju.io',
-  integrations: [tailwind(), preact()],
-
+  integrations: [
+    tailwind(),
+    preact(),
+  ],
   vite: {
     plugins: [
       Icons({
