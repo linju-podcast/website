@@ -1,0 +1,12 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+const isDev = import.meta.env.DEV
+---
+
+{
+  isDev && (
+    <MainLayout>
+      <p>Hello Color Palette!</p>
+    </MainLayout>
+  )
+}
