@@ -15,7 +15,7 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 
-const currentPath = new URL(Astro.request.url).pathname
+const currentPath = Astro.url.pathname
 ---
 
 <header class='bg-[#f3f4f5] dark:bg-neutral-700'>
