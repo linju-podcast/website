@@ -5,7 +5,7 @@ description: 'The host will share their practical experiences of transitioning c
 
 This series will be divided into four episodes, and in the second episode, we will delve into two essential elements related to persistence in the toolkit: learning materials and the necessary mindset for persistence.'
 date: 2023-09-17
-draft: false
+draft: true
 ---
 
 ## Introduction
@@ -42,4 +42,10 @@ This series will be divided into **four episodes**, and in the second episode, w
 - [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
 - [Song: American Patrol (OST from Circus Charlie, 1986)](https://downloads.khinsider.com/game-soundtracks/album/circus-charlie-family-computer)
 
+## Stay tuned
+
 If you'd like to receive more updates, please feel free to follow us on the following platforms:
+
+- [Jike](https://m.okjike.com/users/c751f4fb-d31d-44cf-aef9-f6b55dec4cd5?source=user_card&s=eyJ1IjoiNjUyMzg3NmQwZWQ3ZTc2NjQ5ODMwNWE4IiwiZCI6MX0%3D)
+- [Red](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
+- [X(Twitter)]()

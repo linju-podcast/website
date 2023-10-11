@@ -4,7 +4,7 @@ tags: ['devTips']
 description: '主播将从老手和新人不同视角，分享转码的实测经历。
 本系列将分为四期节目，在第二期节目我们将探讨工具包里坚持相关的两个要素：学习资料和坚持必备的心态'
 date: 2023-09-17
-draft: false
+draft: true
 ---
 
 ## 节目介绍
@@ -40,7 +40,10 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
 - [歌曲：1986 版《马戏团》游戏音乐](https://downloads.khinsider.com/game-soundtracks/album/circus-charlie-family-computer)
 
+## 保持联系
+
 想要获取更多节目咨询，欢迎在以下平台关注我们：
 
-- 即刻：
-- 小红书：
+- [网上邻居播客 - 即刻](https://m.okjike.com/users/c751f4fb-d31d-44cf-aef9-f6b55dec4cd5?source=user_card&s=eyJ1IjoiNjUyMzg3NmQwZWQ3ZTc2NjQ5ODMwNWE4IiwiZCI6MX0%3D)
+- [网上邻居播客 - 小红书](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
+- [网上邻居播客 - X(Twitter)]()
