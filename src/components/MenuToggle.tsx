@@ -77,10 +77,10 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
             </li>
             <li>
               <a
-                href={translatePath('/about')}
+                href={translatePath('/about/')}
                 onClick={handleClick}
                 className={`font-bold text-xl tracking-widest text-slate-600 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 dark:text-slate-200 dark:before:bg-purple-400 ${
-                  currentPath === translatePath('/about')
+                  currentPath === translatePath('/about/')
                     ? `before:scale-x-100`
                     : ``
                 }`}
@@ -92,10 +92,10 @@ const MenuToggle: FunctionComponent<menuToggleProps> = ({
             </li>
             <li>
               <a
-                href={translatePath('/podcast')}
+                href={translatePath('/podcast/')}
                 onClick={handleClick}
                 className={`font-bold text-xl tracking-widest text-slate-600 relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-400 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 dark:text-slate-200 dark:before:bg-purple-400 ${
-                  currentPath === translatePath('/podcast')
+                  currentPath === translatePath('/podcast/')
                     ? `before:scale-x-100`
                     : ``
                 }`}
