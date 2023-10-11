@@ -53,9 +53,11 @@ const translatePath = useTranslatedPath(lang)
       <h2
         class='font-bold text-2xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
-        <span class='marker dark:marker-dark'>
-          {sing.data.title}
-        </span>
+        <a href={sing.data.github}>
+          <span class='marker dark:marker-dark'>
+            {sing.data.title}
+          </span>
+        </a>
       </h2>
       <div class='prose dark:prose-invert text-slate-500'>
         <SingContent />
@@ -63,9 +65,11 @@ const translatePath = useTranslatedPath(lang)
       <h2
         class='font-bold text-2xl text-gray-800 dark:text-slate-200 text-left text-slate-600'
       >
-        <span class='marker dark:marker-dark'>
-          {papaya.data.title}
-        </span>
+        <a href={papaya.data.github}>
+          <span class='marker dark:marker-dark'>
+            {papaya.data.title}
+          </span>
+        </a>
       </h2>
       <div class='prose dark:prose-invert text-slate-500'>
         <PapayaContent />

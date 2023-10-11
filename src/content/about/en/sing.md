@@ -1,5 +1,6 @@
 ---
 title: 'S1ngS1ng'
+github: 'https://github.com/S1ngS1ng'
 ---
 
 I used to be the quality control ninja in Tim Cook's hometown, but now I am writing code in the Silicon Valley! Why the sudden switcheroo, you ask? Well, it's all because I have a deep, burning love for lifelong learning.
