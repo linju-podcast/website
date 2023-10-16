@@ -48,4 +48,4 @@ If you'd like to receive more updates, please feel free to follow us on the foll
 
 - [Jike](https://m.okjike.com/users/c751f4fb-d31d-44cf-aef9-f6b55dec4cd5?source=user_card&s=eyJ1IjoiNjUyMzg3NmQwZWQ3ZTc2NjQ5ODMwNWE4IiwiZCI6MX0%3D)
 - [Red](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
-- [X(Twitter)]()
+- [X(Twitter)](https://twitter.com/wslj_podcast)

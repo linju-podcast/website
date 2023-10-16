@@ -3,7 +3,7 @@ title: 'EP 1 不完备实测转码工具包 ｜ 最基础的检查点'
 tags: ['devTips']
 description: '主播将从老手和新人不同视角，分享转码的实测经历。
 本系列将分为四期节目，在第一期节目我们将探讨工具包里最基础的两个检查点：逻辑以及长期学习的意愿。'
-date: 2023-09-13
+date: 2023-10-13
 draft: false
 ---
 
@@ -47,4 +47,4 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 
 - [网上邻居播客 - 即刻](https://m.okjike.com/users/c751f4fb-d31d-44cf-aef9-f6b55dec4cd5?source=user_card&s=eyJ1IjoiNjUyMzg3NmQwZWQ3ZTc2NjQ5ODMwNWE4IiwiZCI6MX0%3D)
 - [网上邻居播客 - 小红书](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
-- [网上邻居播客 - X(Twitter)]()
+- [网上邻居播客 - X(Twitter)](https://twitter.com/wslj_podcast)

@@ -46,4 +46,4 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 
 - [网上邻居播客 - 即刻](https://m.okjike.com/users/c751f4fb-d31d-44cf-aef9-f6b55dec4cd5?source=user_card&s=eyJ1IjoiNjUyMzg3NmQwZWQ3ZTc2NjQ5ODMwNWE4IiwiZCI6MX0%3D)
 - [网上邻居播客 - 小红书](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
-- [网上邻居播客 - X(Twitter)]()
+- [网上邻居播客 - X(Twitter)](https://twitter.com/wslj_podcast)
