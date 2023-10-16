@@ -20,7 +20,7 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
           title: 'EP1 不完备实测转码工具包 ｜ 最基础的检查点',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://podcasts.captivate.fm/media/a7ab2c4e-531a-4bad-aa45-09a6c88d3160/Wangshanglinju-EP-1.mp3'
+          src: 'https://media.xyzcdn.net/lvLDgvePCGf07ing-B4YlGD6B9TA.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
