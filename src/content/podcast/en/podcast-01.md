@@ -1,24 +1,52 @@
 ---
-title: 'How to be a developer?'
+title: 'EP 1 Incomplete Toolkit for Switching Career into IT industry | The Most Basic Checkpoints'
 tags: ['devTips']
-description: 'Thoughts sharing'
-date: 2023-07-11
-image:
-  {
-    src: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80',
-    alt: 'dev pic'
-  }
+description: '
+The host will share their firsthand experiences of transitioning careers from the perspectives of both an industry veteran and a newcomer.
+
+This series will be divided into four episodes, and in the first episode, we will delve into the two most fundamental checkpoints in the toolkit: logic and the willingness to commit to long-term learning.'
+date: 2023-10-13
 draft: false
 ---
 
-## Dictum integer fusce ac ridiculus
+## Introduction
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit euismod rutrum, consequat fringilla ultricies nullam curae mollis semper conubia viverra, orci aenean dapibus pharetra nec tortor tellus cubilia. Ullamcorper mi lectus eu malesuada tempor massa praesent magna mattis posuere, lobortis vulputate ut duis magnis parturient habitant nibh id tristique, quis suspendisse donec nisl penatibus sem non feugiat taciti. Mollis per ridiculus integer cursus semper vestibulum fermentum penatibus cubilia blandit scelerisque, tempus platea leo posuere ac pharetra volutpat aliquet euismod id ullamcorper lobortis, urna est magna mus rhoncus massa curae libero praesent eget. Mattis malesuada vestibulum quis ac nam phasellus suscipit facilisis libero diam posuere, cursus massa vehicula neque imperdiet tincidunt dui egestas lacinia mollis aliquet orci, nisl curabitur dapibus litora dis cum nostra montes ligula praesent. Facilisi aliquam convallis molestie tempor blandit ultricies bibendum parturient cubilia quam, porttitor morbi torquent tempus taciti nec faucibus elementum phasellus, quis inceptos vestibulum gravida augue potenti eget nunc maecenas. Tempor facilisis ligula volutpat habitant consequat inceptos orci per potenti blandit platea, mus sapien eget vel libero vestibulum augue cubilia ut ultrices fringilla lectus, imperdiet pellentesque cum ridiculus convallis sollicitudin nisl interdum semper felis.
+S1ngS1ng is actually not your typical Bay Area programmer. While he did pursue a master's degree and stay in the United States, his graduate studies were in materials engineering. However, this doesn't deter him from living the life of commuting on I-880 during the daily rush hours.
 
-Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti augue nulla vivamus senectus odio, quisque curabitur enim consequat class sociis feugiat ullamcorper, felis dis imperdiet cubilia commodo sed massa phasellus. Viverra purus mus nisi condimentum dui vehicula facilisis turpis, habitant nascetur lectus tempor quisque habitasse urna scelerisque, nibh nullam vestibulum luctus aenean mollis metus. Suscipit gravida duis nec aliquet natoque molestie a ridiculus scelerisque cum, justo cursus sapien sodales purus dignissim vel facilisi magnis, inceptos rutrum ut integer auctor commodo sollicitudin fames et. Faucibus ligula nibh sagittis mauris auctor posuere habitant, scelerisque phasellus accumsan egestas gravida viverra nam, sed etiam eleifend proin massa dictumst. Porttitor risus luctus per aenean tellus primis fringilla vitae fames lacinia mauris metus, nec pulvinar quisque commodo sodales ac nibh natoque phasellus semper placerat. Lectus aenean potenti leo sollicitudin tristique eros quam ligula, vestibulum diam consequat enim torquent nec tempus, blandit viverra dapibus eleifend dis nunc nascetur.
+Papaya's original life and the world of coding were worlds apart. Nonetheless, she relies on her strong English skills to bravely venture into the world of coding. Despite being a total beginner, she is now happily navigating the world of frontend development in the newcomer village.
 
-## Sodales hendrerit malesuada et vestibulum
+The host will share their firsthand experiences of transitioning careers from the perspectives of both an industry veteran and a newcomer.
 
-- Luctus euismod pretium nisi et, est dui enim.
+This series will be divided into four episodes, and in the first episode, we will delve into the two most fundamental checkpoints in the toolkit: logic and the willingness to commit to long-term learning.
 
-- Curae eget inceptos malesuada, fermentum class.
+## Timeline
+
+- 01:20:62 Should I start learning frontend development?
+- 01:46:60 The importance of logical thinking.
+- 03:04:55 The definition of logical thinking.
+- 07:30:19 The determination for long-term learning.
+- 13:32:60 How to determine if you want to commit to long-term learning?
+- 19:51:19 Positive feedback.
+- 22:02:06 S1ngS1ng's coding journey sharing.
+- 26:11:33 Finite games vs. Infinite games 1.0.
+- 33:37:64 TWO MORE THINGS.
+- 34:11:47 ARC Browser.
+- 37:52:52 Song recommendation: "Until I Found You" (Stephen Sanchez
+  ) - Covered by ROSÉ
+
+## Reference
+
+- [Two-Way Binding](https://angular.io/guide/two-way-binding)
+- [Data-Driven](https://en.wikipedia.org/wiki/Data-driven_programming)
+- Soulsborne Games: The Soulsborne games originated with _Demon's Souls_, designed by Hidetaka Miyazaki in 2009. Soulsborne games are known for their high level of difficulty and emphasis on environmental storytelling.
+- [Authentic Happiness](https://www.authentichappiness.sas.upenn.edu/)
+- [Arc Browser](https://arc.net/)
+- [Song: Until I Found You](https://www.youtube.com/watch?v=WfEiabOTH8Y)
+
+## Stay tuned
+
+If you'd like to receive more updates, please feel free to follow us on the following platforms:
+
+- [Jike](https://m.okjike.com/users/c751f4fb-d31d-44cf-aef9-f6b55dec4cd5?source=user_card&s=eyJ1IjoiNjUyMzg3NmQwZWQ3ZTc2NjQ5ODMwNWE4IiwiZCI6MX0%3D)
+- [Red](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
+- [X(Twitter)](https://twitter.com/wslj_podcast)

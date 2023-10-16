@@ -1,24 +1,51 @@
 ---
-title: 'How to be a developer2?'
+title: 'EP 2 Incomplete Toolkit for Switching Career into IT industry | Persistence Tips'
 tags: ['devTips']
-description: 'Thoughts sharing'
-date: 2023-07-12
-image:
-  {
-    src: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80',
-    alt: 'dev pic'
-  }
-draft: false
+description: 'The host will share their practical experiences of transitioning careers from both the perspectives of an industry veteran and a newcomer.
+
+This series will be divided into four episodes, and in the second episode, we will delve into two essential elements related to persistence in the toolkit: learning materials and the necessary mindset for persistence.'
+date: 2023-09-17
+draft: true
 ---
 
-## Dictum integer fusce ac ridiculus
+## Introduction
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit euismod rutrum, consequat fringilla ultricies nullam curae mollis semper conubia viverra, orci aenean dapibus pharetra nec tortor tellus cubilia. Ullamcorper mi lectus eu malesuada tempor massa praesent magna mattis posuere, lobortis vulputate ut duis magnis parturient habitant nibh id tristique, quis suspendisse donec nisl penatibus sem non feugiat taciti. Mollis per ridiculus integer cursus semper vestibulum fermentum penatibus cubilia blandit scelerisque, tempus platea leo posuere ac pharetra volutpat aliquet euismod id ullamcorper lobortis, urna est magna mus rhoncus massa curae libero praesent eget. Mattis malesuada vestibulum quis ac nam phasellus suscipit facilisis libero diam posuere, cursus massa vehicula neque imperdiet tincidunt dui egestas lacinia mollis aliquet orci, nisl curabitur dapibus litora dis cum nostra montes ligula praesent. Facilisi aliquam convallis molestie tempor blandit ultricies bibendum parturient cubilia quam, porttitor morbi torquent tempus taciti nec faucibus elementum phasellus, quis inceptos vestibulum gravida augue potenti eget nunc maecenas. Tempor facilisis ligula volutpat habitant consequat inceptos orci per potenti blandit platea, mus sapien eget vel libero vestibulum augue cubilia ut ultrices fringilla lectus, imperdiet pellentesque cum ridiculus convallis sollicitudin nisl interdum semper felis.
+S1ngS1ng is actually not your typical Bay Area programmer. While he did pursue a master's degree and stay in the United States, his graduate studies were in materials engineering. However, this doesn't deter him from living the life of commuting on I-880 during the daily rush hours.
 
-Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti augue nulla vivamus senectus odio, quisque curabitur enim consequat class sociis feugiat ullamcorper, felis dis imperdiet cubilia commodo sed massa phasellus. Viverra purus mus nisi condimentum dui vehicula facilisis turpis, habitant nascetur lectus tempor quisque habitasse urna scelerisque, nibh nullam vestibulum luctus aenean mollis metus. Suscipit gravida duis nec aliquet natoque molestie a ridiculus scelerisque cum, justo cursus sapien sodales purus dignissim vel facilisi magnis, inceptos rutrum ut integer auctor commodo sollicitudin fames et. Faucibus ligula nibh sagittis mauris auctor posuere habitant, scelerisque phasellus accumsan egestas gravida viverra nam, sed etiam eleifend proin massa dictumst. Porttitor risus luctus per aenean tellus primis fringilla vitae fames lacinia mauris metus, nec pulvinar quisque commodo sodales ac nibh natoque phasellus semper placerat. Lectus aenean potenti leo sollicitudin tristique eros quam ligula, vestibulum diam consequat enim torquent nec tempus, blandit viverra dapibus eleifend dis nunc nascetur.
+Papaya's original life and the world of coding were worlds apart. Nonetheless, she relies on her strong English skills to bravely venture into the world of coding. Despite being a total beginner, she is now happily navigating the world of frontend development in the newcomer village.
 
-## Sodales hendrerit malesuada et vestibulum
+"The host will share their practical experiences of transitioning careers from both the perspectives of an industry veteran and a newcomer.
 
-- Luctus euismod pretium nisi et, est dui enim.
+This series will be divided into **four episodes**, and in the second episode, we will delve into two essential elements related to persistence in the toolkit: _learning materials_ and _the necessary mindset for persistence_."
 
-- Curae eget inceptos malesuada, fermentum class.
+## Timeline
+
+- 01:13:41 Finite Games vs. Infinite Games 2.0
+- 05:25:56 Advice of learning and job hunting
+- 06:21:32 How to find good learning resources
+- 10:25:09 STAR principles in learning
+- 17:43:97 What to persist in and how to persist?
+- 23:05:95 Dealing with stereotypes
+- 27:52:30 The importance of curiosity
+- 34:05:96 TWO MORE THINGS
+- 34:17:87 Documentary: Free Solo
+- 47:39:06 Music: Soundtrack of Circus
+- 47:39:06 Song recommendation: American Patrol (OST from Circus Charlie, 1986)
+
+## Reference
+
+- [freeCodeCamp Courses](https://www.freecodecamp.org/)
+- [Wild Iron Man(稚晖君)](https://space.bilibili.com/20259914/)
+- [Free Solo](https://movie.douban.com/subject/30167509/)
+- [macOS Naming](https://en.wikipedia.org/wiki/MacOS)
+- [Game Music Website —— Khinsider](https://downloads.khinsider.com/game-soundtracks)
+- [American Patrol](https://en.wikipedia.org/wiki/American_Patrol)
+- [Song: American Patrol (OST from Circus Charlie, 1986)](https://downloads.khinsider.com/game-soundtracks/album/circus-charlie-family-computer)
+
+## Stay tuned
+
+If you'd like to receive more updates, please feel free to follow us on the following platforms:
+
+- [Jike](https://m.okjike.com/users/c751f4fb-d31d-44cf-aef9-f6b55dec4cd5?source=user_card&s=eyJ1IjoiNjUyMzg3NmQwZWQ3ZTc2NjQ5ODMwNWE4IiwiZCI6MX0%3D)
+- [Red](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
+- [X(Twitter)](https://twitter.com/wslj_podcast)
