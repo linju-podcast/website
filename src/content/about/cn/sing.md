@@ -1,5 +1,6 @@
 ---
 title: 'S1ngS1ng'
+github: 'https://github.com/S1ngS1ng'
 ---
 
 本来在 Tim Cook 的老家做质检，现在却在湾区写代码，究其原因大概是因为喜欢终身学习。\

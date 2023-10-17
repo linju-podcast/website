@@ -2,9 +2,11 @@
 import IconSaturn from '~icons/streamline/ecology-science-planet-solar-system-ring-planet-saturn-space-astronomy'
 import IconSpotify from '~icons/mingcute/spotify-line'
 import IconApplePodcast from '~icons/ph/apple-podcasts-logo'
-import IconGooglePodcast from '~icons/simple-icons/googlepodcasts'
+import IconRss from '~icons/ph/rss'
 
 const { t } = Astro.props
+
+const pathname = Astro.url.pathname
 ---
 
 <div class='py-10 text-center'>
@@ -18,7 +20,7 @@ const { t } = Astro.props
         class='absolute -top-1 -left-1 bg-[#3db4e1]/80 w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href=''>
+      <a href='https://www.xiaoyuzhoufm.com/podcast/6528fb85a3b0404cbf078f7e'>
         <IconSaturn
           style={{ fontSize: '2em' }}
           class='text-slate-400 dark:text-slate-200'
@@ -30,7 +32,7 @@ const { t } = Astro.props
         class='absolute -top-1 -left-1 bg-[#42d760]/80 w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href=''>
+      <a href='https://open.spotify.com/show/4sGvdSr1iouTvPBVapiYnI'>
         <IconSpotify
           style={{ fontSize: '2em' }}
           class='text-slate-400 dark:text-slate-200'
@@ -42,7 +44,9 @@ const { t } = Astro.props
         class='absolute -top-1 -left-1 bg-[#a945e3]/80 w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href=''>
+      <a
+        href='https://podcasts.apple.com/us/podcast/网上邻居-cyber-neighbors/id1712253447'
+      >
         <IconApplePodcast
           style={{ fontSize: '2em' }}
           class='text-slate-400 dark:text-slate-200'
@@ -51,11 +55,15 @@ const { t } = Astro.props
     </div>
     <div class='relative group'>
       <div
-        class='absolute -top-1 -left-1 bg-[#f2b30a]/80 w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
+        class='absolute -top-1 -left-1 bg-[#fdba74]/80 w-7 h-7 -z-10 rounded-full group-hover:translate-x-1 group-hover:translate-y-1'
       >
       </div>
-      <a href=''>
-        <IconGooglePodcast
+      <a
+        href={pathname.includes('/en/')
+          ? 'https://feeds.captivate.fm/wangshanglinju'
+          : 'https://feed.xyzfm.space/mm6eucrln3q6'}
+      >
+        <IconRss
           style={{ fontSize: '2em' }}
           class='text-slate-400 dark:text-slate-200'
         />
