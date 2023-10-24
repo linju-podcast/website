@@ -15,6 +15,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/partytown": "^2.0.1",
     "@astrojs/rss": "^3.0.0",
     "astro": "^3.0.6",
     "lxgw-wenkai-webfont": "^1.7.0",

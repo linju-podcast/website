@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config'
 import tailwind from '@astrojs/tailwind'
 import preact from '@astrojs/preact'
+import partytown from '@astrojs/partytown'
 import Icons from 'unplugin-icons/vite'
 import { FileSystemIconLoader } from 'unplugin-icons/loaders'
 
@@ -10,6 +11,11 @@ export default defineConfig({
   integrations: [
     tailwind(),
     preact(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push']
+      }
+    })
   ],
   vite: {
     plugins: [
