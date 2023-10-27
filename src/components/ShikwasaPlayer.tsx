@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP1 不完备实测转码工具包 ｜ 最基础的检查点',
+          title: 'EP 2 不完备实测转码工具包 ｜ 坚持锦囊',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lvLDgvePCGf07ing-B4YlGD6B9TA.m4a'
+          src: 'https://media.xyzcdn.net/liux5QmY6OZEliLaXkNxyl0qhgvu.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)

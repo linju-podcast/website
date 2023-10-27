@@ -5,7 +5,7 @@ description: 'The host will share their practical experiences of transitioning c
 
 This series will be divided into four episodes, and in the second episode, we will delve into two essential elements related to persistence in the toolkit: learning materials and the necessary mindset for persistence.'
 date: 2023-09-17
-draft: true
+draft: false
 ---
 
 ## Introduction
