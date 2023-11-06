@@ -33,11 +33,6 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 
 ## 拓展阅读
 
-RFC
-费曼学习法
-Angular thread - signal
-stackoverflow 键帽
-
 - [《别逗了，费曼先生！》以及费曼学习法](https://sspai.com/post/61411) （Papaya 注：虽然在播客里没有提，但是《别逗了，费曼先生！》这本书很好看）
 - [S1ngS1ng 在 freeCodeCamp 的专栏](https://www.freecodecamp.org/news/author/xing/)
 - [RFC - Request for Comments](https://en.wikipedia.org/wiki/Request_for_Comments)
