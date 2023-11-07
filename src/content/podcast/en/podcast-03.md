@@ -35,7 +35,9 @@ This series will be divided into **four episodes**, and in the second episode, w
 ## Reference
 
 - [Surely You're Joking, Mr. Feynman! and Feynman Learning Technique ](https://sspai.com/post/61411) （Note from Papaya: Even though it wasn't mentioned in the podcast, this book is a great read.）
+- [Rat race](https://en.wikipedia.org/wiki/Rat_race)
 - [S1ngS1ng's Column on freeCodeCamp](https://www.freecodecamp.org/news/author/xing/)
+- [S1ngS1ng's personal blog](https://singsing.io/blog)
 - [RFC - Request for Comments](https://en.wikipedia.org/wiki/Request_for_Comments)
 - [RFC: Angular Signals](https://github.com/angular/angular/discussions/49685)
 - [Stack Overflow Keycaps Blog Post](https://stackoverflow.blog/2021/09/28/become-a-better-coder-with-this-one-weird-click/)

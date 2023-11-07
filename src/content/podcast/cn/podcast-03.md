@@ -36,7 +36,7 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - [《别逗了，费曼先生！》以及费曼学习法](https://sspai.com/post/61411) （Papaya 注：虽然在播客里没有提，但是《别逗了，费曼先生！》这本书很好看）
 - [“卷”的英文：Rat race](https://en.wikipedia.org/wiki/Rat_race)
 - [S1ngS1ng 在 freeCodeCamp 的专栏](https://www.freecodecamp.org/news/author/xing/)
-- [S1ngS1ng 的个人播客](https://singsing.io/blog)
+- [S1ngS1ng 的个人博客](https://singsing.io/blog)
 - [RFC - Request for Comments](https://en.wikipedia.org/wiki/Request_for_Comments)
 - [RFC: Angular Signals](https://github.com/angular/angular/discussions/49685)
 - [Stack Overflow 复制粘贴键帽博文](https://stackoverflow.blog/2021/09/28/become-a-better-coder-with-this-one-weird-click/)
