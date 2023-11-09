@@ -42,7 +42,7 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - [Stack Overflow 复制粘贴键帽博文](https://stackoverflow.blog/2021/09/28/become-a-better-coder-with-this-one-weird-click/)
 - ![对应图片](https://cdn.stackoverflow.co/images/jo7n4k8s/production/e53da7968091b70a882a23fb4a711aeaa72eeed2-1200x630.png?w=1200&h=630&auto=format&dpr=2)
 - [剪贴板管理工具: Paste](https://pasteapp.io/)
-- [软件订阅平台 SETAPP](https://setapp.com/)
+- [软件订阅平台 Setapp](https://setapp.com/)
 - [效率工具: Alfred](https://www.alfredapp.com/)
 - [效率工具: Raycast](https://www.raycast.com/)
 
