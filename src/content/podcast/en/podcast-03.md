@@ -43,7 +43,7 @@ This series will be divided into **four episodes**, and in the second episode, w
 - [Stack Overflow Keycaps Blog Post](https://stackoverflow.blog/2021/09/28/become-a-better-coder-with-this-one-weird-click/)
 - ![keycap image](https://cdn.stackoverflow.co/images/jo7n4k8s/production/e53da7968091b70a882a23fb4a711aeaa72eeed2-1200x630.png?w=1200&h=630&auto=format&dpr=2)
 - [Clipboard Management Tool: Paste](https://pasteapp.io/)
-- [Software Subscription Platform: SETAPP](https://setapp.com/)
+- [Software Subscription Platform: Setapp](https://setapp.com/)
 - [Productivity Tool: Alfred](https://www.alfredapp.com/)
 - [Productivity Tool: Raycast](https://www.raycast.com/)
 
