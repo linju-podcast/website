@@ -4,7 +4,7 @@ tags: ['devTips']
 description: 'The host will share their practical experiences of transitioning careers from both the perspectives of an industry veteran and a newcomer.
 
 This series will be divided into four episodes, and in the second episode, we will delve into two essential elements related to persistence in the toolkit: learning materials and the necessary mindset for persistence.'
-date: 2023-09-17
+date: 2023-10-27
 draft: false
 ---
 
