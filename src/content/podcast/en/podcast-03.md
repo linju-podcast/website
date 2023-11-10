@@ -3,7 +3,7 @@ title: 'EP 2 Incomplete Toolkit for Switching Career into IT industry | A Dose o
 tags: ['devTips']
 description: 'The host will share their practical experiences of transitioning careers from both the perspectives of an industry veteran and a newcomer.
 
-This series will be divided into four episodes, and in the third episode, we will delve into a comforting tool in the toolkit, encouraging a change in perspective, showing that "JUAN"（stay competitive 24 / 7 ）might not be so daunting after all, and that inner drive can lead you to a better place'
+This series will be divided into four episodes, and in the third episode, we will delve into a comforting tool in the toolkit, encouraging a change in perspective, showing that "JUAN"（Rat Race）might not be so daunting after all, and that inner drive can lead you to a better place'
 date: 2023-11-10
 draft: false 
 ---
@@ -16,7 +16,7 @@ Papaya's original life and the world of coding were worlds apart. Nonetheless, s
 
 "The host will share their practical experiences of transitioning careers from both the perspectives of an industry veteran and a newcomer.
 
-This series will be divided into **four episodes**, and in the second episode, we will explore a comforting tool in the toolkit: shifting one's perspective. Perhaps _"JUAN"（ stay competitive 24 / 7 ）_ isn't as intimidating as it seems, and _"inner drive"_ will lead you to a better place.
+This series will be divided into **four episodes**, and in the second episode, we will explore a comforting tool in the toolkit: shifting one's perspective. Perhaps _"JUAN"（rat race）_ isn't as intimidating as it seems, and _"inner drive"_ will lead you to a better place.
 
 ## Timeline
 
@@ -24,7 +24,7 @@ This series will be divided into **four episodes**, and in the second episode, w
 - 04:38:15 "Lifelong Learning" !== "Grinding"
 - 06:45:70 S1ngS1ng's Learn in Public Journey
 - 07:41:75 Feynman Learning Technique
-- 08:59:75 Redefining "JUAN"
+- 08:59:75 Redefining "JUAN"(rat race)
 - 12:20:15 Best Practices for "Curiosity": Browsing GitHub as if you are gossiping
 - 15:54:87 A New Approach to Open Source Participation
 - 18:02:07 Interpretation of Motivation and Inner Drive
