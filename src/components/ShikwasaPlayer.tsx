@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 3 不完备实测转码工具包 | 一剂安抚',
+          title: 'EP 4 脱离考试体系之后如何学英语',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lgJGn6kU1-PHFhUuQFjT__7g6Lz6.m4a'
+          src: 'https://media.xyzcdn.net/llPBfU9mm6C8undc-cvy6BFN-Z3V.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)

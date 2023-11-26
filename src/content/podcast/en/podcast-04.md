@@ -2,7 +2,6 @@
 title: 'EP 4: How to Learn English Beyond the Exam System'
 tags: ['english']
 description: 'Papaya observes that many professionals, including programmers, often continue using exam-oriented learning habits when studying English after leaving the exam system. However, the results are often subpar. In this episode, we share our experiences learning English and aim to provide inspiration for a more effective approach to English language learning.'
-
 date: 2023-11-26
 draft: false
 ---
@@ -27,9 +26,9 @@ In this episode, we share our insights into learning English, hoping to inspire 
 - 34:11:80 Breaking free from exam-oriented mindset
 - 46:20:79 Recommended methods for learning English
 - 1:02:36:96 Assessing one's English proficiency
-- 1:09:08:42 TWO MORE THINGS
-- 1:09:17:52 HammerSpoon
-- 1:20:26:41 Song recommendation: "世界で一番顽张っている君に" by Soma
+- 1:07:38:00 TWO MORE THINGS
+- 1:07:46:00 HammerSpoon
+- 1:18:43:41 Song recommendation: "世界で一番顽张っている君に" by Soma
 
 ## Further Reading
 
@@ -37,10 +36,12 @@ In this episode, we share our insights into learning English, hoping to inspire 
 - [Book: "17天搞定 GRE 单词" (17 Days to Master GRE Vocabulary)](https://book.douban.com/subject/1803504/)
 - [Various English Expressions for the Toilet](https://language.chinadaily.com.cn/2017-03/17/content_28593341.htm)
 - [Book: "看听学 Look Listen Learn"](https://book.douban.com/subject/1123421/)
+- Joey: How you doin
 - ![Joey How you doin](https://media.licdn.com/dms/image/C5612AQEmIW7-fD1diw/article-cover_image-shrink_720_1280/0/1593554959906?e=2147483647&v=beta&t=T03dBevRgTW2A_N7JuVyEHAVp0VyeEDIiwb2ztOvx64)
 - [MKBHD's YouTube Channel](https://www.youtube.com/user/marquesbrownlee)
 - [Linus Tech Tips YouTube Channel](https://www.youtube.com/@LinusTechTips)
-- ppy Interpretation Notes (to be supplemented with images)
+- Papaya's Interpretation Notes
+- ![Papaya Interpretation Notes](https://image.xyzcdn.net/FkA0NrO7dGnjkc7UiCv_dTwSCFq0.jpg)
 - [HammerSpoon Official Website](http://www.hammerspoon.org/)
 - [S1ngS1ng's HammerSpoon Configuration Files](https://github.com/S1ngS1ng/HammerSpoon)
 
