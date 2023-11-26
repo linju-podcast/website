@@ -1,6 +1,6 @@
 ---
 title: 'EP 4 脱离考试体系之后如何学英语'
-tags: ['english']
+tags: ['englishLearnings']
 description: 'Papaya 观察到有非常多的职场人（包括程序员）在离开了考试体系之后，还是会用过去应试教育的学习习惯来学习英语，往往这样的效果并不好。S1ngS1ng 也经常被其他的程序员问到，如何学好英语。'
 date: 2023-11-26
 draft: false

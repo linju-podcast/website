@@ -1,6 +1,6 @@
 ---
 title: 'EP 4: How to Learn English Beyond the Exam System'
-tags: ['english']
+tags: ['englishLearnings']
 description: 'Papaya observes that many professionals, including programmers, often continue using exam-oriented learning habits when studying English after leaving the exam system. However, the results are often subpar. In this episode, we share our experiences learning English and aim to provide inspiration for a more effective approach to English language learning.'
 date: 2023-11-26
 draft: false
