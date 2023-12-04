@@ -42,8 +42,8 @@ draft: false
 - Reel to reel 轮到轮磁带
   ![轮到轮磁带](https://miro.medium.com/v2/resize:fit:720/format:webp/1*1UnvtC8XLX9cV3cmQseH_A.jpeg)
 
-- RCA 磁带和盒式磁带(Compact Cassettte)尺寸对比
-  ![RCA 磁带和盒式磁带(Compact Cassettte)尺寸对比](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zzCfrdQqgKyYyM_Sd3INYw.png)
+- RCA 磁带和盒式磁带(Compact Cassette)尺寸对比
+  ![RCA 磁带和盒式磁带(Compact Cassette)尺寸对比](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zzCfrdQqgKyYyM_Sd3INYw.png)
 
 - [飞利浦 Norelco 产品线由来](https://en.wikipedia.org/wiki/Philips_Norelco)
 
