@@ -15,17 +15,17 @@ Do you still use the same device to listen to Jay Chou as you did the first time
 
 ## Timeline
 
-01:59 Overview of changes in music carriers
+01:59 Overview of evolution in music storage format
 08:00 What is sampling rate
 10:20 Assessing music playback devices from the perspectives of sound quality and portability
 13:30 Brief discussion on copyright
 14:50 Vinyl record era
 20:45 What is signal-to-noise ratio
 22:33 Radio (wireless broadcasting) era
-37:42 Tape era
+37:42 Cassette tape era
 1:09:00 Piracy issues brought by cassette tapes
 1:26:18 TWO MORE THINGS
-1:26:21 White noise app: Tidal
+1:26:21 White noise app: 潮汐
 1:30:00 Song recommendation: "Qi Li Xiang" by Jay Chou
 
 ## Further Reading
@@ -34,14 +34,16 @@ Do you still use the same device to listen to Jay Chou as you did the first time
 
   ![Phonograph cylinder](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/EdisonPhonograph.jpg/220px-EdisonPhonograph.jpg)
 
-- [Sample Rate](<https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate>)
+- [Sample Rate](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate)
 
 - [RIAA](https://en.wikipedia.org/wiki/Recording_Industry_Association_of_America)
 
-- Reel to reel
-  ![Reel to reel](https://miro.medium.com/v2/resize:fit:720/format:webp/1*1UnvtC8XLX9cV3cmQseH_A.jpeg)
+- Reel to reel tape
+
+  ![Reel to reel tape](https://miro.medium.com/v2/resize:fit:720/format:webp/1*1UnvtC8XLX9cV3cmQseH_A.jpeg)
 
 - Size comparison of RCA tape and Compact Cassette
+
   ![Size comparison of RCA tape and Compact Cassette](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zzCfrdQqgKyYyM_Sd3INYw.png)
 
 - [Philips Norelco product line origins](https://en.wikipedia.org/wiki/Philips_Norelco)
@@ -49,18 +51,31 @@ Do you still use the same device to listen to Jay Chou as you did the first time
 - [RFID](https://en.wikipedia.org/wiki/Radio-frequency_identification)
 
 - Sony Walkman TPS-L2
+
   ![Sony Walkman TPS-L2](https://retrospekt.com/cdn/shop/files/PC-VR-1247_1.jpg?v=1699892745&width=800)
+
 - Star-Lord with Sony Walkman TPS-L2
+
   ![星爵与索尼 Walkman TPS-L2](https://s3.ifanr.com/wp-content/uploads/2017/05/GotG_Walkman.jpg!720)
+
 - Early Boombox
+
   ![Early Boombox](https://upload.wikimedia.org/wikipedia/commons/5/50/Chicago_Pride_Parade_1985_033.jpg)
+
 - Cassette tape write-protect notch
+
   ![Cassette tape write-protect notch](https://upload.wikimedia.org/wikipedia/commons/0/05/Cassette_Write_Protect_IV.jpg)
-- Home Taping is Killing Music Logo
-  ![Home Taping is Killing Music](https://upload.wikimedia.org/wikipedia/en/b/bc/Home_taping_is_killing_music.png)
+
+- "Home Taping Is Killing Music" Logo
+
+  ![Home Taping Is Killing Music](https://upload.wikimedia.org/wikipedia/en/b/bc/Home_taping_is_killing_music.png)
+
 - The Pirate Bay Logo
+
   ![The Pirate Bay logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/The_Pirate_Bay_logo.svg/1024px-The_Pirate_Bay_logo.svg.png)
+
 - [How do Vinyl Records Work?](https://www.soundsetal.com/blog-how-do-vinyl-records-work/)
+- ["Why do you need external devices to listen to music? Does it really make music sound better?" by ChaiKnows](https://youtu.be/el4NBqkfhWk?si=CtwGGUQ0xjqIGfdW)
 
 ## Stay tuned
 

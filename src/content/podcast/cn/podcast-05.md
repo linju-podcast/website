@@ -35,33 +35,49 @@ draft: false
 
   ![留声机圆筒](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/EdisonPhonograph.jpg/220px-EdisonPhonograph.jpg)
 
-- [采样率](<https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate>)
+- [采样率](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate)
 
 - [RIAA 美国唱片业协会](https://en.wikipedia.org/wiki/Recording_Industry_Association_of_America)
 
-- Reel to reel 轮到轮磁带
-  ![轮到轮磁带](https://miro.medium.com/v2/resize:fit:720/format:webp/1*1UnvtC8XLX9cV3cmQseH_A.jpeg)
+- 开盘式录音磁带 (Reel to reel tape)
 
-- RCA 磁带和盒式磁带(Compact Cassette)尺寸对比
-  ![RCA 磁带和盒式磁带(Compact Cassette)尺寸对比](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zzCfrdQqgKyYyM_Sd3INYw.png)
+  ![开盘式录音磁带](https://miro.medium.com/v2/resize:fit:720/format:webp/1*1UnvtC8XLX9cV3cmQseH_A.jpeg)
+
+- RCA 磁带和盒式磁带 (Compact Cassette) 尺寸对比
+
+  ![RCA 磁带和盒式磁带 (Compact Cassette) 尺寸对比](https://miro.medium.com/v2/resize:fit:720/format:webp/1*zzCfrdQqgKyYyM_Sd3INYw.png)
 
 - [飞利浦 Norelco 产品线由来](https://en.wikipedia.org/wiki/Philips_Norelco)
 
 - [RFID 频射识别技术](https://en.wikipedia.org/wiki/Radio-frequency_identification)
 
 - 索尼 Walkman TPS-L2
+
   ![索尼 Walkman TPS-L2](https://retrospekt.com/cdn/shop/files/PC-VR-1247_1.jpg?v=1699892745&width=800)
+
 - 星爵与索尼 Walkman TPS-L2
+
   ![星爵与索尼 Walkman TPS-L2](https://s3.ifanr.com/wp-content/uploads/2017/05/GotG_Walkman.jpg!720)
+
 - 早期的 Boombox
+
   ![男人和 Boombox](https://upload.wikimedia.org/wikipedia/commons/5/50/Chicago_Pride_Parade_1985_033.jpg)
+
 - 磁带顶部写保护凹槽
+
   ![磁带顶部写保护凹槽](https://upload.wikimedia.org/wikipedia/commons/0/05/Cassette_Write_Protect_IV.jpg)
+
 - Home Taping is Killing Music Logo
+
   ![Home Taping is Killing Music](https://upload.wikimedia.org/wikipedia/en/b/bc/Home_taping_is_killing_music.png)
+
 - The Pirate Bay (海盗湾) Logo
+
   ![海盗湾 logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/The_Pirate_Bay_logo.svg/1024px-The_Pirate_Bay_logo.svg.png)
-- [黑胶唱片是如何运作的？ How do Vinyl Records Work?](https://www.soundsetal.com/blog-how-do-vinyl-records-work/)
+
+- [How do Vinyl Records Work (黑胶唱片是如何运作的)](https://www.soundsetal.com/blog-how-do-vinyl-records-work/)
+- [听个歌为什么要外接“小尾巴”？真的能让音乐更好听吗？【柴知道】](https://www.bilibili.com/video/BV1H34y1u7BQ)
+
 
 ## 保持联系
 
