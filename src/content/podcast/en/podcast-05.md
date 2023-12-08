@@ -1,6 +1,6 @@
 ---
 title: 'EP 5 Electronic Nostalgia — A Brief History of Music Playback Devices | Analog Media Era'
-tags: ['lifeHacks']
+tags: ['nostalgia']
 description: 'This is the first episode of a special series called "Electronic Nostalgia" from a tech podcast, divided into three parts. In this series, we will explore the evolution of electronic playback devices from the perspectives of sampling rate, information storage, sound quality and portability, copyright, and more.'
 
 date: 2023-12-08
@@ -11,22 +11,22 @@ draft: false
 
 This is the first episode of a special series called "Electronic Nostalgia" from a tech podcast, divided into three parts.
 
-Do you still use the same device to listen to Jay Chou as you did the first time you heard him? The music has given us beautiful memories, and the carriers of these memories have changed over the years. In this special blog series, we will examine these electronic playback devices from various angles, including sampling rate, information storage, sound quality and portability, copyright, and more.
+Do you still use the same device to listen to Jay Chou as you did the first time you heard him? The music has given us beautiful memories, and the carriers of these memories have changed over the years. In this special podcast series, we will examine these electronic playback devices from various angles, including sampling rate, information storage, sound quality and portability, copyright, and more.
 
 ## Timeline
 
-01:59 Overview of evolution in music storage format
-08:00 What is sampling rate
-10:20 Assessing music playback devices from the perspectives of sound quality and portability
-13:30 Brief discussion on copyright
-14:50 Vinyl record era
-20:45 What is signal-to-noise ratio
-22:33 Radio (wireless broadcasting) era
-37:42 Cassette tape era
-1:09:00 Piracy issues brought by cassette tapes
-1:26:18 TWO MORE THINGS
-1:26:21 White noise app: 潮汐
-1:30:00 Song recommendation: "Qi Li Xiang" by Jay Chou
+- 01:59 Overview of evolution in music storage format
+- 08:00 What is sampling rate
+- 10:20 Assessing music playback devices from the perspectives of sound quality and portability
+- 13:30 Brief discussion on copyright
+- 14:50 Vinyl record era
+- 20:45 What is signal-to-noise ratio
+- 22:33 Radio (wireless broadcasting) era
+- 37:42 Cassette tape era
+- 1:09:00 Piracy issues brought by cassette tapes
+- 1:26:18 TWO MORE THINGS
+- 1:26:21 White noise app: 潮汐
+- 1:30:00 Song recommendation: 七里香 by Jay Chou
 
 ## Further Reading
 
@@ -34,7 +34,7 @@ Do you still use the same device to listen to Jay Chou as you did the first time
 
   ![Phonograph cylinder](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/EdisonPhonograph.jpg/220px-EdisonPhonograph.jpg)
 
-- [Sample Rate](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate)
+- [Sample Rate](<https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate>)
 
 - [RIAA](https://en.wikipedia.org/wiki/Recording_Industry_Association_of_America)
 

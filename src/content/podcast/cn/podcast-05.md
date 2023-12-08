@@ -1,6 +1,6 @@
 ---
 title: 'EP 5 电子怀旧 —— 音乐播放设备简史 ｜ 模拟介质时代'
-tags: ['lifeHacks']
+tags: ['nostalgia']
 description: '这是一期技术播客节的特别系列节目——“电子怀旧”的第一期，整个系列将分为三期。在这个特别系列博客中，我们将从采样率、信息的存储方式、音质与便携度、版权等不同角度来盘点记忆中的这些电子播放设备。'
 date: 2023-12-08
 draft: false
@@ -12,7 +12,7 @@ draft: false
 
 你现在听周杰伦的时候还和当初第一次听周杰伦用一样的设备吗？
 这些音乐留给了我们美好的回忆，而这些美好回忆的载体也随着岁月的流逝不断发生变化。
-在这个特别系列博客中，我们将从采样率、信息的存储方式、音质与便携度、版权等不同角度来盘点记忆中的这些电子播放设备。
+在这个特别系列播客中，我们将从采样率、信息的存储方式、音质与便携度、版权等不同角度来盘点记忆中的这些电子播放设备。
 
 ## 时间线
 
@@ -35,7 +35,7 @@ draft: false
 
   ![留声机圆筒](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/EdisonPhonograph.jpg/220px-EdisonPhonograph.jpg)
 
-- [采样率](https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate)
+- [采样率](<https://en.wikipedia.org/wiki/Sampling_(signal_processing)#Sampling_rate>)
 
 - [RIAA 美国唱片业协会](https://en.wikipedia.org/wiki/Recording_Industry_Association_of_America)
 
@@ -77,7 +77,6 @@ draft: false
 
 - [How do Vinyl Records Work (黑胶唱片是如何运作的)](https://www.soundsetal.com/blog-how-do-vinyl-records-work/)
 - [听个歌为什么要外接“小尾巴”？真的能让音乐更好听吗？【柴知道】](https://www.bilibili.com/video/BV1H34y1u7BQ)
-
 
 ## 保持联系
 
