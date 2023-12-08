@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 4 脱离考试体系之后如何学英语',
+          title: 'EP 5 电子怀旧 —— 音乐播放设备简史 ｜ 模拟介质时代',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/llPBfU9mm6C8undc-cvy6BFN-Z3V.m4a'
+          src: 'https://media.xyzcdn.net/lueTUl-fHaQK_cuwFdQ8AJ_ti5GQ.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
