@@ -27,8 +27,6 @@ In this episode, we draw from our individual experiences to divide English learn
 ## Further Reading
 
 - [Duolingo Official Website](https://www.duolingo.cn/)
-- Duolingo's Drama Queen Parrot
-  ![Duolingo's Drama Queen Parrot](https://img.huodongju.com/activity/202311/fetch-4001701137417.jpg)
 - [Common European Framework of Reference for Languages (CEFR)](https://www.cambridgeenglish.cn/exams-and-tests/cefr/)
 - [New Thinking on English Grammar](https://book.douban.com/subject/1035318/)
 - [MBTI Online Test](https://www.16personalities.com/free-personality-test)

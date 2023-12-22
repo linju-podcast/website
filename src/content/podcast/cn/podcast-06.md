@@ -27,8 +27,6 @@ Papaya 曾经在某英语培训机构任教，高中通过大学英语六级，�
 ## 拓展阅读
 
 - [多邻国官网](https://www.duolingo.cn/)
-- 多邻国戏精小鹦鹉
-  ![多邻国戏精小鹦鹉](https://img.huodongju.com/activity/202311/fetch-4001701137417.jpg)
 - [欧洲语言共同参考框架 Common European Framework of Reference for Languages](https://www.cambridgeenglish.cn/exams-and-tests/cefr/)
 - [《英语语法新思维》](https://book.douban.com/subject/1035318/)
 - [MBTI 在线测试地址](https://www.16personalities.com/free-personality-test)
