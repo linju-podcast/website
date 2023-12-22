@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 5 电子怀旧 —— 音乐播放设备简史 ｜ 模拟介质时代',
+          title: 'EP 6 英语学习方法大放送',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lueTUl-fHaQK_cuwFdQ8AJ_ti5GQ.m4a'
+          src: 'https://media.xyzcdn.net/lsp_wW5OmCiZfszBSY0uvz8-VqCc.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)

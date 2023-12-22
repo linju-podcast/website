@@ -1,5 +1,5 @@
 ---
-title: 'EP 6 English Learning Methods Extravaganza'
+title: 'EP 6 English Learning Methods Sharing'
 tags: ['englishLearnings']
 description: 'In this episode, we break down English learning into three stages: beginner, intermediate, and advanced, sharing effective methods based on our personal experiences.'
 date: 2023-12-22
@@ -14,7 +14,7 @@ In this episode, we draw from our individual experiences to divide English learn
 
 ## Timeline
 
-- 02:47 The importance of clarifying English learning goals
+- 02:47 The importance of clarifying English learning objectives
 - 09:20 Is it still necessary to learn English in the AI era?
 - 17:08 Self-assessment tools for English proficiency
 - 18:34 Learning methods for beginners
