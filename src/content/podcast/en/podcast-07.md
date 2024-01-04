@@ -3,7 +3,7 @@ title: 'EP 7 Incomplete Toolkit for Switching Career into IT industry | Roadmap'
 tags: ['devTips']
 description: 'The host will share transcoding testing experiences from the perspectives of both an experienced professional and a newcomer. This series will consist of four episodes, and in the fourth episode, we will explore the map and compass in the toolkit: the learning roadmap and the consistent learning methods throughout.'
 
-date: 2023-10-13
+date: 2024-01-05
 draft: false
 ---
 
