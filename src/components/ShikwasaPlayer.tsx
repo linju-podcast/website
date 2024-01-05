@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 6 英语学习方法大放送',
+          title: 'EP 7 不完备实测转码工具包 ｜ 学习路线',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lsp_wW5OmCiZfszBSY0uvz8-VqCc.m4a'
+          src: 'https://media.xyzcdn.net/lk4mtvuboD4VJbr2S8OVqWxKzA_b.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
