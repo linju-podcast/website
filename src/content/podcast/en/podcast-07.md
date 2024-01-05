@@ -46,6 +46,7 @@ This series will be divided into **four episodes**. In the fourth episode, we wi
 - [Native method for deep cloning in JS: structuredClone](https://developer.mozilla.org/en-US/docs/Web/API/structuredClone)
 - [Lodash documentation](https://lodash.com/docs)
 - [You don't (may not) need Lodash/Underscore GitHub repository](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)
+- [S1ngS1ng's algorithm course on Bilibili](https://www.bilibili.com/video/BV1iZ4y1p7kr/?vd_source=fbf82fff42e0441608451f7e69ddec08)
 - [Exhibition book: Fantastic Beasts: The Wonder of Nature](https://book.douban.com/subject/35611195/)
 - [Exhibition book: Harry Potter - A History of Magic](https://book.douban.com/subject/27156213/)
 - [Harry Potter - A History of Magic exhibition documentary](https://www.bilibili.com/video/BV17L4y1t77d/?vd_source=fbf82fff42e0441608451f7e69ddec08)
