@@ -35,7 +35,7 @@ The hosts will share their hands-on transcoding experiences from the perspective
 - [Programming Language: Lua](https://www.lua.org/)
 - [Relationship between World of Warcraft and Lua](https://wowpedia.fandom.com/wiki/Lua)
 - [Why Vim Uses hjkl as Arrow Keys](https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys)
-- [Dunning-Kruger Effect](https://zh.wikipedia.org/zh-hans/%E9%84%A7%E5%AF%A7-%E5%85%8B%E9%AD%AF%E6%A0%BC%E6%95%88%E6%87%89) -![Dunning-Kruger Curve](https://pic1.zhimg.com/v2-280c8f607bf257704c0d5c3898894039_720w.jpg?source=172ae18b)
+- [Dunning-Kruger Effect](https://zh.wikipedia.org/zh-hans/%E9%84%A7%E5%AF%A7-%E5%85%8B%E9%AD%AF%E6%A0%BC%E6%95%88%E6%87%89) ![Dunning-Kruger Curve](https://img-blog.csdnimg.cn/20210308202454937.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTExOTU4ODM=,size_16,color_FFFFFF,t_70#pic_center)
 - [The Art of Unix Programming](https://book.douban.com/subject/1467587/)
 - [Instagram Account: Yes but](https://www.instagram.com/_yes_but/reels/)
 - [PunHub](https://twitter.com/PunHubOnline/status/1458840531451224064)
