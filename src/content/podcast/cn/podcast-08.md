@@ -36,7 +36,7 @@ Papaya 原本的人生和代码八杆子打不着，不过她仗着自己英语�
 - [编程语言: Lua](https://www.lua.org/)
 - [《魔兽世界》和 Lua 关系](https://wowpedia.fandom.com/wiki/Lua)
 - [为什么 vim 的方向键是 hjkl](https://catonmat.net/why-vim-uses-hjkl-as-arrow-keys)
-- [达克曲线](https://zh.wikipedia.org/zh-hans/%E9%84%A7%E5%AF%A7-%E5%85%8B%E9%AD%AF%E6%A0%BC%E6%95%88%E6%87%89) -![达克曲线](https://img-blog.csdnimg.cn/20210308202454937.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTExOTU4ODM=,size_16,color_FFFFFF,t_70#pic_center)
+- [达克曲线](https://zh.wikipedia.org/zh-hans/%E9%84%A7%E5%AF%A7-%E5%85%8B%E9%AD%AF%E6%A0%BC%E6%95%88%E6%87%89) 
 - [Unix 编程艺术](https://book.douban.com/subject/1467587/)
 - [Ins 账号：Yes but](https://www.instagram.com/_yes_but/reels/)
 - [PunHub](https://twitter.com/PunHubOnline/status/1458840531451224064)
