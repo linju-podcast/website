@@ -1,8 +1,8 @@
 ---
 title: 'EP 9 可以，但是没必要？｜ 如何像 native 一样说英语'
 tags: ['englishLearnings']
-description: '在这期节目中我们分享了如何像 native 一样说英语的技巧以及我们对这种现象的看法'
-date: 2024-2-4
+description: '在这期英语节目中，我们会基于各自的经验，结合一些理论知识，分享如何快速地像 native 一样说英语。与此同时，我们也对“是否一定要像 native 一样说英语”发表了各自的看法。希望可以给大家带来收获和启发'
+date: 2024-02-02
 draft: false
 ---
 
@@ -10,7 +10,9 @@ draft: false
 
 Papaya 曾经在某英语培训机构任教，高中通过大学英语六级，雅思听力阅读满分，也做过同声传译，现在学习编程也基本上使用的是英语材料；而 S1ngS1ng 已经在美国定居快十年，每天工作生活使用的语言都是英语。
 
-在这期节目中，我们分享了快速像 native 一样说英语的小技巧，也表达了我们对这种现象的看法。
+在这期英语节目中，我们会基于各自的经验，结合一些理论知识，分享如何快速地像 native 一样说英语。与此同时，我们也对“是否一定要像 native 一样说英语”发表了各自的看法。希望可以给大家带来收获和启发。
+
+另外，我们的播客邮箱也已经开通，有任何想要和我们分享的内容，欢迎和我们邮件交流，我们的邮箱是：wangshang@linju.io
 
 ## 时间线
 
@@ -27,7 +29,7 @@ Papaya 曾经在某英语培训机构任教，高中通过大学英语六级，�
 
 - [雷军 Are you OK b 站 Remix 版本](https://www.bilibili.com/video/BV1es411D7sW/?vd_source=fbf82fff42e0441608451f7e69ddec08)
 - [Are you OK 原版视频](https://www.youtube.com/watch?v=yx0hCwtJSG0)
-- [周受资问询视频](https://www.youtube.com/watch?v=KT7QEWEcA8I)
+- [周受资视频](https://www.youtube.com/watch?v=KT7QEWEcA8I)
 - [二语习得关键期假说](https://en.wikipedia.org/wiki/Critical_period_hypothesis)
 - [前额叶皮质](https://zh.wikipedia.org/zh-hans/%E5%89%8D%E9%A1%8D%E8%91%89%E7%9A%AE%E8%B3%AA)
 - [乔姆斯基对 ChatGPT 的批判](https://www.nytimes.com/2023/03/08/opinion/noam-chomsky-chatgpt-ai.html)

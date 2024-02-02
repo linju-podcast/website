@@ -1,8 +1,8 @@
 ---
-title: 'EP 9 It's Possible, But Is It Necessary? | How to Speak English Like a Native'
+title: 'EP 9 Yes, but | How to sound like a native speaker'
 tags: ['englishLearnings']
 description: 'In this episode, we share tips on how to speak English like a native and our views on this phenomenon'
-date: 2024-2-4
+date: 2024-02-02
 draft: false
 ---
 
