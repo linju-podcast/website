@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 8 不完备实测转码工具包 SP ｜ 最佳实践',
+          title: 'EP 9 可以，但是没必要？｜ 如何像 native 一样说英语',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/liMIr4tjeEbRJ-w5UpcY-KmE1seY.m4a'
+          src: 'https://media.xyzcdn.net/lj1LPAK0QBY8y7TTpD7tS2eYXhzM.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
