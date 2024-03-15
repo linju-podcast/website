@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 10 漫谈英语词源',
+          title: 'EP 11 人人都可以懂的编程概念：HTTP',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/ltnHiRgQBjmrWJrSKK0tYincwiVq.m4a'
+          src: 'https://media.xyzcdn.net/lsrET5_DJxzyHvStk7I33LLN532-.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
