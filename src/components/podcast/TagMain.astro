@@ -41,7 +41,7 @@ import Pagination from './Pagination.astro'
   </main>
   <div class='mt-16'>
     {
-      page.data.length > 5 && (
+      page.data.length >= 5 && (
         <div>
           <Pagination
             length={lastPage}
