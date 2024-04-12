@@ -21,22 +21,22 @@ Papaya - A frontend newbie, currently working on small projects with friends.
 
 ## Timeline
 
-- 00:51 Audience segmentation
-- 01:30 Differentiating frontend and backend
-- 03:40 Distinguishing between front end and back end
-- 05:20 Understanding client and server
-- 08:10 Frequency of client requests
-- 12:33 The server as the cornerstone of the internet
-- 14:30 Responsibilities of frontend and backend developers
-- 15:00 Exploring technology stacks
-- 21:08 Event-driven vs data-driven
-- 27:24 Developer tools: DevTool
-- 32:02 Expanding the definitions of client and server
-- 34:49 Separation of concerns and single responsibility principle
-- 42:44 The importance of developer experience and tool sharing
-- 49:52 TWO MORE THINGS
-- 49:57 Bilibili account: 以假乱真official
-- 51:02 Color scheme: Catppuccine
+- 01:42 Audience segmentation
+- 02:40 Difference between front-end and back-end
+- 05:10 Difference between front office and back office
+- 07:37 Difference between client and server
+- 11:23 Frequency of client requests
+- 17:24 The server is the cornerstone of the internet
+- 20:15 Responsibilities of front-end and back-end
+- 21:20 The legendary technology stack
+- 29:27 Event-driven vs. data-driven
+- 38:00 Developer tools: DevTool
+- 44:50 Expanding the definitions of client and server
+- 48:42 Separation of concerns principle and single responsibility principle
+- 59:47 Importance of developer experience and tool sharing
+- 1:09:53 TWO MORE THINGS
+- 1:10:00 Bilibili account: Genuine or Fake official
+- 1:11:23 Color scheme: Catppuccine
 
 ## Further Reading
 
