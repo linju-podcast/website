@@ -30,7 +30,7 @@ Papaya - 前端小菜鸡，现在在和朋友一起做些小项目
 - 20:15 前端和后端的工作职责
 - 21:20 传说中的技术栈
 - 29:27 事件驱动 vs 数据驱动
-- 38:00 开发者工具：DevTool
+- 38:00 开发者工具：DevTools
 - 44:50 拓展客户端和服务器的定义
 - 48:42 关注点分离原则与单一功能原则
 - 59:47 开发者体验的重要性和工具分享
@@ -54,7 +54,7 @@ Papaya - 前端小菜鸡，现在在和朋友一起做些小项目
 - [Stack Overflow 上关于 Data Driven 和 Event Driven 的讨论](https://stackoverflow.com/questions/42174856/data-driven-vs-event-driven-model-architecture)
 - [Stack Overflow 上关于 Data Driven 的讨论](https://stackoverflow.com/questions/1065584/what-is-data-driven-programming)
 - [Chrome DevTools 文档](https://developer.chrome.com/docs/devtools/overview)
-- 42:45 Jim Browning
+- [Jim Browning 油管账号](https://youtube.com/@JimBrowning)
 - [关注点分离 Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 - [单一功能原则 Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
 - [Lighthouse 文档](https://developer.chrome.com/docs/lighthouse/overview)

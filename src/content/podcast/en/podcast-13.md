@@ -54,7 +54,7 @@ Papaya - A frontend newbie, currently working on small projects with friends.
 - [Stack Overflow discussion on Data Driven vs Event Driven model architecture](https://stackoverflow.com/questions/42174856/data-driven-vs-event-driven-model-architecture)
 - [Stack Overflow discussion on Data Driven](https://stackoverflow.com/questions/1065584/what-is-data-driven-programming)
 - [Chrome DevTools Documentation](https://developer.chrome.com/docs/devtools/overview)
-- 42:45 Jim Browning
+- [Jim Browning](https://youtube.com/@JimBrowning)
 - [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
 - [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
 - [Lighthouse Documentation](https://developer.chrome.com/docs/lighthouse/overview)
