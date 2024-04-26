@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 13 人人都可以懂的编程概念：客户端与服务器',
+          title: 'EP 14 人人都能用英语 ｜ 两个故事一个方法',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/ljC4hwC2WxDFX6ZX4_DVGbyLYY2J.m4a'
+          src: 'https://media.xyzcdn.net/ljzlWgaTSaYF_DvYW-_w_ItmjTXk.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
