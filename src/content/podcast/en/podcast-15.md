@@ -2,7 +2,7 @@
 title: 'EP 15 Yes，but？ | A Casual Talk on Mechanical Keyboards 1️⃣'
 tags: ['nostalgia']
 description: In this podcast, we extract two stories from a book and an interesting method, combined with our personal experiences, to discuss how to effectively learn English.
-date: 2024-04-26
+date: 2024-05-20
 draft: false
 ---
 
