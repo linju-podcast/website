@@ -1,5 +1,5 @@
 ---
-title: 'EP 16 Review and recommendation of English learning tool'
+title: 'EP 16 Review and recommendation of English learning tools'
 tags: ['englishLearnings']
 description: We evaluated several English learning tools based on aesthetics, functionality, and ease of use, and discussed the importance of these tools for learning English
 date: 2024-05-30
@@ -61,4 +61,3 @@ For more updates on our podcast, follow us on:
 - [Internet Neighbors Podcast - Xiaohongshu](https://www.xiaohongshu.com/user/profile/64c2024f00000000140396e6?xhsshare=WeixinSession&appuid=64c2024f00000000140396e6&apptime=1697005943)
 - [Internet Neighbors Podcast - X (Twitter)](https://twitter.com/wslj_podcast)
 - Email: wangshang@linju.io
-
