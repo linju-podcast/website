@@ -1,7 +1,7 @@
 ---
 title: 'EP 15 可以，但是没必要？｜ 漫谈机械键盘1️⃣'
 tags: ['nostalgia']
-description: 我们在播客中摘取了书里面的两个故事和一个有趣的方法，结合我们亲身体验聊了聊英语到底应该怎么学。
+description: In this episode, we will follow S1ngS1ng's perspective to explore the past and present of mechanical keyboards, sharing some basic information about mechanical keyboards, including key layouts, switches, keycaps, product recommendations, and more.
 date: 2024-05-20
 draft: false
 ---

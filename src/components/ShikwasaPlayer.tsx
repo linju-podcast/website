@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 16 英语学习工具评测与推荐',
+          title: 'EP 17 可以，但是没必要？｜ 漫谈机械键盘2️⃣',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lkDiAnzlr-OfMAKwAI1zQGF9EIkX.m4a'
+          src: 'https://media.xyzcdn.net/lvPP4QR9nTRdfIo9VR72PurVY5Xn.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
