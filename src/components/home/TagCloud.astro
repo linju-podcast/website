@@ -8,7 +8,7 @@ const formattedPodcast: CollectionEntry<'podcast'>[] = formatPosts(podcasts, {})
 const allTags = formattedPodcast.map((tag) => tag.data.tags).flat()
 
 const processedTags: Record<
-  'devTips' | 'nostalgia' | 'englishLearnings',
+  'devTips' | 'nostalgia' | 'englishLearnings' | 'special',
   number
 > = allTags.reduce((acc, tag) => {
   const value = acc[tag] || 0
