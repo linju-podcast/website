@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 17 可以，但是没必要？｜ 漫谈机械键盘2️⃣',
-          artist: 'Papaya & S1ngS1ng',
+          title: 'EP 18 番外｜对话攀岩游民KK ：我把“辣米粉”搬进攀岩馆',
+          artist: 'Papaya & hanhan',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lvPP4QR9nTRdfIo9VR72PurVY5Xn.m4a'
+          src: 'https://media.xyzcdn.net/lun4UDyzaP0Xdt4ir6glizkWKzln.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)

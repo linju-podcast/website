@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content'
 
 export async function getStaticPaths({ paginate }) {
-  const allTags = ['devTips', 'nostalgia', 'englishLearnings']
+  const allTags = ['devTips', 'nostalgia', 'englishLearnings', 'special']
   const allPodcasts = await getCollection('podcast', ({ id }) => {
     return id.startsWith('cn/')
   })

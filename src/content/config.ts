@@ -7,7 +7,7 @@ const podcastCollection = defineCollection({
   schema: object({
     title: string(),
     description: string().max(160, 'for better display'),
-    tags: z.enum(['devTips', 'nostalgia', 'englishLearnings']),
+    tags: z.enum(['devTips', 'nostalgia', 'englishLearnings', 'special']),
     image: object({
       src: string(),
       alt: string()
