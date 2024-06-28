@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 18 番外｜对话攀岩游民KK ：我把“辣米粉”搬进攀岩馆',
-          artist: 'Papaya & hanhan',
+          title: 'EP 19 中英表达大不同',
+          artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lun4UDyzaP0Xdt4ir6glizkWKzln.m4a'
+          src: 'https://media.xyzcdn.net/lrStkyQcY8FeCfLqOLM6cWS-5Yi4.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
