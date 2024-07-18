@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 19 中英表达大不同',
+          title: 'EP 20 英语缩写 1️⃣',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lrStkyQcY8FeCfLqOLM6cWS-5Yi4.m4a'
+          src: 'https://media.xyzcdn.net/lg8dMVRn3oyl12ZRnzBLQQQg37t0.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
