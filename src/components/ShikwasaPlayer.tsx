@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 20 英语缩写 1️⃣',
+          title: 'EP 21 可以，但是没必要？｜聊聊英语名字的那些事',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lg8dMVRn3oyl12ZRnzBLQQQg37t0.m4a'
+          src: 'https://media.xyzcdn.net/luyrKdxJIsFMuvYsRnkkM6hNFX_s.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
