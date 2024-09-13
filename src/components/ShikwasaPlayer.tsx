@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 21 可以，但是没必要？｜聊聊英语名字的那些事',
+          title: 'EP 23 如何在六个月内掌握英语',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/luyrKdxJIsFMuvYsRnkkM6hNFX_s.m4a'
+          src: 'https://media.xyzcdn.net/luU4sQB59S3TVKDp57mfWLS8KNmt.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
