@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 23 如何在六个月内掌握英语',
+          title: 'EP 24 单词量 300 在美国生活 1️⃣',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/luU4sQB59S3TVKDp57mfWLS8KNmt.m4a'
+          src: 'https://media.xyzcdn.net/lpW94CItJUOABv4D_BrONOHo8vhz.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)

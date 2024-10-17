@@ -1,5 +1,5 @@
 ---
-title: 'EP 24 单词量 300 在美国生活（一）'
+title: 'EP 24 单词量 300 在美国生活 1️⃣'
 tags: ['englishLearnings']
 description: 这期节目主要介绍了 S1ngS1ng 的父亲在英语几乎零基础的情况决定赴美生活的前期准备
 date: 2024-10-17
@@ -53,15 +53,16 @@ S1ngS1ng 的父亲老柳老师，退休后决定在美国长期定居，过上�
 
 ### Part 6: TWO MORE THINGS
 
-- 42:01 充电线推荐：Incharge
+- 42:01 充电线推荐：inCharge
 - 46:03 旅游项目：东京华纳兄弟影棚——The Making of Harry Potter
 
 ## 拓展阅读
 
-- PETS 全国公共英语等级考试
-- Shadow Reading 影子跟读
+- [PETS 全国公共英语等级考试](https://pets.neea.edu.cn/)
+- [Shadow Reading 影子跟读是什么？](https://epaper.gmw.cn/lx/html/2015-05/05/nw.D110000lx_20150505_1-07.htm?div=-1)
 - [麦克老师](https://www.youtube.com/@maikelaoshi)
 - [inCharge by Rolling Square](https://rollingsquare.com/collections/cables)
+- [The Making of Harry Potter 东京官网](https://www.wbstudiotour.jp/en/)
 
 ## 主播介绍
 
