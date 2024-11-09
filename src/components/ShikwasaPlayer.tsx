@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 24 单词量 300 在美国生活 1️⃣',
+          title: 'EP 25 到底要怎么样背单词？',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lpW94CItJUOABv4D_BrONOHo8vhz.m4a'
+          src: 'https://media.xyzcdn.net/lsJ4Wv5Qjrk8zeMUJEJMmvzX5oBO.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
