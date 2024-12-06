@@ -17,10 +17,10 @@ const ShikwasaPlayer: FunctionComponent<ShikwasaPlayerProps> = ({}) => {
         container: () => podcast.current,
         themeColor: '#C084FC',
         audio: {
-          title: 'EP 25 到底要怎么样背单词？',
+          title: 'EP 26 江湖再见！',
           artist: 'Papaya & S1ngS1ng',
           cover: Logo.src,
-          src: 'https://media.xyzcdn.net/lsJ4Wv5Qjrk8zeMUJEJMmvzX5oBO.m4a'
+          src: 'https://media.xyzcdn.net/ljfaTmE8QBtxf9iHu1fV-xZM-1St.m4a'
         }
       })
       sessionStorage.setItem('playerId', globalThis.player.id)
